@@ -1,0 +1,14 @@
+{
+  "_comment": "compute_alerts.py가 매일 갱신하는 상태 파일. 최고 수익률(peak_return_pct)과 트레일링스탑/분할매도 진행 단계, 연간 실현손익 누계를 저장.",
+  "updated_at": null,
+  "realized_year": 2026,
+  "realized_profit_krw_ytd": 0,
+  "positions": {
+    "AVGO": { "peak_return_pct": null, "tiers_completed": [], "trailing_stop_last_peak": null },
+    "IONQ": { "peak_return_pct": null, "tiers_completed": [], "trailing_stop_last_peak": null },
+    "NVDA": { "peak_return_pct": null, "tiers_completed": [], "trailing_stop_last_peak": null },
+    "OKLO": { "peak_return_pct": null, "tiers_completed": [], "trailing_stop_last_peak": null },
+    "PLTR": { "peak_return_pct": null, "tiers_completed": [], "trailing_stop_last_peak": null },
+    "UEC":  { "peak_return_pct": null, "tiers_completed": [], "trailing_stop_last_peak": null }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_comment": "보유 종목 원장. original_qty는 매도 트리거의 25% 계산 기준(고정). remaining_qty는 알림이 발동될 때마다 시스템이 추정으로 차감하는 값이며, 실제 토스앱 체결 수량/단가와 다를 수 있으니 주기적으로 사용자가 직접 맞춰줘야 함.",
+  "as_of": "2026-08-23",
+  "positions": [
+    { "ticker": "AVGO", "name": "브로드컴",       "original_qty": 7,  "remaining_qty": 7,  "avg_cost_krw": 294544 },
+    { "ticker": "IONQ", "name": "아이온큐",       "original_qty": 10, "remaining_qty": 10, "avg_cost_krw": 49099  },
+    { "ticker": "NVDA", "name": "엔비디아",       "original_qty": 17, "remaining_qty": 17, "avg_cost_krw": 157895 },
+    { "ticker": "OKLO", "name": "오클로",         "original_qty": 16, "remaining_qty": 16, "avg_cost_krw": 74107  },
+    { "ticker": "PLTR", "name": "팔란티어 테크",  "original_qty": 16, "remaining_qty": 16, "avg_cost_krw": 97529  },
+    { "ticker": "UEC",  "name": "우라늄 에너지",  "original_qty": 30, "remaining_qty": 30, "avg_cost_krw": 16245  }
+  ]
+}
