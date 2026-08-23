@@ -10,9 +10,12 @@
 
 ## 1. 시세 조회
 ```
-pip install --quiet yfinance   # 세션마다 새로 필요
 python3 scripts/fetch_prices.py portfolio/holdings.json > /tmp/prices.json
 ```
+- 이 스크립트는 `yfinance` 패키지를 쓰지 않고 표준 `requests`로 Yahoo Finance의 공개
+  chart API(`query1.finance.yahoo.com`)를 직접 호출한다. `yfinance`의 기본 조회 방식은
+  이 클라우드 환경의 아웃바운드 프록시(MITM)와 궁합이 안 맞아 TLS 연결이 리셋되는 것을
+  확인했기 때문이다. `requests`는 이미 설치돼 있어 별도 pip install이 필요 없다.
 - **실패 시(네트워크 정책으로 Yahoo Finance 차단 등, exit code 1):** 나머지 단계를 건너뛰고 카카오톡으로
   `"[해외주식 알림] 오늘 시세 조회 실패 - 환경 네트워크 정책 확인 필요"` 한 통만 보내고 종료한다.
   절대 없는 시세를 지어내거나 어제 값을 그대로 재사용하지 않는다.

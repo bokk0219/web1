@@ -14,5 +14,9 @@
 - `docs/daily_runbook.md` — 매일 자동 세션이 따르는 실행 절차 (전제 조건, 실패 시 처리 포함)
 
 ### 실행 전제 조건
-1. **PlayMCP 네이버 검색 MCP 연결** — claude.ai 커넥터 설정에서 활성화 필요 (현재 카카오톡 도구만 연결됨)
-2. **환경 네트워크 정책에서 Yahoo Finance 아웃바운드 허용** — 기본 정책은 차단되어 있어 `yfinance` 호출이 실패함
+1. ✅ **PlayMCP 네이버 검색 MCP 연결** — 완료
+2. ✅ **환경 네트워크 정책에서 Yahoo Finance(query1.finance.yahoo.com) 아웃바운드 허용** — 완료. 단 `yfinance`
+   패키지 자체는 이 환경 프록시와 궁합이 안 맞아 표준 `requests`로 Yahoo chart API를 직접 호출하도록 구현함
+   (`scripts/fetch_prices.py` 참고)
+3. ⛔ **claude.ai Routines(예약) 화면에서 매일 07:00 KST 트리거를 직접 생성** — API로 만든 트리거는 이 조직에서
+   PlayMCP 커넥터를 붙일 수 없어서, 반드시 웹 UI에서 만들어야 카카오톡/네이버 도구가 실제로 동작함
