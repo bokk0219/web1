@@ -21,9 +21,11 @@ python3 scripts/fetch_prices.py portfolio/holdings.json > /tmp/prices.json
   절대 없는 시세를 지어내거나 어제 값을 그대로 재사용하지 않는다.
 
 ## 2. 관련 뉴스 검색 (PlayMCP 네이버 검색 MCP)
-- 보유 6종목(`portfolio/holdings.json`의 `positions[].name`/`ticker`) 각각에 대해 최근 뉴스를 검색해
-  한국어 1줄(40자 내외)로 요약한다.
-- 결과를 `{"AVGO": "...", "IONQ": "...", ...}` 형태로 `/tmp/news.json`에 저장한다.
+- 보유 6종목(`portfolio/holdings.json`의 `positions[].name`/`ticker`) 각각에 대해 뉴스 검색 도구(이름에
+  `NaverSearch`가 들어간 도구 중 뉴스 검색용)로 가장 최근/관련도 높은 기사 1건을 찾는다.
+- 기사 **제목과 링크(url)를 둘 다** 챙겨서 `{"AVGO": {"title": "기사 제목", "url": "https://..."}, ...}`
+  형태로 `/tmp/news.json`에 저장한다 (링크가 있어야 사용자가 카카오톡에서 바로 눌러 기사를 열 수 있다).
+  검색 결과에 링크가 없는 경우에만 `{"AVGO": "1줄 요약"}`처럼 문자열로 저장한다.
 - **네이버 검색 MCP 도구가 이 세션 도구 목록에 없으면**, 이 단계를 건너뛰고 `/tmp/news.json`을 만들지 않는다
   (다른 검색 수단으로 대체하지 말 것 — 사용자가 명시적으로 PlayMCP 네이버 검색만 쓰길 원함).
   요약 메시지에 "뉴스 검색 도구 미연결"이라고만 남긴다.
@@ -41,7 +43,8 @@ python3 scripts/format_messages.py /tmp/alerts.json /tmp/news.json > /tmp/messag
 # news.json이 없으면 두 번째 인자 생략:
 # python3 scripts/format_messages.py /tmp/alerts.json > /tmp/messages.json
 ```
-- 출력은 문자열 배열(요약 1통 + 종목별 최대 6통, 각 200자 이내)이다.
+- 출력은 문자열 배열(요약 1통 + 종목별 시세 메시지 + 링크가 있는 종목은 별도 뉴스 메시지 1통 더,
+  전부 각 200자 이내)이다. 뉴스 메시지는 링크가 잘리지 않도록 시세 메시지와 분리해서 만든다.
 
 ## 5. 카카오톡 발송
 - `/tmp/messages.json`의 각 문자열을 순서대로 PlayMCP 카카오톡 나챗방 도구(`KakaotalkChat-MemoChat` 계열,

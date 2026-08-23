@@ -1,16 +1,23 @@
 #!/usr/bin/env python3
 """
-alerts.json (+ 선택적으로 뉴스 요약 news.json) 을 받아
+alerts.json (+ 선택적으로 뉴스 news.json) 을 받아
 카카오톡 나챗방으로 보낼 메시지 목록(각 200자 이내)을 JSON 배열로 출력한다.
 
 사용법:
     python3 scripts/format_messages.py /tmp/alerts.json [news.json] > /tmp/messages.json
 
-news.json 형식 (선택): {"AVGO": "1줄 뉴스 요약", ...}
+news.json 형식 (선택), 종목당 아래 둘 다 지원:
+    {"AVGO": "1줄 뉴스 요약"}                                   # 링크 없이 제목/요약만
+    {"AVGO": {"title": "기사 제목", "url": "https://..."}}      # 링크 포함 (권장)
 네이버 검색 MCP가 연결되어 있지 않으면 이 인자를 생략하면 된다 — 뉴스 줄 없이 발송된다.
 
-출력은 [요약 메시지, 종목1 메시지, 종목2 메시지, ...] 형태의 문자열 배열이며,
-호출한 러너가 순서대로 카카오톡 도구에 하나씩 넘기면 된다.
+링크가 있는 종목은 시세/트리거 메시지와 별도로 "[종목] 뉴스: 제목 링크" 메시지를 하나 더
+보낸다. 트리거가 많은 날은 시세 메시지 자체가 이미 200자에 가까워서, 같은 메시지에
+링크까지 욱여넣으면 링크가 잘려 못 여는 상태로 발송될 수 있기 때문이다. 링크를 지키기 위해
+필요하면 제목 쪽을 줄인다.
+
+출력은 [요약 메시지, 종목1 시세 메시지, (종목1 뉴스 메시지), 종목2 시세 메시지, ...] 형태의
+문자열 배열이며, 호출한 러너가 순서대로 카카오톡 도구에 하나씩 넘기면 된다.
 """
 import json
 import sys
@@ -28,6 +35,28 @@ def trigger_line(t):
     if t["type"] == "trailing_stop":
         return f"[트레일링] 고점{t['peak_return_pct']}%에서 -{t['drop_pp']}%p 하락 → {t['sell_qty']}주 매도 검토"
     return ""
+
+
+def news_title_and_url(entry):
+    if isinstance(entry, str):
+        return entry, None
+    if isinstance(entry, dict):
+        return entry.get("title") or entry.get("summary") or "", entry.get("url")
+    return None, None
+
+
+def build_news_message(label, title, url):
+    prefix = f"[{label}] 뉴스: "
+    if not url:
+        return truncate(prefix + title)
+
+    room_for_title = MAX_LEN - len(prefix) - len(url) - 1  # -1 for the space before the url
+    if room_for_title >= 5:
+        return f"{prefix}{truncate(title, room_for_title)} {url}"
+    if len(prefix) + len(url) <= MAX_LEN:
+        return f"{prefix}{url}"
+    # url 자체가 비정상적으로 길 때의 최후 수단: 앞부분이라도 남긴다 (열리지 않을 수 있음)
+    return url[:MAX_LEN]
 
 
 def main():
@@ -66,22 +95,25 @@ def main():
     messages.append(truncate(" / ".join(summary_lines)))
 
     for p in alerts["positions"]:
+        label = f"{p['name']}({p['ticker']})"
+
         if p.get("error"):
-            messages.append(truncate(f"[{p['name']}({p['ticker']})] 시세조회 실패: {p['error']}"))
+            messages.append(truncate(f"[{label}] 시세조회 실패: {p['error']}"))
             continue
 
         parts = [
-            f"[{p['name']}({p['ticker']})]",
+            f"[{label}]",
             f"{p['price_krw']:,.0f}원",
             f"수익률 {p['return_pct']:+.1f}%",
             f"보유 {p['remaining_qty']}주",
         ]
         for t in p.get("triggers", []):
             parts.append(trigger_line(t))
-        n = news.get(p["ticker"])
-        if n:
-            parts.append(f"뉴스: {n}")
         messages.append(truncate(" / ".join(parts)))
+
+        title, url = news_title_and_url(news.get(p["ticker"]))
+        if title or url:
+            messages.append(build_news_message(label, title or "", url))
 
     print(json.dumps(messages, ensure_ascii=False, indent=2))
 
