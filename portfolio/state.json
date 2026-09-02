@@ -1,6 +1,6 @@
 {
   "_comment": "compute_alerts.py가 매일 갱신하는 상태 파일. 최고 수익률(peak_return_pct)과 트레일링스탑/분할매도 진행 단계, 연간 실현손익 누계를 저장.",
-  "updated_at": "2026-09-01T11:56:59.939832+00:00",
+  "updated_at": "2026-09-02T06:07:03.274199+00:00",
   "realized_year": 2026,
   "realized_profit_krw_ytd": 5141264.0,
   "positions": {
