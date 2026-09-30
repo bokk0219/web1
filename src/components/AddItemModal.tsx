@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { PRESET_EMOJIS } from "../storage";
+import { ICON_CATEGORIES } from "../storage";
 
 interface AddItemModalProps {
   onClose: () => void;
   onCreate: (item: {
     name: string;
     emoji: string;
+    category: string;
     trackPrice: boolean;
     trackQuantity: boolean;
     reasonOptions: string[];
@@ -14,12 +15,22 @@ interface AddItemModalProps {
 
 export default function AddItemModal({ onClose, onCreate }: AddItemModalProps) {
   const [name, setName] = useState("");
-  const [emoji, setEmoji] = useState(PRESET_EMOJIS[0]);
+  const [category, setCategory] = useState(ICON_CATEGORIES[0].label);
+  const [emoji, setEmoji] = useState(ICON_CATEGORIES[0].emojis[0]);
   const [trackPrice, setTrackPrice] = useState(false);
   const [trackQuantity, setTrackQuantity] = useState(false);
   const [reasonText, setReasonText] = useState("");
 
   const canSubmit = name.trim().length > 0;
+  const currentEmojis = ICON_CATEGORIES.find((c) => c.label === category)?.emojis ?? [];
+
+  function selectCategory(label: string) {
+    setCategory(label);
+    const emojis = ICON_CATEGORIES.find((c) => c.label === label)?.emojis ?? [];
+    if (!emojis.includes(emoji)) {
+      setEmoji(emojis[0]);
+    }
+  }
 
   function handleSubmit() {
     if (!canSubmit) return;
@@ -27,7 +38,7 @@ export default function AddItemModal({ onClose, onCreate }: AddItemModalProps) {
       .split(",")
       .map((s) => s.trim())
       .filter(Boolean);
-    onCreate({ name: name.trim(), emoji, trackPrice, trackQuantity, reasonOptions });
+    onCreate({ name: name.trim(), emoji, category, trackPrice, trackQuantity, reasonOptions });
   }
 
   return (
@@ -50,9 +61,26 @@ export default function AddItemModal({ onClose, onCreate }: AddItemModalProps) {
         </div>
 
         <div className="space-y-2">
+          <label className="text-sm text-espresso font-medium">분류</label>
+          <div className="flex flex-wrap gap-2">
+            {ICON_CATEGORIES.map((c) => (
+              <button
+                key={c.label}
+                onClick={() => selectCategory(c.label)}
+                className={`px-3 py-1.5 rounded-full text-sm ${
+                  category === c.label ? "bg-clay text-ink" : "bg-white/60 text-ink/80"
+                }`}
+              >
+                {c.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="space-y-2">
           <label className="text-sm text-espresso font-medium">아이콘</label>
-          <div className="grid grid-cols-10 gap-2">
-            {PRESET_EMOJIS.map((e) => (
+          <div className="grid grid-cols-7 gap-2">
+            {currentEmojis.map((e) => (
               <button
                 key={e}
                 onClick={() => setEmoji(e)}
