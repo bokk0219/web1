@@ -1,0 +1,150 @@
+{
+  "day": 4,
+  "date": "2026-09-28",
+  "slug": "Pharmacy",
+  "title": "At the Pharmacy",
+  "title_ko": "약국에서 감기약 사기",
+  "vocab_title_ko": "약국에서 감기약 사기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Sarah",
+      "en": "Hello! How can I help you today?",
+      "ko": "안녕하세요! 무엇을 도와드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I think I caught a cold. I need some medicine.",
+      "ko": "감기에 걸린 것 같아요. 약이 필요해요."
+    },
+    {
+      "role": "partner",
+      "name": "Sarah",
+      "en": "Oh, I'm sorry to hear that. What are your symptoms? Do you have a fever or a sore throat?",
+      "ko": "저런, 안됐네요. 증상이 어떠세요? 열이 나거나 목이 아프세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I have a fever and a sore throat, and I feel drowsy.",
+      "ko": "열이 나고 목이 아파요. 그리고 나른해요."
+    },
+    {
+      "role": "partner",
+      "name": "Sarah",
+      "en": "Oh, you feel drowsy too. You should get some rest. How long have you had these symptoms?",
+      "ko": "나른하기도 하시군요. 좀 쉬셔야겠어요. 증상은 언제부터 있었어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "It started today. Yesterday, I went for a walk at night.",
+      "ko": "오늘부터요. 어제 밤에 산책을 했어요."
+    },
+    {
+      "role": "partner",
+      "name": "Sarah",
+      "en": "I see. It was cold last night. Are you allergic to any medicine?",
+      "ko": "그렇군요. 어젯밤 추웠죠. 알레르기 있는 약이 있나요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, I'm not allergic to any medicine.",
+      "ko": "아니요, 알레르기 있는 약은 없어요."
+    },
+    {
+      "role": "partner",
+      "name": "Sarah",
+      "en": "OK. This cold medicine is good for a fever and a sore throat. Take one tablet three times a day, after meals. And drink lots of warm water. Do you have any questions?",
+      "ko": "네. 이 감기약이 열과 목 아픈 데 좋아요. 하루 세 번, 식후에 한 알씩 드세요. 따뜻한 물도 많이 드시고요. 궁금한 점 있으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Does it make me drowsy? Is there anything good for a cold?",
+      "ko": "먹으면 졸린가요? 감기에 좋은 게 있을까요?"
+    },
+    {
+      "role": "partner",
+      "name": "Sarah",
+      "en": "Yes, it may make you a little drowsy. So don't drive after you take it. For a cold, rest is the best. Sleep well, and eat warm soup. Anything else?",
+      "ko": "네, 조금 졸릴 수 있어요. 그러니 드신 후에는 운전하지 마세요. 감기에는 쉬는 게 최고예요. 푹 자고 따뜻한 국물을 드세요. 더 필요한 건요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Thank you for your kind help. As soon as I get home, I need to get some rest.",
+      "ko": "친절하게 도와주셔서 감사해요. 집에 가자마자 좀 쉬어야겠어요."
+    },
+    {
+      "role": "partner",
+      "name": "Sarah",
+      "en": "You're welcome! Get well soon. Take care!",
+      "ko": "천만에요! 빨리 나으세요. 몸조리 잘하세요!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "catch a cold",
+      "pos": "표현",
+      "meaning": "감기에 걸리다 (과거: caught)",
+      "example": "I think I <b>caught a cold</b>."
+    },
+    {
+      "word": "medicine",
+      "pos": "명사",
+      "meaning": "약",
+      "example": "I need some <b>medicine</b>."
+    },
+    {
+      "word": "symptom",
+      "pos": "명사",
+      "meaning": "증상",
+      "example": "What are your <b>symptoms</b>?"
+    },
+    {
+      "word": "fever",
+      "pos": "명사",
+      "meaning": "열",
+      "example": "I have a <b>fever</b>."
+    },
+    {
+      "word": "sore throat",
+      "pos": "명사",
+      "meaning": "목 아픔, 인후통",
+      "example": "I have a <b>sore throat</b>."
+    },
+    {
+      "word": "drowsy",
+      "pos": "형용사",
+      "meaning": "나른한, 졸린",
+      "example": "I feel <b>drowsy</b>."
+    },
+    {
+      "word": "go for a walk",
+      "pos": "표현",
+      "meaning": "산책하다",
+      "example": "Yesterday, I <b>went for a walk</b> at night."
+    },
+    {
+      "word": "allergic",
+      "pos": "형용사",
+      "meaning": "알레르기가 있는",
+      "example": "I'm not <b>allergic</b> to any medicine."
+    },
+    {
+      "word": "after meals",
+      "pos": "표현",
+      "meaning": "식후에",
+      "example": "Take one tablet three times a day, <b>after meals</b>."
+    },
+    {
+      "word": "get some rest",
+      "pos": "표현",
+      "meaning": "좀 쉬다",
+      "example": "I need to <b>get some rest</b>."
+    }
+  ]
+}

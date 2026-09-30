@@ -1,0 +1,126 @@
+{
+  "day": 6,
+  "date": "2026-09-30",
+  "slug": "FeelingBetter",
+  "title": "Feeling Better",
+  "title_ko": "친구와 전화로 안부 나누기",
+  "vocab_title_ko": "친구와 안부 나누기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Hi, Hyunju! I heard you were sick. Are you feeling better now?",
+      "ko": "현주야! 아팠다며. 이제 좀 괜찮아?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Thanks for asking. I feel much better now.",
+      "ko": "물어봐 줘서 고마워. 이제 훨씬 나아졌어."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Oh, good! I'm so glad to hear that. What happened? Did you go to the doctor?",
+      "ko": "다행이다! 정말 기쁘다. 어떻게 된 거야? 병원은 갔어?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I went to see a doctor and got a shot.",
+      "ko": "병원에 가서 주사 맞았어."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "A shot! No wonder you got better so fast. How did you catch a cold?",
+      "ko": "주사! 그래서 그렇게 빨리 나았구나. 감기는 어쩌다 걸렸어?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I went for a walk at night. It was cold.",
+      "ko": "밤에 산책했거든. 추웠어."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Oh, the nights are getting really cold these days. You should wear a warm jacket next time! Did you rest at home?",
+      "ko": "요즘 밤에 진짜 추워졌어. 다음엔 따뜻한 재킷 꼭 입어! 집에서 쉬었어?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I rested at home and slept a lot. It was very helpful.",
+      "ko": "응, 집에서 쉬고 잠을 많이 잤어. 그게 많이 도움이 됐어."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "That's good. Sleep is the best medicine! Hey, when you're fully better, let's go to the Do Ho Suh exhibition together! When are you free?",
+      "ko": "잘했어. 잠이 최고의 약이지! 있잖아, 다 나으면 서도호 전시회 같이 가자! 언제 시간 돼?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Thank you, but I need to take care of myself for a while. When I'm fully recovered, I'll get in touch with you.",
+      "ko": "고마워. 그런데 당분간은 몸조리를 해야 할 것 같아. 완전히 나으면 연락할게."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Of course! Your health comes first. Take care, and call me when you're ready. Bye!",
+      "ko": "당연하지! 건강이 먼저야. 몸조리 잘하고, 괜찮아지면 전화해. 안녕!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "Thanks for asking.",
+      "pos": "표현",
+      "meaning": "물어봐 줘서 고마워. (친구 사이)",
+      "example": "<b>Thanks for asking.</b> I feel much better now."
+    },
+    {
+      "word": "much better",
+      "pos": "표현",
+      "meaning": "훨씬 나은",
+      "example": "I feel <b>much better</b> now."
+    },
+    {
+      "word": "get a shot",
+      "pos": "표현",
+      "meaning": "주사를 맞다 (과거: got)",
+      "example": "I went to see a doctor and <b>got a shot</b>."
+    },
+    {
+      "word": "No wonder",
+      "pos": "표현",
+      "meaning": "어쩐지, 그래서 ~구나",
+      "example": "<b>No wonder</b> you got better so fast."
+    },
+    {
+      "word": "take care of myself",
+      "pos": "표현",
+      "meaning": "몸조리하다, 나를 돌보다",
+      "example": "I need to <b>take care of myself</b> for a while."
+    },
+    {
+      "word": "for a while",
+      "pos": "표현",
+      "meaning": "당분간, 한동안",
+      "example": "I need to rest <b>for a while</b>."
+    },
+    {
+      "word": "fully recovered",
+      "pos": "표현",
+      "meaning": "완전히 회복한 (am 뒤에는 -ed)",
+      "example": "When I'm <b>fully recovered</b>, I'll call you."
+    },
+    {
+      "word": "get in touch with",
+      "pos": "표현",
+      "meaning": "~와 연락하다 (with 필수)",
+      "example": "I'll <b>get in touch with</b> you."
+    }
+  ]
+}

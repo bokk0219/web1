@@ -1,0 +1,156 @@
+{
+  "day": 5,
+  "date": "2026-09-29",
+  "slug": "Doctor",
+  "title": "At the Doctor's Office",
+  "title_ko": "병원에서 진료받기",
+  "vocab_title_ko": "병원에서 진료받기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Dr. Brown",
+      "en": "Hello, Hyunju. Please have a seat. What brings you here today?",
+      "ko": "안녕하세요, 현주 씨. 앉으세요. 오늘 어디가 불편해서 오셨어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I think I caught a cold.",
+      "ko": "감기에 걸린 것 같아요."
+    },
+    {
+      "role": "partner",
+      "name": "Dr. Brown",
+      "en": "A cold? I see. What are your symptoms?",
+      "ko": "감기요? 그렇군요. 증상이 어떠세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I have a fever, a runny nose, and a sore throat.",
+      "ko": "열이 나고, 콧물이 나고, 목이 아파요."
+    },
+    {
+      "role": "partner",
+      "name": "Dr. Brown",
+      "en": "A fever, a runny nose, and a sore throat... Let me check your temperature. Hmm, it's 38 degrees. When did it start?",
+      "ko": "열, 콧물, 인후통이요… 체온을 재 볼게요. 음, 38도네요. 언제부터 그랬어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "It started yesterday.",
+      "ko": "어제부터요."
+    },
+    {
+      "role": "partner",
+      "name": "Dr. Brown",
+      "en": "Since yesterday, I see. Let me look at your throat. Say \"Ahh.\" Your throat is very red. Do you have a cough?",
+      "ko": "어제부터군요. 목을 볼게요. \"아~\" 해 보세요. 목이 많이 빨갛네요. 기침도 하세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I have a bit of a cough.",
+      "ko": "네, 기침이 조금 나요."
+    },
+    {
+      "role": "partner",
+      "name": "Dr. Brown",
+      "en": "OK. It looks like a bad cold. I'll give you a prescription for three days. Are you taking any other medicine now?",
+      "ko": "네. 감기가 심하네요. 사흘 치 처방전을 드릴게요. 지금 드시는 다른 약이 있나요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I got some cold medicine from the pharmacy.",
+      "ko": "네, 약국에서 감기약을 샀어요."
+    },
+    {
+      "role": "partner",
+      "name": "Dr. Brown",
+      "en": "I see. Then please stop taking that medicine and take this one instead. Get plenty of rest and drink lots of water. Do you have any questions?",
+      "ko": "그렇군요. 그럼 그 약은 그만 드시고 대신 이 약을 드세요. 푹 쉬고 물을 많이 드세요. 궁금한 점 있으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Could it be the flu? I'm a little worried.",
+      "ko": "혹시 독감일 수도 있나요? 조금 걱정돼요."
+    },
+    {
+      "role": "partner",
+      "name": "Dr. Brown",
+      "en": "Don't worry. Your symptoms look like a cold, not the flu. But if your fever goes over 39 degrees, please come back and we'll do a flu test. Anything else?",
+      "ko": "걱정 마세요. 증상을 보니 독감이 아니라 감기예요. 하지만 열이 39도를 넘으면 다시 오세요. 독감 검사를 해 볼게요. 다른 건요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No. Thank you for your kind answer.",
+      "ko": "없어요. 친절하게 답해 주셔서 감사해요."
+    },
+    {
+      "role": "partner",
+      "name": "Dr. Brown",
+      "en": "You're welcome. Take your medicine and get some rest. Get well soon, Hyunju!",
+      "ko": "천만에요. 약 드시고 푹 쉬세요. 빨리 나으세요, 현주 씨!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "runny nose",
+      "pos": "명사",
+      "meaning": "콧물 (running nose는 틀린 표현)",
+      "example": "I have a <b>runny nose</b>."
+    },
+    {
+      "word": "a bit of a cough",
+      "pos": "표현",
+      "meaning": "기침이 조금 남",
+      "example": "Yes, I have <b>a bit of a cough</b>."
+    },
+    {
+      "word": "temperature",
+      "pos": "명사",
+      "meaning": "체온, 온도",
+      "example": "Let me check your <b>temperature</b>."
+    },
+    {
+      "word": "prescription",
+      "pos": "명사",
+      "meaning": "처방전",
+      "example": "I'll give you a <b>prescription</b> for three days."
+    },
+    {
+      "word": "pharmacy",
+      "pos": "명사",
+      "meaning": "약국 (ph는 f 소리)",
+      "example": "I got some cold medicine from the <b>pharmacy</b>."
+    },
+    {
+      "word": "instead",
+      "pos": "부사",
+      "meaning": "대신에",
+      "example": "Take this one <b>instead</b>."
+    },
+    {
+      "word": "the flu",
+      "pos": "명사",
+      "meaning": "독감",
+      "example": "Could it be <b>the flu</b>?"
+    },
+    {
+      "word": "worried",
+      "pos": "형용사",
+      "meaning": "걱정되는",
+      "example": "I'm a little <b>worried</b>."
+    },
+    {
+      "word": "scared vs scary",
+      "pos": "형용사",
+      "meaning": "scared: (내가) 무서운 / scary: (대상이) 무서운",
+      "example": "I feel a little <b>scared</b>. The movie was <b>scary</b>."
+    }
+  ]
+}
