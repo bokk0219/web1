@@ -2,6 +2,7 @@ export interface Item {
   id: string;
   name: string;
   emoji: string;
+  category: string;
   trackPrice: boolean;
   trackQuantity: boolean;
   reasonOptions: string[];

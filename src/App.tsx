@@ -5,11 +5,12 @@ import Splash from "./components/Splash";
 import Home from "./components/Home";
 import ItemsList from "./components/ItemsList";
 import ItemDetail from "./components/ItemDetail";
+import CalendarView from "./components/CalendarView";
 import BottomNav from "./components/BottomNav";
 import AddItemModal from "./components/AddItemModal";
 import AddRecordModal from "./components/AddRecordModal";
 
-type Tab = "home" | "items";
+type Tab = "home" | "calendar" | "items";
 
 export default function App() {
   const [data, setData] = useState<AppData>(() => loadData());
@@ -88,6 +89,9 @@ export default function App() {
                 setShowAddRecord(true);
               }}
             />
+          )}
+          {tab === "calendar" && (
+            <CalendarView items={data.items} records={data.records} onOpenItem={setSelectedItemId} />
           )}
           {tab === "items" && (
             <ItemsList

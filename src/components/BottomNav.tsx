@@ -1,6 +1,8 @@
+type Tab = "home" | "calendar" | "items";
+
 interface BottomNavProps {
-  active: "home" | "items";
-  onChange: (tab: "home" | "items") => void;
+  active: Tab;
+  onChange: (tab: Tab) => void;
 }
 
 export default function BottomNav({ active, onChange }: BottomNavProps) {
@@ -8,6 +10,7 @@ export default function BottomNav({ active, onChange }: BottomNavProps) {
     <nav className="fixed bottom-0 left-0 right-0 bg-cream/95 backdrop-blur border-t border-beige">
       <div className="max-w-md mx-auto flex">
         <NavButton label="홈" emoji="🏠" isActive={active === "home"} onClick={() => onChange("home")} />
+        <NavButton label="달력" emoji="📅" isActive={active === "calendar"} onClick={() => onChange("calendar")} />
         <NavButton label="나의 항목" emoji="📋" isActive={active === "items"} onClick={() => onChange("items")} />
       </div>
     </nav>

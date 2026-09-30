@@ -11,8 +11,9 @@ export function loadData(): AppData {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return emptyData();
     const parsed = JSON.parse(raw);
+    const items: Item[] = Array.isArray(parsed.items) ? parsed.items : [];
     return {
-      items: Array.isArray(parsed.items) ? parsed.items : [],
+      items: items.map((item) => ({ ...item, category: item.category ?? DEFAULT_CATEGORY })),
       records: Array.isArray(parsed.records) ? parsed.records : [],
       hasVisited: Boolean(parsed.hasVisited),
     };
@@ -35,9 +36,20 @@ export function todayISO(): string {
   return new Date(d.getTime() - tz).toISOString().slice(0, 10);
 }
 
-export const PRESET_EMOJIS = [
-  "🪥", "💅", "🛏️", "🧴", "💇", "🧺", "🧼", "🐾", "✂️", "🧽",
-  "🚿", "🩹", "💊", "🧦", "👕", "🪒", "🕯️", "🧹", "🔋", "🌱",
+export interface IconCategory {
+  label: string;
+  emojis: string[];
+}
+
+export const ICON_CATEGORIES: IconCategory[] = [
+  { label: "위생·미용", emojis: ["🪥", "💇", "✂️", "🪒", "💅", "🚿", "🧴"] },
+  { label: "청소·세탁", emojis: ["🧺", "🧹", "🧼", "🧽", "👕", "🧦"] },
+  { label: "건강", emojis: ["💊", "🩹", "🌱"] },
+  { label: "반려동물", emojis: ["🐾"] },
+  { label: "생활용품", emojis: ["🛏️", "🔋", "🕯️"] },
+  { label: "기타", emojis: ["📦", "⭐", "🔧"] },
 ];
+
+export const DEFAULT_CATEGORY = "기타";
 
 export type { Item, Record };
