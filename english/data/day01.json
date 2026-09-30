@@ -1,0 +1,108 @@
+{
+  "day": 1,
+  "date": "2026-09-25",
+  "slug": "Neighbor",
+  "title": "Meeting a New Neighbor",
+  "title_ko": "엘리베이터에서 새 이웃 만나기",
+  "vocab_title_ko": "새 이웃 만나기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Emma",
+      "en": "Hi! Good morning. I'm Emma. I just moved in. I live on the fifth floor. What's your name?",
+      "ko": "안녕하세요! 좋은 아침이에요. 저는 엠마예요. 막 이사 왔어요. 5층에 살아요. 이름이 뭐예요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "My name is Hyunju. Nice to meet you.",
+      "ko": "제 이름은 현주예요. 만나서 반가워요."
+    },
+    {
+      "role": "partner",
+      "name": "Emma",
+      "en": "Nice to meet you too, Hyunju! That's a pretty name. Which floor do you live on?",
+      "ko": "저도 반가워요, 현주 씨! 예쁜 이름이네요. 몇 층에 사세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I live on the fifteenth floor.",
+      "ko": "15층에 살아요."
+    },
+    {
+      "role": "partner",
+      "name": "Emma",
+      "en": "Oh, the fifteenth floor! You must have a great view! I'm new here. I don't know this area well. Is there a good supermarket near here?",
+      "ko": "아, 15층이요! 전망이 정말 좋겠네요! 여기 처음이라 동네를 잘 몰라요. 근처에 괜찮은 슈퍼마켓이 있나요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, there is a supermarket across the road.",
+      "ko": "네, 길 건너편에 슈퍼마켓이 있어요."
+    },
+    {
+      "role": "partner",
+      "name": "Emma",
+      "en": "Across the road? Oh, that's very close! Thank you so much. I love cooking. Do you like cooking too, Hyunju?",
+      "ko": "길 건너편이요? 아주 가깝네요! 정말 고마워요. 저는 요리를 좋아해요. 현주 씨도 요리 좋아하세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I like cooking, but I'm not good at it. I like homemade meals.",
+      "ko": "네, 요리는 좋아하는데 잘하지는 못해요. 집밥을 좋아해요."
+    },
+    {
+      "role": "partner",
+      "name": "Emma",
+      "en": "Me too! Homemade food is the best. Don't worry, cooking is easy with practice! What's your favorite food? What do you like to eat at home?",
+      "ko": "저도요! 집밥이 최고죠. 걱정 마세요, 하다 보면 쉬워져요! 제일 좋아하는 음식이 뭐예요? 집에서 뭘 즐겨 드세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I usually make pasta at home. It's easy to make, and I can put so many things in it.",
+      "ko": "집에서는 보통 파스타를 만들어요. 만들기 쉽고, 여러 가지를 넣을 수 있거든요."
+    },
+    {
+      "role": "partner",
+      "name": "Emma",
+      "en": "Pasta! I love pasta too! You can put vegetables, meat, or seafood in it. So good! Oh, this is my floor. It was nice talking to you, Hyunju! See you around!",
+      "ko": "파스타! 저도 정말 좋아해요! 채소, 고기, 해산물 다 넣을 수 있죠. 너무 맛있어요! 아, 제 층이에요. 얘기 즐거웠어요, 현주 씨! 또 봐요!"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Bye! See you soon.",
+      "ko": "안녕히 가세요! 또 봬요."
+    }
+  ],
+  "vocab": [
+    {
+      "word": "across the road",
+      "pos": "표현",
+      "meaning": "길 건너편에",
+      "example": "There is a supermarket <b>across the road</b>."
+    },
+    {
+      "word": "homemade",
+      "pos": "형용사",
+      "meaning": "집에서 만든 (한 단어로 써요)",
+      "example": "I like <b>homemade</b> meals."
+    },
+    {
+      "word": "be good at",
+      "pos": "표현",
+      "meaning": "~을 잘하다",
+      "example": "I'm not <b>good at</b> cooking."
+    },
+    {
+      "word": "elevator",
+      "pos": "명사",
+      "meaning": "엘리베이터 (영국: lift)",
+      "example": "I met Emma in the <b>elevator</b>."
+    }
+  ]
+}

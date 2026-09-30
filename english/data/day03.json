@@ -1,0 +1,150 @@
+{
+  "day": 3,
+  "date": "2026-09-27",
+  "slug": "Exhibition",
+  "title": "Talking About an Exhibition",
+  "title_ko": "친구에게 전시회 이야기하기",
+  "vocab_title_ko": "전시회 이야기하기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Hey, Hyunju! Long time no see! What did you do yesterday?",
+      "ko": "현주야! 오랜만이야! 어제 뭐 했어?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I went to an exhibition by Do Ho Suh. It was really good.",
+      "ko": "서도호 작가 전시회에 갔어. 정말 좋았어."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Oh, Do Ho Suh! I've heard of him. He makes those big fabric houses, right? What did you like the most?",
+      "ko": "아, 서도호! 들어 봤어. 천으로 커다란 집 만드는 작가 맞지? 뭐가 제일 좋았어?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I like his early drawings. They are so cute and full of humor.",
+      "ko": "초기 드로잉이 좋아. 너무 귀엽고 유머가 넘쳐."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Really? I didn't know he drew cute drawings! What kind of drawings were they?",
+      "ko": "정말? 귀여운 그림도 그리는 줄 몰랐어! 어떤 그림이었어?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "They are about houses and people. That is the theme of the exhibition.",
+      "ko": "집과 사람에 관한 그림이야. 그게 전시 주제야."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Houses and people... That sounds interesting! Did you go with someone, or did you go alone?",
+      "ko": "집과 사람이라… 재밌겠다! 누구랑 갔어, 아니면 혼자 갔어?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I went alone.",
+      "ko": "혼자 갔어."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Oh, alone? That's nice. You can take your time and enjoy the art. Was it crowded?",
+      "ko": "혼자? 좋네. 천천히 작품을 즐길 수 있잖아. 사람 많았어?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "It was free because of the Chuseok holiday, so it was crowded.",
+      "ko": "추석 연휴라서 무료였거든. 그래서 사람이 많았어."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Oh, it was free during Chuseok? Lucky you! But I guess there were a lot of people. How long did you stay there?",
+      "ko": "추석에 무료였어? 운 좋았네! 그래도 사람 많았겠다. 얼마나 있었어?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I stayed for about an hour, and I bought a magnet as a souvenir.",
+      "ko": "한 시간쯤 있었고, 기념으로 마그넷을 샀어."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "A magnet! That's a nice souvenir. Would you recommend the exhibition to me?",
+      "ko": "마그넷! 좋은 기념품이네. 나한테도 추천할 만해?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I highly recommend it! It was really good. I'd like to go again.",
+      "ko": "완전 추천해! 정말 좋았어. 또 가고 싶어."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Wow, you really loved it! Then let's go together next time.",
+      "ko": "와, 진짜 좋았나 보다! 그럼 다음에 같이 가자."
+    }
+  ],
+  "vocab": [
+    {
+      "word": "exhibition",
+      "pos": "명사",
+      "meaning": "전시회",
+      "example": "I went to an <b>exhibition</b> by Do Ho Suh."
+    },
+    {
+      "word": "humor",
+      "pos": "명사",
+      "meaning": "유머",
+      "example": "They are so cute and full of <b>humor</b>."
+    },
+    {
+      "word": "theme",
+      "pos": "명사",
+      "meaning": "주제",
+      "example": "That is the <b>theme</b> of the exhibition."
+    },
+    {
+      "word": "be about",
+      "pos": "표현",
+      "meaning": "~에 관한 것이다",
+      "example": "They <b>are about</b> houses and people."
+    },
+    {
+      "word": "crowded",
+      "pos": "형용사",
+      "meaning": "붐비는, 사람이 많은",
+      "example": "It was free, so it was <b>crowded</b>."
+    },
+    {
+      "word": "souvenir",
+      "pos": "명사",
+      "meaning": "기념품",
+      "example": "I bought a magnet as a <b>souvenir</b>."
+    },
+    {
+      "word": "the Chuseok holiday",
+      "pos": "표현",
+      "meaning": "추석 연휴",
+      "example": "It was free because of <b>the Chuseok holiday</b>."
+    },
+    {
+      "word": "highly recommend",
+      "pos": "표현",
+      "meaning": "강력 추천하다",
+      "example": "I <b>highly recommend</b> it!"
+    }
+  ]
+}

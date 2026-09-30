@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Hyunju's Script</title>
+<link href="fonts/local.css" rel="stylesheet">
+<style>
+  :root { --bg:#fff8f0; --p:#dff0ff; --pi:#2f6fb8; --me:#ffe1e8; --mi:#d6456a; --ink:#3a3340; --sub:#8a8090; }
+  * { box-sizing:border-box; margin:0; }
+  html, body { background:var(--bg); }
+  body { width:110mm; font-family:'Nunito','Noto Sans KR',sans-serif; color:var(--ink); }
+  .day { padding:9mm 6mm 8mm; background:var(--bg); }
+  .top { text-align:center; margin-bottom:6mm; }
+  .badge { display:inline-block; font-family:'Jua',sans-serif; background:var(--ink); color:#fff; border-radius:20px; padding:1mm 4mm; font-size:10pt; }
+  h1 { font-family:'Jua',sans-serif; font-weight:400; font-size:21pt; margin-top:2mm; }
+  .kt { font-family:'Jua',sans-serif; color:var(--sub); font-size:11pt; }
+  .dots { margin:3mm auto 0; display:flex; gap:2mm; justify-content:center; }
+  .dots i { width:2.2mm; height:2.2mm; border-radius:50%; background:#ffc4d2; }
+  .dots i:nth-child(2) { background:#bfe0ff; } .dots i:nth-child(3) { background:#ffe39a; }
+
+  .row { display:flex; gap:2mm; margin-bottom:3.2mm; align-items:flex-start; }
+  .row.me { flex-direction:row-reverse; }
+  .face { flex:none; width:9mm; height:9mm; border-radius:50%; display:flex; align-items:center; justify-content:center;
+          font-family:'Jua',sans-serif; font-size:9pt; color:#fff; background:var(--pi); }
+  .me .face { background:var(--mi); }
+  .col { max-width:80mm; display:flex; flex-direction:column; }
+  .me .col { align-items:flex-end; }
+  .name { font-family:'Jua',sans-serif; font-size:8pt; color:var(--sub); margin:0 1.5mm .6mm; }
+  .bub { background:var(--p); border-radius:4mm 4mm 4mm 1mm; padding:2.2mm 3.2mm; }
+  .me .bub { background:var(--me); border-radius:4mm 4mm 1mm 4mm; }
+  .en { font-weight:800; font-size:10.5pt; line-height:1.4; }
+  .ko { font-family:'Nunito','Noto Sans KR',sans-serif; font-size:8pt; color:#6c6475; line-height:1.45; margin-top:.8mm; }
+
+  .end { text-align:center; font-family:'Jua',sans-serif; color:var(--sub); font-size:10pt; margin-top:5mm; }
+  .end b { color:var(--mi); font-weight:400; }
+</style>
+</head>
+<body>
+<section class="day" id="page">
+  <div class="top">
+    <span class="badge" id="badge"></span>
+    <h1 id="title"></h1>
+    <div class="kt" id="title_ko"></div>
+    <div class="dots"><i></i><i></i><i></i></div>
+  </div>
+  <div id="lines"></div>
+  <div class="end">내 대사(<b>분홍</b>) 앞에서 멈추고 먼저 말해 보기!</div>
+</section>
+<script>
+// build.js calls render(data) with one english/data/dayNN.json object.
+const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+function render(d) {
+  document.getElementById('badge').textContent = 'DAY ' + d.day;
+  document.getElementById('title').textContent = d.title;
+  document.getElementById('title_ko').textContent = d.title_ko;
+  document.getElementById('lines').innerHTML = d.lines.map(l =>
+    `<div class="row ${l.role === 'me' ? 'me' : 'p'}"><div class="face">${esc(l.name[0])}</div><div class="col"><div class="name">${esc(l.name)}</div><div class="bub"><div class="en">${esc(l.en)}</div><div class="ko">${esc(l.ko)}</div></div></div></div>`).join('');
+}
+</script>
+</body>
+</html>

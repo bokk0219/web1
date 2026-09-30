@@ -1,0 +1,13 @@
+🔵 Hello! How can I help you today?
+🔴 I think I caught a cold. I need some medicine.
+🔵 Oh, I'm sorry to hear that. What are your symptoms? Do you have a fever or a sore throat?
+🔴 I have a fever and a sore throat, and I feel drowsy.
+🔵 Oh, you feel drowsy too. You should get some rest. How long have you had these symptoms?
+🔴 It started today. Yesterday, I went for a walk at night.
+🔵 I see. It was cold last night. Are you allergic to any medicine?
+🔴 No, I'm not allergic to any medicine.
+🔵 OK. This cold medicine is good for a fever and a sore throat. Take one tablet three times a day, after meals. And drink lots of warm water. Do you have any questions?
+🔴 Does it make me drowsy? Is there anything good for a cold?
+🔵 Yes, it may make you a little drowsy. So don't drive after you take it. For a cold, rest is the best. Sleep well, and eat warm soup. Anything else?
+🔴 Thank you for your kind help. As soon as I get home, I need to get some rest.
+🔵 You're welcome! Get well soon. Take care!

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Hyunju's Word Book</title>
+<link href="fonts/local.css" rel="stylesheet">
+<style>
+  :root { --bg:#fff8f0; --ink:#3a3340; --sub:#8a8090; --pink:#d6456a; --blue:#2f6fb8; --bluebg:#dff0ff; }
+  * { box-sizing:border-box; margin:0; }
+  html, body { background:var(--bg); }
+  body { width:110mm; font-family:'Nunito','Noto Sans KR',sans-serif; color:var(--ink); }
+  .wrap { padding:9mm 6mm 8mm; }
+  .top { text-align:center; margin-bottom:5mm; }
+  .badge { display:inline-block; font-family:'Jua',sans-serif; background:var(--ink); color:#fff; border-radius:20px; padding:1mm 4mm; font-size:10pt; }
+  h1 { font-family:'Jua',sans-serif; font-weight:400; font-size:23pt; margin-top:2mm; }
+  .kt { font-family:'Jua',sans-serif; color:var(--sub); font-size:11pt; }
+  .dots { margin:3mm auto 0; display:flex; gap:2mm; justify-content:center; }
+  .dots i { width:2.2mm; height:2.2mm; border-radius:50%; background:#ffc4d2; }
+  .dots i:nth-child(2) { background:#bfe0ff; } .dots i:nth-child(3) { background:#ffe39a; }
+  .how { font-family:'Jua',sans-serif; font-size:9.5pt; color:var(--sub); text-align:center; margin-top:3mm; }
+
+  h2 { font-family:'Jua',sans-serif; font-weight:400; font-size:13pt; margin:6mm 0 2.5mm; display:flex; align-items:center; gap:2mm; }
+  h2 span { background:var(--bluebg); color:var(--blue); border-radius:3mm; padding:.5mm 2.5mm; font-size:10pt; }
+
+  .card { background:#fff; border-radius:3.5mm; padding:2.6mm 3.2mm 2.6mm 9mm; margin-bottom:2.4mm; position:relative; box-shadow:0 .4mm 0 #f0e4d8; break-inside:avoid; }
+  .card::before { content:''; position:absolute; left:3mm; top:3.4mm; width:3.2mm; height:3.2mm; border:1.4px solid #d8cdd8; border-radius:1mm; }
+  .w { font-weight:800; font-size:12pt; color:var(--pink); }
+  .w small { font-weight:600; font-size:8pt; color:var(--sub); margin-left:1.5mm; }
+  .m { font-size:9.5pt; margin-top:.3mm; }
+  .ex { font-size:9pt; color:#5f5868; margin-top:.8mm; background:#faf5ef; border-radius:2mm; padding:1mm 2mm; }
+  .ex b { color:var(--ink); }
+  .end { text-align:center; font-family:'Jua',sans-serif; color:var(--sub); font-size:10pt; margin-top:5mm; }
+</style>
+</head>
+<body>
+<div class="wrap" id="page">
+  <div class="top">
+    <span class="badge" id="badge"></span>
+    <h1>My Word Book</h1>
+    <div class="kt">현주의 영어 단어장</div>
+    <div class="dots"><i></i><i></i><i></i></div>
+    <div class="how">외운 단어는 네모 칸에 체크하기!</div>
+  </div>
+  <div id="list"></div>
+  <div class="end">다 외웠으면 예문을 소리 내어 읽어 보기!</div>
+</div>
+<script>
+// build.js calls render(days) with every english/data/dayNN.json object, in order.
+// vocab.example may contain <b>…</b> to highlight the word; everything else is escaped.
+const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const bold = s => esc(s).replace(/&lt;b&gt;/g,'<b>').replace(/&lt;\/b&gt;/g,'</b>');
+function render(days) {
+  const withWords = days.filter(d => d.vocab && d.vocab.length);
+  document.getElementById('badge').textContent = `DAY ${withWords[0].day} ~ ${withWords[withWords.length - 1].day}`;
+  document.getElementById('list').innerHTML = withWords.map(d =>
+    `<h2><span>DAY ${d.day}</span>${esc(d.vocab_title_ko || d.title_ko)}</h2>` + d.vocab.map(v =>
+      `<div class="card"><div class="w">${esc(v.word)}<small>${esc(v.pos)}</small></div><div class="m">${esc(v.meaning)}</div><div class="ex">${bold(v.example)}</div></div>`).join('')
+  ).join('');
+}
+</script>
+</body>
+</html>

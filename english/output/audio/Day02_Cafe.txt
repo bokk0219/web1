@@ -1,0 +1,22 @@
+🔵 Good morning! Welcome. What would you like to drink today?
+🔴 I'd like a matcha latte, please.
+🔵 A matcha latte, great choice! Sorry, hot or iced?
+🔴 Iced, please.
+🔵 One iced matcha latte. Got it! What size would you like? Small, medium, or large?
+🔴 A large one, please.
+🔵 One large iced matcha latte. Is that for here or to go?
+🔴 For here, please.
+🔵 For here. Sure! That's six dollars and fifty cents. How would you like to pay?
+🔴 Can I pay with Kakao Pay?
+🔵 Kakao Pay? Hmm, I'm sorry, we don't accept that here. We take cash or credit card.
+🔴 OK, I'll pay by card. Here is my card.
+🔵 Thank you! Here's your card and receipt. Can I have your name for the order?
+🔴 It's HJ.
+🔵 Thanks, HJ! Your drink will be ready in a few minutes. By the way, I don't think I've seen you before. Is this your first time here?
+🔴 Yes, this is my first time here.
+🔵 Welcome! I hope you like it here. We also have fresh cakes and cookies every day. Would you like to try something sweet with your latte?
+🔴 No, thanks. I'm trying to lose weight.
+🔵 No problem! Good luck with that. One large iced matcha latte for HJ! Here you go. Enjoy!
+🔵 Hi again, HJ! How is your matcha latte? Do you like it?
+🔴 Yes, I love it. It's not too sweet.
+🔵 Great! I'm glad you like it. Come back anytime!

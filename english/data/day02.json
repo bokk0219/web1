@@ -1,0 +1,180 @@
+{
+  "day": 2,
+  "date": "2026-09-26",
+  "slug": "Cafe",
+  "title": "At the Cafe",
+  "title_ko": "카페에서 주문하기",
+  "vocab_title_ko": "카페에서 주문하기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "Good morning! Welcome. What would you like to drink today?",
+      "ko": "안녕하세요! 어서 오세요. 오늘은 뭘 드시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "HJ",
+      "en": "I'd like a matcha latte, please.",
+      "ko": "말차 라테 주세요."
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "A matcha latte, great choice! Sorry, hot or iced?",
+      "ko": "말차 라테, 좋은 선택이에요! 따뜻한 거요, 아이스요?"
+    },
+    {
+      "role": "me",
+      "name": "HJ",
+      "en": "Iced, please.",
+      "ko": "아이스로 주세요."
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "One iced matcha latte. Got it! What size would you like? Small, medium, or large?",
+      "ko": "아이스 말차 라테 하나요. 알겠습니다! 사이즈는요? 스몰, 미디엄, 라지 있어요."
+    },
+    {
+      "role": "me",
+      "name": "HJ",
+      "en": "A large one, please.",
+      "ko": "큰 걸로 주세요."
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "One large iced matcha latte. Is that for here or to go?",
+      "ko": "라지 아이스 말차 라테 하나요. 드시고 가세요, 가져가세요?"
+    },
+    {
+      "role": "me",
+      "name": "HJ",
+      "en": "For here, please.",
+      "ko": "먹고 갈게요."
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "For here. Sure! That's six dollars and fifty cents. How would you like to pay?",
+      "ko": "네! 6달러 50센트입니다. 결제는 어떻게 하시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "HJ",
+      "en": "Can I pay with Kakao Pay?",
+      "ko": "카카오페이로 결제할 수 있나요?"
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "Kakao Pay? Hmm, I'm sorry, we don't accept that here. We take cash or credit card.",
+      "ko": "카카오페이요? 음, 죄송하지만 여기서는 안 돼요. 현금이나 신용카드만 받아요."
+    },
+    {
+      "role": "me",
+      "name": "HJ",
+      "en": "OK, I'll pay by card. Here is my card.",
+      "ko": "그럼 카드로 할게요. 여기 카드요."
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "Thank you! Here's your card and receipt. Can I have your name for the order?",
+      "ko": "감사합니다! 카드랑 영수증이요. 주문하실 이름을 알려 주시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "HJ",
+      "en": "It's HJ.",
+      "ko": "HJ예요."
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "Thanks, HJ! Your drink will be ready in a few minutes. By the way, I don't think I've seen you before. Is this your first time here?",
+      "ko": "고마워요, HJ! 음료는 몇 분 안에 나와요. 그런데 처음 뵙는 것 같은데, 여기 처음 오셨어요?"
+    },
+    {
+      "role": "me",
+      "name": "HJ",
+      "en": "Yes, this is my first time here.",
+      "ko": "네, 여기 처음 왔어요."
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "Welcome! I hope you like it here. We also have fresh cakes and cookies every day. Would you like to try something sweet with your latte?",
+      "ko": "환영해요! 마음에 드셨으면 좋겠네요. 매일 신선한 케이크랑 쿠키도 있어요. 라테랑 달콤한 것 하나 드셔 보시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "HJ",
+      "en": "No, thanks. I'm trying to lose weight.",
+      "ko": "아니요, 괜찮아요. 살 빼는 중이에요."
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "No problem! Good luck with that. One large iced matcha latte for HJ! Here you go. Enjoy!",
+      "ko": "괜찮아요! 다이어트 화이팅이에요. HJ 님, 라지 아이스 말차 라테 나왔습니다! 맛있게 드세요!"
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "Hi again, HJ! How is your matcha latte? Do you like it?",
+      "ko": "또 뵙네요, HJ! 말차 라테 어때요? 마음에 드세요?"
+    },
+    {
+      "role": "me",
+      "name": "HJ",
+      "en": "Yes, I love it. It's not too sweet.",
+      "ko": "네, 정말 좋아요. 너무 달지 않아요."
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "Great! I'm glad you like it. Come back anytime!",
+      "ko": "잘됐네요! 마음에 드신다니 기뻐요. 언제든 또 오세요!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "matcha",
+      "pos": "명사",
+      "meaning": "말차",
+      "example": "I'd like a <b>matcha</b> latte, please."
+    },
+    {
+      "word": "for here / to go",
+      "pos": "표현",
+      "meaning": "먹고 가요 / 가져가요",
+      "example": "<b>For here</b>, please."
+    },
+    {
+      "word": "pay with / pay by",
+      "pos": "표현",
+      "meaning": "~로 결제하다",
+      "example": "Can I <b>pay with</b> Kakao Pay? I'll <b>pay by</b> card."
+    },
+    {
+      "word": "receipt",
+      "pos": "명사",
+      "meaning": "영수증",
+      "example": "Here's your card and <b>receipt</b>."
+    },
+    {
+      "word": "lose weight",
+      "pos": "표현",
+      "meaning": "살을 빼다 (my 없이)",
+      "example": "I'm trying to <b>lose weight</b>."
+    },
+    {
+      "word": "on a diet",
+      "pos": "표현",
+      "meaning": "다이어트 중인",
+      "example": "No, thanks. I'm <b>on a diet</b>."
+    }
+  ]
+}

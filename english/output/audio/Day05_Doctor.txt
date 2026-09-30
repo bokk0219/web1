@@ -1,0 +1,15 @@
+🔵 Hello, Hyunju. Please have a seat. What brings you here today?
+🔴 I think I caught a cold.
+🔵 A cold? I see. What are your symptoms?
+🔴 I have a fever, a runny nose, and a sore throat.
+🔵 A fever, a runny nose, and a sore throat... Let me check your temperature. Hmm, it's 38 degrees. When did it start?
+🔴 It started yesterday.
+🔵 Since yesterday, I see. Let me look at your throat. Say "Ahh." Your throat is very red. Do you have a cough?
+🔴 Yes, I have a bit of a cough.
+🔵 OK. It looks like a bad cold. I'll give you a prescription for three days. Are you taking any other medicine now?
+🔴 Yes, I got some cold medicine from the pharmacy.
+🔵 I see. Then please stop taking that medicine and take this one instead. Get plenty of rest and drink lots of water. Do you have any questions?
+🔴 Could it be the flu? I'm a little worried.
+🔵 Don't worry. Your symptoms look like a cold, not the flu. But if your fever goes over 39 degrees, please come back and we'll do a flu test. Anything else?
+🔴 No. Thank you for your kind answer.
+🔵 You're welcome. Take your medicine and get some rest. Get well soon, Hyunju!
