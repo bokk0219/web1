@@ -38,8 +38,10 @@ Copy the shape of the latest existing file:
   unanswered, end the script before it or drop that question.
 - `partner` lines are Claude's in-character lines, without emoji, stage directions or feedback.
   Merge two partner turns in a row into one.
-- Keep it to roughly 10–16 turns / ~1,000 characters of English — each character costs one
-  ElevenLabs credit and she is on a small plan.
+- She wants **at least 15 turns** a day. Keep the total around 1,000–1,200 characters of English
+  by keeping partner lines short — each character costs one ElevenLabs credit, and Starter's
+  30,000 credits a month is about 1,000 a day. Never pad the script with lines that weren't said;
+  if the session itself was short, keep it as is and say so.
 - Write numbers so TTS reads them well ("fifteenth floor", "six dollars and fifty cents").
 - `ko`: natural Korean translation. Friends talk in 반말; staff, doctors, neighbors in 존댓말.
 - `slug`: one English word, PascalCase, used in file names (`Day07_Restaurant`).
