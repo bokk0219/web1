@@ -1,0 +1,114 @@
+{
+  "day": 7,
+  "date": "2026-10-01",
+  "slug": "AfterWork",
+  "title": "Tired After Work",
+  "title_ko": "동료에게 퇴근 후 이야기하기",
+  "vocab_title_ko": "퇴근 후 이야기하기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Good morning, Hyunju! You look a little tired. Did you sleep well last night?",
+      "ko": "좋은 아침이에요, 현주 씨! 조금 피곤해 보이네요. 어젯밤에 잘 잤어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, I didn't sleep well. I think I'm very stressed.",
+      "ko": "아니요, 잘 못 잤어요. 스트레스를 많이 받는 것 같아요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Oh no, I'm sorry to hear that. What do you usually do after work?",
+      "ko": "저런, 안됐네요. 퇴근하고 나서 보통 뭐 해요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "After work, I just zone out on the sofa for two hours and watch short videos.",
+      "ko": "퇴근하면 그냥 두 시간 동안 소파에서 멍하니 짧은 영상만 봐요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Ha ha, me too! It's easy to keep scrolling. But it can make you even more tired. Do you do any exercise?",
+      "ko": "하하, 저도요! 계속 화면을 넘기게 되죠. 그런데 그러면 더 피곤해질 수 있어요. 운동은 해요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Before, when I wasn't so stressed, I used to ride my bike for an hour after work.",
+      "ko": "예전에 스트레스를 덜 받을 때는 퇴근 후에 한 시간씩 자전거를 탔어요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Oh, you used to ride a bike? That's great! Why don't you start again? Maybe just twenty minutes a day. What do you think?",
+      "ko": "아, 자전거를 탔었어요? 좋네요! 다시 시작해 보는 건 어때요? 하루에 이십 분만이라도요. 어때요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "That's a good idea. I'm going to ride my bike to the store or the library for twenty minutes.",
+      "ko": "좋은 생각이에요. 이십 분 정도 자전거를 타고 가게나 도서관에 가 볼게요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "That's a smart idea! You can exercise and do your errands at the same time. Let me know how it goes. Good luck, Hyunju!",
+      "ko": "좋은 방법이네요! 운동도 하고 볼일도 같이 볼 수 있잖아요. 어땠는지 알려 줘요. 화이팅, 현주 씨!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "stressed",
+      "pos": "형용사",
+      "meaning": "스트레스를 받은",
+      "example": "I think I'm very <b>stressed</b>."
+    },
+    {
+      "word": "zone out",
+      "pos": "표현",
+      "meaning": "멍하니 있다, 정신줄을 놓다",
+      "example": "I just <b>zone out</b> on the sofa for two hours."
+    },
+    {
+      "word": "watch videos",
+      "pos": "표현",
+      "meaning": "영상을 보다 (see가 아니라 watch)",
+      "example": "I <b>watch</b> short videos."
+    },
+    {
+      "word": "scroll",
+      "pos": "동사",
+      "meaning": "화면을 넘기다",
+      "example": "It's easy to keep <b>scrolling</b>."
+    },
+    {
+      "word": "used to",
+      "pos": "표현",
+      "meaning": "예전에 ~하곤 했다",
+      "example": "I <b>used to</b> ride my bike for an hour after work."
+    },
+    {
+      "word": "ride my bike to ~",
+      "pos": "표현",
+      "meaning": "자전거를 타고 ~에 가다 (my, to 필수)",
+      "example": "I'm going to <b>ride my bike to</b> the store."
+    },
+    {
+      "word": "library",
+      "pos": "명사",
+      "meaning": "도서관",
+      "example": "I'll ride my bike to the store or the <b>library</b>."
+    },
+    {
+      "word": "errands",
+      "pos": "명사",
+      "meaning": "볼일, 장보기 같은 자잘한 일",
+      "example": "You can exercise and do your <b>errands</b> at the same time."
+    }
+  ]
+}
