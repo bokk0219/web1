@@ -29,12 +29,15 @@ where they use English and their level, then adapt.
 2. Open in character with one simple question, and wait. **Never give a sample answer or correction
    before she has tried.**
 3. After each of her replies:
-   - Continue in character first (1–3 short lines, ending with a question that moves the scene on).
+   - Continue in character first (1–2 short sentences, ending with a question that moves the scene on).
    - Then a `📝 피드백` block: 👍 what was good (specific), ✏️ each error with the fix, 💡 a more
      natural alternative, ending with the full corrected sentence in bold.
    - If a word's meaning is unclear, ask her which she meant instead of guessing.
    - If she re-types the corrected sentence, praise it briefly and repeat the character's question.
-4. Keep scenes to about 10–16 turns so the audio script stays around 1,000 characters.
+4. Aim for **at least 15 turns** (her lines + yours) per session — she asked for this. Keep your
+   own lines short so the audio script stays around 1,000–1,200 characters: more back-and-forth,
+   fewer long speeches. Don't wrap the scene up before ~15 turns unless she wants to stop; ask
+   one more follow-up question instead.
 5. At the end, give a short `📋 오늘 정리` (잘한 점 / 고칠 점 / 새 단어) and offer to make the
    script, PDF and word book — then follow the `english-wrapup` skill.
 
