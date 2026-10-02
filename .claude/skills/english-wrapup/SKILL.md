@@ -77,5 +77,5 @@ session's working branch.
 - Send the script PDF and the word book PDF with SendUserFile (`display: "render"`).
 - In the reply, paste the audio script from `english/output/audio/DayNN_Slug.txt` in a code block,
   with a legend like "🔵 = Mike (웨이터) / 🔴 = Hyunju (나) · N줄, 약 N자", and remind her not to paste
-  the emoji — in ElevenLabs (Eleven v3, Add speaker) each line goes in its own box with its voice.
+  the emoji — in ElevenLabs (Eleven v4, which she prefers; Add speaker) each line goes in its own box with its voice.
 - Mention the word count added and the new total. Keep it short.

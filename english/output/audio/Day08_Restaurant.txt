@@ -1,0 +1,19 @@
+🔵 Good evening! Welcome. How many people?
+🔴 Just one, please.
+🔵 Sure! This way, please. Is this table OK?
+🔴 Can I sit by the window?
+🔵 Of course! Here's a window table. And here's the menu. Can I get you something to drink?
+🔴 I'd like a cold beer, please.
+🔵 One cold beer, coming right up! Are you ready to order?
+🔴 A small potato pizza, please.
+🔵 A small potato pizza. Great choice! Would you like a salad with that?
+🔴 I'd like a seafood salad with that, please.
+🔵 One seafood salad. Do you have any allergies?
+🔴 No, I don't have any allergies. I love seafood. It goes great with beer.
+🔵 I agree! I'll bring your beer first. Here's your pizza and salad. How is everything?
+🔴 Everything is good. Could I have another beer, please?
+🔵 Sure! One more cold beer for you. Would you like any dessert?
+🔴 No, thanks. I'm already full.
+🔵 No problem! Would you like the check?
+🔴 Yes, the check, please.
+🔵 Here's your check. You can pay at the counter. Thank you for coming. Have a good night!
