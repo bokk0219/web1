@@ -85,3 +85,6 @@ PR link in one line.
   with a legend like "🔵 = Mike (웨이터) / 🔴 = Hyunju (나) · N줄, 약 N자", and remind her not to paste
   the emoji — in ElevenLabs (Eleven v4, which she prefers; Add speaker) each line goes in its own box with its voice.
 - Mention the word count added and the new total. Keep it short.
+- Close with the progress in plain numbers — she loves this: "N일 완료, 30일까지 M일 남았어요"
+  (after Day 30, switch to the review phase in `english-tutor`). Use numbers elsewhere too where
+  they help (line count, characters/credits, words added).
