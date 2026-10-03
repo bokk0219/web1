@@ -67,10 +67,16 @@ script changes, rebuild with `all`.
 Playwright is installed globally; if `require('playwright')` fails, check `npm root -g`. Fonts are
 local in `english/templates/fonts/` (Chromium here can't fetch Google Fonts through the proxy).
 
-## 3. Commit and push
+## 3. Commit, push and merge
 
 Commit `english/data/dayNN.json` and everything changed under `english/output/`, then push to the
 session's working branch.
+
+Then merge it into `master` right away — Hyunju asked for this on every wrap-up (2026-10-03), so
+don't ask first. Open a PR from the working branch to `master` and merge it, so the next session
+(which starts from `master`) sees the new day and word book. If the working branch's earlier PR was
+already merged, restart the branch from the latest `origin/master` before committing. Tell her the
+PR link in one line.
 
 ## 4. Hand over
 
