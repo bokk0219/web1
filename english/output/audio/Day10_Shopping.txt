@@ -1,0 +1,21 @@
+🔵 Hi there! Welcome. Are you looking for anything special today?
+🔴 I'm looking for some shirts for fall.
+🔵 Great! Our new fall shirts are right here. What color do you like?
+🔴 I like beige or brown.
+🔵 Nice choice! How about this beige one? What size do you wear?
+🔴 I wear a large. Can I try this on?
+🔵 Of course! The fitting room is over there. How does it fit?
+🔴 It fits me well, but I'd like to try another color. Can you help me?
+🔵 Sure! Here's the same shirt in brown. Do you want to try it on, too?
+🔴 I'd like to try it on, too.
+🔵 OK! Which one do you like better, the beige or the brown?
+🔴 I like the brown one. I'll take it. Is there any discount on this?
+🔵 Good news! It's twenty percent off this week. Would you like to see some pants to go with it?
+🔴 I'd like to see some pants to go with this.
+🔵 Sure! These black pants go great with the brown shirt. Would you like to try them on?
+🔴 I'll try them on.
+🔵 Great! How do the pants fit?
+🔴 They're too small. Do you have a larger size?
+🔵 Sure! Here's a larger size. How about these?
+🔴 They fit me well. I'll take both of them.
+🔵 Great choice! With the discount, that's sixty dollars in total. You can pay at the counter. Thank you for shopping with us!
