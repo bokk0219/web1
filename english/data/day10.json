@@ -1,0 +1,192 @@
+{
+  "day": 10,
+  "date": "2026-10-04",
+  "slug": "Shopping",
+  "title": "Shopping for Clothes",
+  "title_ko": "옷 가게에서 쇼핑하기",
+  "vocab_title_ko": "옷 가게에서 쇼핑하기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Lisa",
+      "en": "Hi there! Welcome. Are you looking for anything special today?",
+      "ko": "안녕하세요! 어서 오세요. 오늘 특별히 찾으시는 거 있으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'm looking for some shirts for fall.",
+      "ko": "가을에 입을 셔츠를 찾고 있어요."
+    },
+    {
+      "role": "partner",
+      "name": "Lisa",
+      "en": "Great! Our new fall shirts are right here. What color do you like?",
+      "ko": "좋아요! 새로 나온 가을 셔츠가 바로 여기 있어요. 어떤 색을 좋아하세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I like beige or brown.",
+      "ko": "베이지나 갈색이 좋아요."
+    },
+    {
+      "role": "partner",
+      "name": "Lisa",
+      "en": "Nice choice! How about this beige one? What size do you wear?",
+      "ko": "좋은 선택이에요! 이 베이지색은 어떠세요? 사이즈는 뭐 입으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I wear a large. Can I try this on?",
+      "ko": "라지 입어요. 입어 봐도 될까요?"
+    },
+    {
+      "role": "partner",
+      "name": "Lisa",
+      "en": "Of course! The fitting room is over there. How does it fit?",
+      "ko": "그럼요! 탈의실은 저쪽이에요. 잘 맞으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "It fits me well, but I'd like to try another color. Can you help me?",
+      "ko": "잘 맞아요. 그런데 다른 색도 입어 보고 싶어요. 도와주시겠어요?"
+    },
+    {
+      "role": "partner",
+      "name": "Lisa",
+      "en": "Sure! Here's the same shirt in brown. Do you want to try it on, too?",
+      "ko": "그럼요! 같은 셔츠 갈색이 여기 있어요. 이것도 입어 보시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like to try it on, too.",
+      "ko": "이것도 입어 볼게요."
+    },
+    {
+      "role": "partner",
+      "name": "Lisa",
+      "en": "OK! Which one do you like better, the beige or the brown?",
+      "ko": "네! 베이지랑 갈색 중에 어느 게 더 마음에 드세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I like the brown one. I'll take it. Is there any discount on this?",
+      "ko": "갈색이 좋아요. 이걸로 살게요. 이거 할인되나요?"
+    },
+    {
+      "role": "partner",
+      "name": "Lisa",
+      "en": "Good news! It's twenty percent off this week. Would you like to see some pants to go with it?",
+      "ko": "좋은 소식이에요! 이번 주에 20퍼센트 할인이에요. 같이 입을 바지도 보시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like to see some pants to go with this.",
+      "ko": "이거랑 어울리는 바지를 보고 싶어요."
+    },
+    {
+      "role": "partner",
+      "name": "Lisa",
+      "en": "Sure! These black pants go great with the brown shirt. Would you like to try them on?",
+      "ko": "그럼요! 이 검은 바지가 갈색 셔츠랑 잘 어울려요. 입어 보시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'll try them on.",
+      "ko": "입어 볼게요."
+    },
+    {
+      "role": "partner",
+      "name": "Lisa",
+      "en": "Great! How do the pants fit?",
+      "ko": "좋아요! 바지는 잘 맞으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "They're too small. Do you have a larger size?",
+      "ko": "너무 작아요. 더 큰 사이즈 있나요?"
+    },
+    {
+      "role": "partner",
+      "name": "Lisa",
+      "en": "Sure! Here's a larger size. How about these?",
+      "ko": "그럼요! 더 큰 사이즈 여기 있어요. 이건 어떠세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "They fit me well. I'll take both of them.",
+      "ko": "잘 맞아요. 둘 다 살게요."
+    },
+    {
+      "role": "partner",
+      "name": "Lisa",
+      "en": "Great choice! With the discount, that's sixty dollars in total. You can pay at the counter. Thank you for shopping with us!",
+      "ko": "잘 고르셨어요! 할인해서 모두 60달러예요. 계산은 카운터에서 하시면 돼요. 저희 가게에서 쇼핑해 주셔서 감사해요!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "I'm looking for ~",
+      "pos": "표현",
+      "meaning": "~을 찾고 있어요 (가게에서)",
+      "example": "<b>I'm looking for</b> some shirts for fall."
+    },
+    {
+      "word": "try it on / try them on",
+      "pos": "표현",
+      "meaning": "입어 보다 (it, them은 try와 on 사이에)",
+      "example": "Can I <b>try this on</b>? I'll <b>try them on</b>."
+    },
+    {
+      "word": "fit",
+      "pos": "동사",
+      "meaning": "(옷이) 잘 맞다",
+      "example": "It <b>fits</b> me well."
+    },
+    {
+      "word": "fitting room",
+      "pos": "명사",
+      "meaning": "탈의실",
+      "example": "The <b>fitting room</b> is over there."
+    },
+    {
+      "word": "I'll take it.",
+      "pos": "표현",
+      "meaning": "이걸로 살게요.",
+      "example": "I like the brown one. <b>I'll take it.</b>"
+    },
+    {
+      "word": "Is there any discount?",
+      "pos": "표현",
+      "meaning": "할인되나요? (there 필수 / 같은 뜻: Is this on sale?)",
+      "example": "<b>Is there any discount</b> on this?"
+    },
+    {
+      "word": "pants (They)",
+      "pos": "명사",
+      "meaning": "바지 (항상 복수 → they로 받아요)",
+      "example": "<b>They</b>'re too small."
+    },
+    {
+      "word": "a larger size",
+      "pos": "표현",
+      "meaning": "더 큰 사이즈",
+      "example": "Do you have <b>a larger size</b>?"
+    },
+    {
+      "word": "both of them",
+      "pos": "표현",
+      "meaning": "둘 다",
+      "example": "I'll take <b>both of them</b>."
+    }
+  ]
+}
