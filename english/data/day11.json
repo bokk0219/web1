@@ -1,0 +1,162 @@
+{
+  "day": 11,
+  "date": "2026-10-05",
+  "slug": "HotelCheckIn",
+  "title": "Hotel Check-in",
+  "title_ko": "호텔 체크인하기",
+  "vocab_title_ko": "호텔 체크인하기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "Good afternoon! Welcome to the Sunny Hotel. How can I help you?",
+      "ko": "안녕하세요! 써니 호텔에 오신 걸 환영합니다. 무엇을 도와드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like to check in. I have a reservation under the name HJ Kim.",
+      "ko": "체크인하려고요. HJ Kim 이름으로 예약했어요."
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "Let me check... Yes, HJ Kim. Two nights in a single room. May I see your passport, please?",
+      "ko": "확인해 볼게요… 네, HJ Kim 님. 싱글룸 2박이시네요. 여권 좀 보여 주시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Sure, here is my passport.",
+      "ko": "네, 여기 여권이요."
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "Thank you. Your room is on the seventh floor. Would you like breakfast with your stay?",
+      "ko": "감사합니다. 방은 7층이에요. 숙박하시는 동안 조식도 드시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I'd like breakfast with my stay. Does it include traditional Thai food?",
+      "ko": "네, 조식도 신청할게요. 태국 전통 음식도 나오나요?"
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "Yes! Our buffet has both Thai and Western food. Breakfast is from six thirty to ten a.m. on the second floor. Do you have any other questions?",
+      "ko": "네! 뷔페에 태국 음식과 서양 음식이 다 있어요. 조식은 2층에서 오전 6시 30분부터 10시까지예요. 다른 궁금한 점 있으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes. What time is check-out? Can you recommend a restaurant near the hotel?",
+      "ko": "네. 체크아웃은 몇 시예요? 호텔 근처 식당 추천해 주실 수 있어요?"
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "Check-out is at eleven a.m. And yes! There's a great Thai restaurant just around the corner. Do you like spicy food?",
+      "ko": "체크아웃은 오전 11시예요. 그리고 네! 바로 모퉁이에 아주 좋은 태국 식당이 있어요. 매운 음식 좋아하세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I like spicy food. Should I take that elevator to my room?",
+      "ko": "네, 매운 음식 좋아해요. 방에 가려면 저 엘리베이터를 타면 되나요?"
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "Yes, that's right. Here's your key card. Do you need help with your luggage?",
+      "ko": "네, 맞아요. 카드 키 여기 있습니다. 짐 옮기는 거 도와드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, thanks. I can handle it.",
+      "ko": "아니요, 괜찮아요. 제가 할 수 있어요."
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "No problem! Enjoy your stay. Is there anything else I can help you with?",
+      "ko": "알겠습니다! 편히 머무세요. 더 도와드릴 게 있을까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "How many towels are there in my room? If I need more, can I get some?",
+      "ko": "방에 수건이 몇 장 있어요? 더 필요하면 받을 수 있나요?"
+    },
+    {
+      "role": "partner",
+      "name": "Tom",
+      "en": "There are two towels in your room. If you need more, just call the front desk. Dial zero. Have a wonderful stay, Ms. Kim!",
+      "ko": "방에 수건이 두 장 있어요. 더 필요하시면 프런트로 전화 주세요. 0번을 누르시면 돼요. 즐거운 시간 보내세요, 김 선생님!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "check in / check-out",
+      "pos": "표현",
+      "meaning": "체크인하다 / 체크아웃(시간)",
+      "example": "I'd like to <b>check in</b>. What time is <b>check-out</b>?"
+    },
+    {
+      "word": "reservation",
+      "pos": "명사",
+      "meaning": "예약",
+      "example": "I have a <b>reservation</b> under the name HJ Kim."
+    },
+    {
+      "word": "under the name",
+      "pos": "표현",
+      "meaning": "~의 이름으로 (the 필수)",
+      "example": "I have a reservation <b>under the name</b> HJ Kim."
+    },
+    {
+      "word": "passport",
+      "pos": "명사",
+      "meaning": "여권",
+      "example": "Sure, here is my <b>passport</b>."
+    },
+    {
+      "word": "include",
+      "pos": "동사",
+      "meaning": "포함하다",
+      "example": "Does it <b>include</b> traditional Thai food?"
+    },
+    {
+      "word": "Can you recommend ~?",
+      "pos": "표현",
+      "meaning": "~을 추천해 주실 수 있어요?",
+      "example": "<b>Can you recommend</b> a restaurant near the hotel?"
+    },
+    {
+      "word": "take the elevator",
+      "pos": "표현",
+      "meaning": "엘리베이터를 타다",
+      "example": "Should I <b>take that elevator</b> to my room?"
+    },
+    {
+      "word": "luggage",
+      "pos": "명사",
+      "meaning": "짐, 여행 가방",
+      "example": "Do you need help with your <b>luggage</b>?"
+    },
+    {
+      "word": "I can handle it.",
+      "pos": "표현",
+      "meaning": "제가 할 수 있어요. (도움을 정중히 거절할 때)",
+      "example": "No, thanks. <b>I can handle it.</b>"
+    },
+    {
+      "word": "How many ~ are there?",
+      "pos": "표현",
+      "meaning": "~이 몇 개 있어요? (are there 필수)",
+      "example": "<b>How many</b> towels <b>are there</b> in my room?"
+    }
+  ]
+}
