@@ -1,0 +1,15 @@
+🔵 Good afternoon! Welcome to the Sunny Hotel. How can I help you?
+🔴 I'd like to check in. I have a reservation under the name HJ Kim.
+🔵 Let me check... Yes, HJ Kim. Two nights in a single room. May I see your passport, please?
+🔴 Sure, here is my passport.
+🔵 Thank you. Your room is on the seventh floor. Would you like breakfast with your stay?
+🔴 Yes, I'd like breakfast with my stay. Does it include traditional Thai food?
+🔵 Yes! Our buffet has both Thai and Western food. Breakfast is from six thirty to ten a.m. on the second floor. Do you have any other questions?
+🔴 Yes. What time is check-out? Can you recommend a restaurant near the hotel?
+🔵 Check-out is at eleven a.m. And yes! There's a great Thai restaurant just around the corner. Do you like spicy food?
+🔴 Yes, I like spicy food. Should I take that elevator to my room?
+🔵 Yes, that's right. Here's your key card. Do you need help with your luggage?
+🔴 No, thanks. I can handle it.
+🔵 No problem! Enjoy your stay. Is there anything else I can help you with?
+🔴 How many towels are there in my room? If I need more, can I get some?
+🔵 There are two towels in your room. If you need more, just call the front desk. Dial zero. Have a wonderful stay, Ms. Kim!
