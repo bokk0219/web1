@@ -1,0 +1,138 @@
+{
+  "day": 12,
+  "date": "2026-10-06",
+  "slug": "NewJobPlan",
+  "title": "My New Job Plan",
+  "title_ko": "친구에게 이직 준비 이야기하기",
+  "vocab_title_ko": "이직 준비 이야기하기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Hi, Hyunju! You sound happy today. Did something good happen?",
+      "ko": "현주야! 오늘 목소리가 밝다. 좋은 일 있었어?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Finally, I made a workbook for the NCS.",
+      "ko": "드디어 NCS 문제집을 만들었어."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Wow, congratulations! But what is the NCS? Can you tell me about it?",
+      "ko": "와, 축하해! 그런데 NCS가 뭐야? 설명해 줄 수 있어?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "The NCS is a test for getting a job in Korea.",
+      "ko": "NCS는 한국에서 취업할 때 보는 시험이야."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Oh, I see! That sounds like a lot of work. Who is the workbook for?",
+      "ko": "아, 그렇구나! 정말 손이 많이 갔겠다. 그 문제집은 누구를 위한 거야?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "It's for me. These days, I've been stressed at work, so I'd like to find another job. I'd like to work in planning.",
+      "ko": "나를 위한 거야. 요즘 회사에서 계속 스트레스를 받아서 이직하고 싶어. 기획 쪽 일을 하고 싶어."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Planning? That's perfect for you! You're so good at making plans. Look at your English study! When is the test?",
+      "ko": "기획? 너한테 딱이다! 너 계획 세우는 거 정말 잘하잖아. 영어 공부하는 것만 봐도! 시험은 언제야?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'm planning to take the test in March twenty twenty-seven. This May, I got eight hundred fifteen points on the TOEIC. Now I'm starting to study the other parts.",
+      "ko": "2027년 3월에 시험을 볼 계획이야. 올해 5월에 토익 815점을 받았어. 이제 다른 과목 공부를 시작하는 중이야."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Wow, eight hundred fifteen on the TOEIC? That's a great score! Which part is the hardest for you?",
+      "ko": "와, 토익 815점? 정말 좋은 점수다! 어떤 과목이 제일 어려워?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "The hardest part is math. When I was young, I always had trouble with math, so I'm very worried.",
+      "ko": "제일 어려운 건 수학이야. 어릴 때부터 수학이 늘 어려웠거든. 그래서 정말 걱정돼."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "Don't worry. You made a whole workbook! You can do it. How are you going to study math?",
+      "ko": "걱정 마. 문제집을 통째로 만들었잖아! 넌 할 수 있어. 수학은 어떻게 공부할 거야?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'm planning to study math step by step. If there is something I can't understand, I'll ask again and again.",
+      "ko": "수학은 차근차근 공부할 계획이야. 이해가 안 되는 게 있으면 몇 번이고 다시 물어볼 거야."
+    },
+    {
+      "role": "partner",
+      "name": "Jenny",
+      "en": "That's a great plan! And if you need help, you can ask me, too. Good luck with the test, Hyunju. Good night!",
+      "ko": "좋은 계획이다! 도움 필요하면 나한테도 물어봐. 시험 잘 봐, 현주야. 잘 자!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "workbook",
+      "pos": "명사",
+      "meaning": "문제집 (quiz package는 어색해요)",
+      "example": "Finally, I made a <b>workbook</b> for the NCS."
+    },
+    {
+      "word": "take a test",
+      "pos": "표현",
+      "meaning": "시험을 보다 (try가 아니라 take)",
+      "example": "I'm planning to <b>take the test</b> in March."
+    },
+    {
+      "word": "find another job",
+      "pos": "표현",
+      "meaning": "다른 직장을 구하다, 이직하다",
+      "example": "I'd like to <b>find another job</b>."
+    },
+    {
+      "word": "I've been ~",
+      "pos": "표현",
+      "meaning": "(요즘) 계속 ~한 상태다",
+      "example": "These days, <b>I've been</b> stressed at work."
+    },
+    {
+      "word": "work in planning",
+      "pos": "표현",
+      "meaning": "기획 일을 하다 (planning part는 한국식 표현)",
+      "example": "I'd like to <b>work in planning</b>."
+    },
+    {
+      "word": "have trouble with",
+      "pos": "표현",
+      "meaning": "~을 어려워하다 (get in trouble은 '혼나다')",
+      "example": "I always <b>had trouble with</b> math."
+    },
+    {
+      "word": "step by step",
+      "pos": "표현",
+      "meaning": "차근차근, 한 단계씩",
+      "example": "I'm planning to study math <b>step by step</b>."
+    },
+    {
+      "word": "If there is something I can't ~",
+      "pos": "표현",
+      "meaning": "~할 수 없는 게 있으면 (can't 주의!)",
+      "example": "<b>If there is something I can't</b> understand, I'll ask again."
+    }
+  ]
+}
