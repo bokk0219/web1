@@ -1,0 +1,168 @@
+{
+  "day": 13,
+  "date": "2026-10-07",
+  "slug": "Taxi",
+  "title": "Taking a Taxi",
+  "title_ko": "택시 타고 서울역 가기",
+  "vocab_title_ko": "택시 타기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Sam",
+      "en": "Hello! Where are you going?",
+      "ko": "안녕하세요! 어디로 가세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'm going to Seoul Station.",
+      "ko": "서울역으로 가요."
+    },
+    {
+      "role": "partner",
+      "name": "Sam",
+      "en": "Seoul Station. OK! Are you in a hurry?",
+      "ko": "서울역이요. 알겠습니다! 급하세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I have to catch a train at ten a.m.",
+      "ko": "네, 오전 10시 기차를 타야 해요."
+    },
+    {
+      "role": "partner",
+      "name": "Sam",
+      "en": "It's nine twenty now. It takes about thirty minutes. Don't worry, we'll make it! Where are you traveling to?",
+      "ko": "지금 9시 20분이에요. 30분쯤 걸려요. 걱정 마세요, 제시간에 도착할 거예요! 어디로 여행 가세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'm going to Daegu to see one of my friends.",
+      "ko": "친구 만나러 대구에 가요."
+    },
+    {
+      "role": "partner",
+      "name": "Sam",
+      "en": "Daegu! That's nice. How long will you stay there?",
+      "ko": "대구요! 좋네요. 거기서 얼마나 머무세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'll stay there for two days at a hotel.",
+      "ko": "호텔에서 이틀 묵을 거예요."
+    },
+    {
+      "role": "partner",
+      "name": "Sam",
+      "en": "Two days. Sounds fun! Oh, there's a lot of traffic here. Do you mind if I take a different road?",
+      "ko": "이틀이요. 재밌겠네요! 아, 여기 차가 많이 막히네요. 다른 길로 가도 괜찮을까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, I don't mind.",
+      "ko": "네, 괜찮아요."
+    },
+    {
+      "role": "partner",
+      "name": "Sam",
+      "en": "Thanks! This road is faster. Is your friend going to meet you at the station?",
+      "ko": "감사합니다! 이 길이 더 빨라요. 친구분이 역으로 마중 나오세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, my friend will meet me at the station, and we're going to eat spicy braised short ribs.",
+      "ko": "네, 친구가 역으로 나올 거고, 같이 매운 갈비찜을 먹으러 갈 거예요."
+    },
+    {
+      "role": "partner",
+      "name": "Sam",
+      "en": "Good choice! Daegu is famous for spicy food. Here we are, Seoul Station. That's fifteen thousand won.",
+      "ko": "잘 고르셨어요! 대구는 매운 음식으로 유명하죠. 다 왔습니다, 서울역이에요. 만 오천 원입니다."
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Thank you so much. I won't be late for my train because you took the faster road.",
+      "ko": "정말 감사합니다. 빠른 길로 와 주셔서 기차 시간에 늦지 않겠어요."
+    },
+    {
+      "role": "partner",
+      "name": "Sam",
+      "en": "You're welcome! Will you pay by card or cash?",
+      "ko": "천만에요! 카드로 하시겠어요, 현금으로 하시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "By card, please. Here is my card.",
+      "ko": "카드로 할게요. 여기 카드요."
+    },
+    {
+      "role": "partner",
+      "name": "Sam",
+      "en": "Thank you! Here's your card and receipt. Have a great trip, and enjoy the galbi-jjim!",
+      "ko": "감사합니다! 카드랑 영수증 여기 있어요. 즐거운 여행 되시고, 갈비찜 맛있게 드세요!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "catch a train",
+      "pos": "표현",
+      "meaning": "기차를 (시간 맞춰) 타다",
+      "example": "I have to <b>catch a train</b> at ten a.m."
+    },
+    {
+      "word": "at + 시각",
+      "pos": "표현",
+      "meaning": "~시에 (in이 아니라 at)",
+      "example": "I have to catch a train <b>at</b> ten a.m."
+    },
+    {
+      "word": "make it",
+      "pos": "표현",
+      "meaning": "제시간에 도착하다, 해내다",
+      "example": "Don't worry, we'll <b>make it</b>!"
+    },
+    {
+      "word": "one of my friends",
+      "pos": "표현",
+      "meaning": "친구 중 한 명 (one of 뒤에는 복수형)",
+      "example": "I'm going to Daegu to see <b>one of my friends</b>."
+    },
+    {
+      "word": "traffic",
+      "pos": "명사",
+      "meaning": "교통량, 차량 (a lot of traffic = 차가 막힘)",
+      "example": "There's a lot of <b>traffic</b> here."
+    },
+    {
+      "word": "Do you mind if ~? / No, I don't mind.",
+      "pos": "표현",
+      "meaning": "~해도 괜찮을까요? / 네, 괜찮아요. (No가 '괜찮다'는 뜻)",
+      "example": "<b>Do you mind if</b> I take a different road? <b>No, I don't mind.</b>"
+    },
+    {
+      "word": "spicy braised short ribs",
+      "pos": "표현",
+      "meaning": "매운 갈비찜 (braised = 푹 졸인)",
+      "example": "We're going to eat <b>spicy braised short ribs</b>."
+    },
+    {
+      "word": "choose - chose",
+      "pos": "동사",
+      "meaning": "고르다 - 골랐다",
+      "example": "You <b>chose</b> the faster road."
+    },
+    {
+      "word": "I won't be late",
+      "pos": "표현",
+      "meaning": "늦지 않을 거예요",
+      "example": "<b>I won't be late</b> for my train."
+    }
+  ]
+}

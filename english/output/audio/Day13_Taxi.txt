@@ -1,0 +1,17 @@
+🔵 Hello! Where are you going?
+🔴 I'm going to Seoul Station.
+🔵 Seoul Station. OK! Are you in a hurry?
+🔴 Yes, I have to catch a train at ten a.m.
+🔵 It's nine twenty now. It takes about thirty minutes. Don't worry, we'll make it! Where are you traveling to?
+🔴 I'm going to Daegu to see one of my friends.
+🔵 Daegu! That's nice. How long will you stay there?
+🔴 I'll stay there for two days at a hotel.
+🔵 Two days. Sounds fun! Oh, there's a lot of traffic here. Do you mind if I take a different road?
+🔴 No, I don't mind.
+🔵 Thanks! This road is faster. Is your friend going to meet you at the station?
+🔴 Yes, my friend will meet me at the station, and we're going to eat spicy braised short ribs.
+🔵 Good choice! Daegu is famous for spicy food. Here we are, Seoul Station. That's fifteen thousand won.
+🔴 Thank you so much. I won't be late for my train because you took the faster road.
+🔵 You're welcome! Will you pay by card or cash?
+🔴 By card, please. Here is my card.
+🔵 Thank you! Here's your card and receipt. Have a great trip, and enjoy the galbi-jjim!
