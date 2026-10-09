@@ -1,0 +1,162 @@
+{
+  "day": 14,
+  "date": "2026-10-09",
+  "slug": "Directions",
+  "title": "Asking for Directions",
+  "title_ko": "길 묻기",
+  "vocab_title_ko": "길 묻기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Anna",
+      "en": "Hi! You look a little lost. Can I help you?",
+      "ko": "안녕하세요! 길을 잃으신 것 같네요. 도와드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Thank you so much. I'd like to go to City Hall, but I'm lost.",
+      "ko": "정말 감사해요. 시청에 가고 싶은데 길을 잃었어요."
+    },
+    {
+      "role": "partner",
+      "name": "Anna",
+      "en": "City Hall? It's not far! Are you walking, or taking the subway?",
+      "ko": "시청이요? 멀지 않아요! 걸어가세요, 아니면 지하철 타세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'll take the subway.",
+      "ko": "지하철을 탈게요."
+    },
+    {
+      "role": "partner",
+      "name": "Anna",
+      "en": "OK! The subway station is right over there. Take Line two and get off at City Hall Station. Do you have a transportation card?",
+      "ko": "네! 지하철역은 바로 저기예요. 2호선을 타고 시청역에서 내리세요. 교통카드 있으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I have a transportation card. Thank you for your kind help. I was very confused.",
+      "ko": "네, 교통카드 있어요. 친절하게 도와주셔서 감사해요. 정말 헷갈렸거든요."
+    },
+    {
+      "role": "partner",
+      "name": "Anna",
+      "en": "You're welcome! It's only two stops, so it's easy. Is this your first time in this city?",
+      "ko": "천만에요! 두 정거장밖에 안 돼서 쉬워요. 이 도시는 처음이세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, I was here two years ago, but so many things have changed.",
+      "ko": "아니요, 2년 전에 와 봤는데 정말 많이 바뀌었어요."
+    },
+    {
+      "role": "partner",
+      "name": "Anna",
+      "en": "Oh, I see. Yes, there are a lot of new buildings now. Why are you going to City Hall?",
+      "ko": "아, 그렇군요. 맞아요, 지금은 새 건물이 많아요. 시청에는 왜 가세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I heard there is a nice viewpoint at City Hall.",
+      "ko": "시청에 멋진 전망대가 있다고 들었어요."
+    },
+    {
+      "role": "partner",
+      "name": "Anna",
+      "en": "Yes! There's a great viewpoint on the top floor. You can see the whole city. Do you like taking photos?",
+      "ko": "맞아요! 꼭대기 층에 멋진 전망대가 있어요. 도시 전체가 다 보여요. 사진 찍는 거 좋아하세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I love taking photos. I especially love taking photos at night. Night photos are very beautiful.",
+      "ko": "네, 사진 찍는 거 정말 좋아해요. 특히 밤에 찍는 걸 좋아해요. 야경 사진은 정말 예쁘거든요."
+    },
+    {
+      "role": "partner",
+      "name": "Anna",
+      "en": "Then go there after sunset! The night view is amazing. Will you have time tonight?",
+      "ko": "그럼 해 지고 나서 가 보세요! 야경이 정말 멋져요. 오늘 밤에 시간 있으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I will go there after sunset.",
+      "ko": "네, 해 지고 나서 가 볼게요."
+    },
+    {
+      "role": "partner",
+      "name": "Anna",
+      "en": "Great! Have fun and take lots of beautiful photos. Bye!",
+      "ko": "좋아요! 즐거운 시간 보내시고 예쁜 사진 많이 찍으세요. 안녕히 가세요!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "I'm lost.",
+      "pos": "표현",
+      "meaning": "길을 잃었어요. (I lost는 '졌다/잃어버렸다')",
+      "example": "I'd like to go to City Hall, but <b>I'm lost.</b>"
+    },
+    {
+      "word": "go to + 장소",
+      "pos": "표현",
+      "meaning": "~에 가다 (to 필수)",
+      "example": "I'd like to <b>go to</b> City Hall."
+    },
+    {
+      "word": "take the subway",
+      "pos": "표현",
+      "meaning": "지하철을 타다",
+      "example": "I'll <b>take the subway</b>."
+    },
+    {
+      "word": "get off",
+      "pos": "표현",
+      "meaning": "(차·지하철에서) 내리다",
+      "example": "Take Line two and <b>get off</b> at City Hall Station."
+    },
+    {
+      "word": "transportation card",
+      "pos": "명사",
+      "meaning": "교통카드",
+      "example": "Yes, I have a <b>transportation card</b>."
+    },
+    {
+      "word": "confused",
+      "pos": "형용사",
+      "meaning": "헷갈리는, 어리둥절한",
+      "example": "I was very <b>confused</b>."
+    },
+    {
+      "word": "have changed",
+      "pos": "표현",
+      "meaning": "(지금까지) 바뀌었다",
+      "example": "So many things <b>have changed</b>."
+    },
+    {
+      "word": "I heard ~",
+      "pos": "표현",
+      "meaning": "~라고 들었어요",
+      "example": "<b>I heard</b> there is a nice viewpoint at City Hall."
+    },
+    {
+      "word": "viewpoint",
+      "pos": "명사",
+      "meaning": "전망대, 경치 좋은 곳 (한 단어)",
+      "example": "There's a great <b>viewpoint</b> on the top floor."
+    },
+    {
+      "word": "after sunset",
+      "pos": "표현",
+      "meaning": "해가 진 뒤에",
+      "example": "I will go there <b>after sunset</b>."
+    }
+  ]
+}
