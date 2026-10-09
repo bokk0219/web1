@@ -1,0 +1,15 @@
+🔵 Hi! You look a little lost. Can I help you?
+🔴 Thank you so much. I'd like to go to City Hall, but I'm lost.
+🔵 City Hall? It's not far! Are you walking, or taking the subway?
+🔴 I'll take the subway.
+🔵 OK! The subway station is right over there. Take Line two and get off at City Hall Station. Do you have a transportation card?
+🔴 Yes, I have a transportation card. Thank you for your kind help. I was very confused.
+🔵 You're welcome! It's only two stops, so it's easy. Is this your first time in this city?
+🔴 No, I was here two years ago, but so many things have changed.
+🔵 Oh, I see. Yes, there are a lot of new buildings now. Why are you going to City Hall?
+🔴 I heard there is a nice viewpoint at City Hall.
+🔵 Yes! There's a great viewpoint on the top floor. You can see the whole city. Do you like taking photos?
+🔴 Yes, I love taking photos. I especially love taking photos at night. Night photos are very beautiful.
+🔵 Then go there after sunset! The night view is amazing. Will you have time tonight?
+🔴 Yes, I will go there after sunset.
+🔵 Great! Have fun and take lots of beautiful photos. Bye!
