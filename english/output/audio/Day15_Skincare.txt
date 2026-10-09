@@ -1,0 +1,17 @@
+🔵 Hello! Welcome. Are you looking for anything today?
+🔴 I need some cleansing milk for my face and some hair conditioner.
+🔵 Sure! Let's start with the cleansing milk. What's your skin type? Dry, oily, or combination?
+🔴 I have dry and sensitive skin. Do you have anything for my skin type?
+🔵 Yes! This one is gentle and has no fragrance. It's good for dry, sensitive skin. Would you like to try a sample?
+🔴 Yes, I'll try a sample. Does it have alcohol?
+🔵 Good question! No, it's alcohol-free. Here, try it on the back of your hand. How does it feel?
+🔴 It feels very gentle. I'll take it. Is there a coupon for this?
+🔵 Yes! If you buy two items today, you get ten percent off. Now, what kind of hair conditioner are you looking for?
+🔴 I need a hair conditioner for oily hair that's easy to use. I don't have much time to get ready.
+🔵 Then try this leave-in spray! You don't have to rinse it out. It takes only five seconds. Would you like to smell it?
+🔴 Yes, I'd like to smell it. I don't really like the smell. Can I try another one?
+🔵 No problem! This one has a light citrus smell. How about this one?
+🔴 Oh, I like it! I'll take both of them, and I don't need a plastic bag. I'll put these in my bag.
+🔵 Great choice! And thank you for saving plastic. With ten percent off, that's thirty-six dollars. How would you like to pay?
+🔴 I'll pay in cash. Here is fifty dollars.
+🔵 Thank you! Here's your change, fourteen dollars, and your receipt. Have a lovely day!
