@@ -1,5 +1,5 @@
 import type { Item, Record } from "../types";
-import { relativeLabel } from "../utils/stats";
+import { daysAgo, relativeLabel } from "../utils/stats";
 
 interface HomeProps {
   items: Item[];
@@ -14,6 +14,7 @@ export default function Home({ items, records, onOpenItem, onAddRecord }: HomePr
     .sort((a, b) => (a.date === b.date ? a.createdAt.localeCompare(b.createdAt) : a.date.localeCompare(b.date)))
     .reverse()
     .slice(0, 30);
+  const groups = groupByPeriod(recent);
 
   return (
     <div className="min-h-screen bg-cream pb-28">
@@ -32,36 +33,60 @@ export default function Home({ items, records, onOpenItem, onAddRecord }: HomePr
         </button>
       </div>
 
-      <div className="px-6 mt-8">
-        <h2 className="text-sm font-semibold text-espresso mb-3">최근 기록</h2>
+      <div className="px-6 mt-12">
+        <h2 className="text-sm font-semibold text-espresso mb-4">최근 기록</h2>
         {recent.length === 0 ? (
           <EmptyState />
         ) : (
-          <ul className="space-y-2">
-            {recent.map((r) => {
-              const item = itemMap.get(r.itemId);
-              if (!item) return null;
-              return (
-                <li key={r.id}>
-                  <button
-                    onClick={() => onOpenItem(item.id)}
-                    className="w-full flex items-center gap-3 bg-white/60 hover:bg-white/90 transition-colors rounded-xl px-4 py-3 text-left"
-                  >
-                    <span className="text-xl">{item.emoji}</span>
-                    <span className="flex-1 text-ink font-medium">{item.name}</span>
-                    {r.reason && (
-                      <span className="text-xs text-stone/70">{r.reason}</span>
-                    )}
-                    <span className="text-xs text-stone">{relativeLabel(r.date)}</span>
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
+          <div className="space-y-7">
+            {groups.map((group) => (
+              <section key={group.label}>
+                <h3 className="text-xs text-stone mb-2">{group.label}</h3>
+                <ul className="space-y-1.5">
+                  {group.records.map((r) => {
+                    const item = itemMap.get(r.itemId);
+                    if (!item) return null;
+                    return (
+                      <li key={r.id}>
+                        <button
+                          onClick={() => onOpenItem(item.id)}
+                          className="w-full flex items-center gap-3 bg-white/60 hover:bg-white/90 transition-colors rounded-xl px-4 py-3 text-left"
+                        >
+                          <span className="text-xl">{item.emoji}</span>
+                          <span className="flex-1 text-ink font-medium">{item.name}</span>
+                          {r.reason && <span className="text-xs text-stone/70">{r.reason}</span>}
+                          <span className="text-xs text-stone">{relativeLabel(r.date)}</span>
+                        </button>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </section>
+            ))}
+          </div>
         )}
       </div>
     </div>
   );
+}
+
+const PERIODS = [
+  { label: "오늘 · 어제", maxDays: 1 },
+  { label: "최근 일주일", maxDays: 6 },
+  { label: "그 전", maxDays: Infinity },
+];
+
+function groupByPeriod(records: Record[]) {
+  return PERIODS.map((period, i) => {
+    const minDays = i === 0 ? -Infinity : PERIODS[i - 1].maxDays + 1;
+    return {
+      label: period.label,
+      records: records.filter((r) => {
+        const days = daysAgo(r.date);
+        return days >= minDays && days <= period.maxDays;
+      }),
+    };
+  }).filter((group) => group.records.length > 0);
 }
 
 function EmptyState() {

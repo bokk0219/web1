@@ -51,8 +51,12 @@ function todayISOLocal(): string {
   return new Date(d.getTime() - tz).toISOString().slice(0, 10);
 }
 
+export function daysAgo(dateISO: string): number {
+  return daysBetween(dateISO, todayISOLocal());
+}
+
 export function relativeLabel(dateISO: string): string {
-  const days = daysBetween(dateISO, todayISOLocal());
+  const days = daysAgo(dateISO);
   if (days <= 0) return "오늘";
   if (days === 1) return "어제";
   return `${days}일 전`;
