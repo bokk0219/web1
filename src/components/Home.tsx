@@ -26,7 +26,7 @@ export default function Home({ items, records, onOpenItem, onAddRecord }: HomePr
       <div className="px-6">
         <button
           onClick={onAddRecord}
-          className="w-full bg-espresso text-cream rounded-2xl py-4 font-medium shadow-soft flex items-center justify-center gap-2 active:scale-[0.99] transition-transform"
+          className="w-full bg-espresso text-cream rounded-2xl py-4 font-medium flex items-center justify-center gap-2 active:scale-[0.99] transition-transform"
         >
           <span className="text-lg leading-none">＋</span>
           <span>기록하기</span>
@@ -34,7 +34,7 @@ export default function Home({ items, records, onOpenItem, onAddRecord }: HomePr
       </div>
 
       <div className="px-6 mt-12">
-        <h2 className="text-sm font-semibold text-espresso mb-4">최근 기록</h2>
+        <h2 className="text-sm font-semibold text-ink mb-4">최근 기록</h2>
         {recent.length === 0 ? (
           <EmptyState />
         ) : (
