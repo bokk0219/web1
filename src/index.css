@@ -9,4 +9,6 @@ html, body, #root {
 body {
   background-color: #f7f2ea;
   -webkit-tap-highlight-color: transparent;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
 }

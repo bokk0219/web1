@@ -53,8 +53,8 @@ export default function Home({ items, records, onOpenItem, onAddRecord }: HomePr
                           className="w-full flex items-center gap-3 bg-white/60 hover:bg-white/90 transition-colors rounded-xl px-4 py-3 text-left"
                         >
                           <span className="text-xl">{item.emoji}</span>
-                          <span className="flex-1 text-ink font-medium">{item.name}</span>
-                          {r.reason && <span className="text-xs text-stone/70">{r.reason}</span>}
+                          <span className="flex-1 min-w-0 text-ink font-medium leading-snug">{item.name}</span>
+                          {r.reason && <span className="max-w-[5.5rem] truncate text-xs text-stone/70">{r.reason}</span>}
                           <span className="w-12 shrink-0 text-right text-xs text-stone tabular-nums">{relativeLabel(r.date)}</span>
                         </button>
                       </li>
