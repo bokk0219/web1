@@ -18,7 +18,7 @@ export default function Home({ items, records, onOpenItem, onAddRecord }: HomePr
   return (
     <div className="min-h-screen bg-cream pb-28">
       <div className="px-6 pt-10 pb-6 space-y-1">
-        <h1 className="text-xl font-bold text-ink">나는 이렇게 산다</h1>
+        <h1 className="text-2xl font-bold text-ink">나는 이렇게 산다</h1>
         <p className="text-stone text-sm">오늘도 뭔가 하나 했다.</p>
       </div>
 
@@ -50,7 +50,7 @@ export default function Home({ items, records, onOpenItem, onAddRecord }: HomePr
                     <span className="text-xl">{item.emoji}</span>
                     <span className="flex-1 text-ink font-medium">{item.name}</span>
                     {r.reason && (
-                      <span className="text-xs text-stone bg-beige/70 rounded-full px-2 py-0.5">{r.reason}</span>
+                      <span className="text-xs text-stone/70">{r.reason}</span>
                     )}
                     <span className="text-xs text-stone">{relativeLabel(r.date)}</span>
                   </button>
