@@ -55,7 +55,7 @@ export default function Home({ items, records, onOpenItem, onAddRecord }: HomePr
                           <span className="text-xl">{item.emoji}</span>
                           <span className="flex-1 text-ink font-medium">{item.name}</span>
                           {r.reason && <span className="text-xs text-stone/70">{r.reason}</span>}
-                          <span className="text-xs text-stone">{relativeLabel(r.date)}</span>
+                          <span className="w-12 shrink-0 text-right text-xs text-stone tabular-nums">{relativeLabel(r.date)}</span>
                         </button>
                       </li>
                     );
