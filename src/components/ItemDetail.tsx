@@ -28,7 +28,7 @@ export default function ItemDetail({
     <div className="min-h-screen bg-cream pb-28">
       <div className="px-6 pt-10 pb-4 flex items-center gap-3">
         <button onClick={onBack} className="text-stone text-lg">‹</button>
-        <h1 className="text-lg font-bold text-ink flex items-center gap-2">
+        <h1 className="text-xl text-ink flex items-center gap-2">
           <ItemIcon emoji={item.emoji} size={20} />
           <span>{item.name}</span>
         </h1>
@@ -36,7 +36,7 @@ export default function ItemDetail({
 
       <div className="px-6">
         <div className="bg-white/60 rounded-2xl p-5 space-y-4">
-          <p className="text-ink font-semibold">총 {stats.count}회 기록</p>
+          <p className="text-lg text-ink">총 {stats.count}회 기록</p>
           {stats.count === 0 ? (
             <p className="text-sm text-stone">아직 패턴을 발견하기엔 기록이 부족해요. 하나 더 기록해볼까요?</p>
           ) : (
@@ -79,7 +79,7 @@ export default function ItemDetail({
         </button>
 
         <div className="mt-8">
-          <h2 className="text-sm font-semibold text-espresso mb-3">기록 목록</h2>
+          <h2 className="text-sm font-medium text-ink mb-3">기록 목록</h2>
           {sortedDesc.length === 0 ? (
             <p className="text-sm text-stone">아직 기록이 없어요.</p>
           ) : (
@@ -123,7 +123,7 @@ function StatBox({ label, value }: { label: string; value: string }) {
   return (
     <div className="bg-sand/60 rounded-xl px-3 py-2.5">
       <p className="text-stone text-xs">{label}</p>
-      <p className="text-ink font-semibold">{value}</p>
+      <p className="text-lg text-ink">{value}</p>
     </div>
   );
 }

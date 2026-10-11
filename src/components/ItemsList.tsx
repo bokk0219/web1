@@ -21,7 +21,7 @@ export default function ItemsList({ items, records, onOpenItem, onAddItem }: Ite
   return (
     <div className="min-h-screen bg-cream pb-28">
       <div className="px-6 pt-10 pb-6 flex items-center justify-between">
-        <h1 className="text-xl font-bold text-ink">나의 항목</h1>
+        <h1 className="text-2xl text-ink">나의 항목</h1>
         <button onClick={onAddItem} className="text-sm text-espresso font-medium bg-beige/70 rounded-full px-3 py-1.5">
           + 새 항목
         </button>
@@ -36,7 +36,7 @@ export default function ItemsList({ items, records, onOpenItem, onAddItem }: Ite
         ) : (
           groups.map((group) => (
             <div key={group.label} className="space-y-2">
-              <h2 className="text-xs font-semibold text-stone px-1">{group.label}</h2>
+              <h2 className="text-xs text-mute px-1">{group.label}</h2>
               {group.items.map((item) => {
                 const itemRecords = records.filter((r) => r.itemId === item.id);
                 const stats = computeStats(itemRecords);

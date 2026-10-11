@@ -65,7 +65,7 @@ export default function AddRecordModal({
     <div className="fixed inset-0 bg-ink/40 flex items-end sm:items-center justify-center z-50">
       <div className="bg-cream w-full sm:max-w-md sm:rounded-3xl rounded-t-3xl p-6 space-y-5 max-h-[90vh] overflow-y-auto">
         <div className="flex items-center justify-between">
-          <h2 className="text-lg font-bold text-ink">기록하기</h2>
+          <h2 className="text-xl text-ink">기록하기</h2>
           <button onClick={onClose} className="text-stone text-sm">닫기</button>
         </div>
 
