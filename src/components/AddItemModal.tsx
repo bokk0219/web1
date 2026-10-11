@@ -111,7 +111,7 @@ export default function AddItemModal({ onClose, onCreate }: AddItemModalProps) {
             <input
               value={reasonText}
               onChange={(e) => setReasonText(e.target.value)}
-              placeholder="선택 사항입니다"
+              placeholder="안 적어도 돼요"
               className="w-full bg-white/70 border border-beige rounded-xl px-4 py-2.5 text-sm text-ink placeholder:text-stone/60 outline-none focus:border-clay"
             />
           </div>

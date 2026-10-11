@@ -131,7 +131,7 @@ function RotatingWord({ words, fallback }: { words: string[]; fallback: string }
   );
 }
 
-// 항목 이름이 길면 이름만 줄이고, "한 지 9일째" 같은 뒷부분은 한 덩어리로 지킨다
+// 항목 이름이 길면 이름만 줄이고, "· 9일째" 같은 뒷부분은 한 덩어리로 지킨다
 function StatusNote({ days, name, suffix, pinned }: { days: number; name: string; suffix: string; pinned: boolean }) {
   return (
     <div className="flex items-center gap-2.5 text-sm text-ink">
@@ -199,14 +199,19 @@ function PinPicker({
   );
 }
 
+// 항목 이름과 상태를 "·"로 나눠서, 이름이 무엇이든 자연스럽게 읽히게 한다
+function sinceText(days: number) {
+  return days === 0 ? " · 오늘 했어요" : ` · ${days}일째`;
+}
+
 function pinnedNote(item: Item, records: Record[]) {
   const stats = computeStats(records.filter((r) => r.itemId === item.id));
   if (stats.daysSinceLast === null) return { days: 0, name: item.name, suffix: ` · 아직 기록이 없어요` };
   const days = stats.daysSinceLast;
   if (stats.average && days >= stats.average) {
-    return { days, name: item.name, suffix: ` 할 때예요 · 평소 ${Math.round(stats.average)}일마다` };
+    return { days, name: item.name, suffix: ` · 할 때가 됐어요 (평소 ${Math.round(stats.average)}일마다)` };
   }
-  return { days, name: item.name, suffix: ` 한 지 ${days}일째` };
+  return { days, name: item.name, suffix: sinceText(days) };
 }
 
 // 평소 간격보다 오래된 항목을 먼저 알려주고, 없으면 가장 오래 쉰 항목을 알려준다
@@ -220,10 +225,10 @@ function findNote(items: Item[], records: Record[]) {
     if (stats.average && days >= stats.average) {
       const ratio = days / stats.average;
       if (!due || ratio > due.ratio) {
-        due = { days, ratio, name: item.name, suffix: ` 할 때예요 · 평소 ${Math.round(stats.average)}일마다` };
+        due = { days, ratio, name: item.name, suffix: ` · 할 때가 됐어요 (평소 ${Math.round(stats.average)}일마다)` };
       }
     }
-    if (!oldest || days > oldest.days) oldest = { days, name: item.name, suffix: ` 한 지 ${days}일째` };
+    if (!oldest || days > oldest.days) oldest = { days, name: item.name, suffix: sinceText(days) };
   }
   return due ?? oldest;
 }

@@ -49,7 +49,7 @@ export default function ItemDetail({
           )}
           {stats.daysSinceLast !== null && (
             <p className="text-xs text-stone">
-              마지막 기록으로부터 {stats.daysSinceLast === 0 ? "오늘" : `${stats.daysSinceLast}일`} 지났어요.
+              {stats.daysSinceLast === 0 ? "오늘 기록했어요." : `마지막 기록으로부터 ${stats.daysSinceLast}일 지났어요.`}
             </p>
           )}
         </div>
@@ -81,7 +81,7 @@ export default function ItemDetail({
         <div className="mt-8">
           <h2 className="text-sm font-semibold text-espresso mb-3">기록 목록</h2>
           {sortedDesc.length === 0 ? (
-            <p className="text-sm text-stone">기록이 없습니다.</p>
+            <p className="text-sm text-stone">아직 기록이 없어요.</p>
           ) : (
             <ul className="space-y-2">
               {sortedDesc.map((r) => (
