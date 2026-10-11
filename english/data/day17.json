@@ -1,0 +1,156 @@
+{
+  "day": 17,
+  "date": "2026-10-11",
+  "slug": "CouchPotato",
+  "title": "A Couch Potato Weekend",
+  "title_ko": "동료에게 연휴 이야기와 여행 계획 말하기",
+  "vocab_title_ko": "연휴 이야기와 여행 계획",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Good morning, Hyunju! Welcome back. How was your long weekend?",
+      "ko": "좋은 아침이에요, 현주 씨! 잘 다녀왔어요? 긴 연휴는 어땠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I was a couch potato all weekend. I wanted to go biking and see an exhibition, but I couldn't.",
+      "ko": "연휴 내내 소파에만 붙어 있었어요. 자전거도 타고 전시도 보고 싶었는데 못 했어요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Ha ha, a couch potato! Me too, sometimes. Why couldn't you go out?",
+      "ko": "하하, 소파 감자! 저도 가끔 그래요. 왜 못 나갔어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "After having a cold, I was so tired and lazy. I watched some travel videos and slept a lot on the sofa.",
+      "ko": "감기 앓고 나서 너무 피곤하고 늘어졌어요. 여행 영상 보다가 소파에서 잠만 잤어요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Oh, you still felt tired after the cold. That makes sense. Travel videos? Where do you want to go?",
+      "ko": "아, 감기 끝나고도 피곤했군요. 그럴 만해요. 여행 영상이요? 어디 가고 싶어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I want to go to Thailand next March, so I've been watching travel videos all weekend.",
+      "ko": "내년 3월에 태국에 가고 싶어서 연휴 내내 여행 영상만 봤어요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Thailand! That sounds amazing. Which city do you want to visit?",
+      "ko": "태국이요! 정말 좋겠다. 어느 도시에 가고 싶어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I want to visit Bangkok. This will be my first trip to Thailand, so I'm very excited.",
+      "ko": "방콕에 가 보고 싶어요. 태국은 처음이라서 정말 설레요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Your first trip! How exciting. What do you want to do in Bangkok?",
+      "ko": "첫 여행이네요! 정말 설레겠다. 방콕에서 뭐 하고 싶어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I want to go to a night market and eat lots of Thai food.",
+      "ko": "야시장에 가서 태국 음식을 잔뜩 먹고 싶어요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Night markets are so much fun! What's your favorite Thai food?",
+      "ko": "야시장 정말 재밌죠! 제일 좋아하는 태국 음식은 뭐예요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "My favorite Thai food is rice noodles, and I'd like to try some food that I've never eaten before.",
+      "ko": "쌀국수를 제일 좋아하고, 한 번도 안 먹어 본 음식도 먹어 보고 싶어요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Good idea! Trying new food is the best part of traveling. Are you going alone, or with someone?",
+      "ko": "좋은 생각이에요! 새로운 음식 먹어 보는 게 여행의 묘미죠. 혼자 가요, 아니면 누구랑 같이 가요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'm going alone. It makes me feel a little lonely, but also free.",
+      "ko": "혼자 가요. 조금 외롭기도 하지만 자유롭기도 해요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "I understand. Traveling alone can feel lonely, but it's also a great adventure! Don't forget to send me photos from Bangkok. See you at lunch!",
+      "ko": "이해해요. 혼자 여행하면 외로울 수 있지만, 멋진 모험이기도 하죠! 방콕에서 사진 꼭 보내 줘요. 점심때 봐요!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "couch potato",
+      "pos": "명사",
+      "meaning": "소파에 붙어 사는 사람, 집에서 뒹굴기만 하는 사람",
+      "example": "I was a <b>couch potato</b> all weekend."
+    },
+    {
+      "word": "I wanted to ~",
+      "pos": "표현",
+      "meaning": "~하고 싶었다 (지난 일 / I'd like to는 지금 하고 싶을 때)",
+      "example": "<b>I wanted to</b> go biking, but I couldn't."
+    },
+    {
+      "word": "after having a cold",
+      "pos": "표현",
+      "meaning": "감기를 앓고 나서",
+      "example": "<b>After having a cold</b>, I was so tired and lazy."
+    },
+    {
+      "word": "next + 달·요일",
+      "pos": "표현",
+      "meaning": "다음 ~에 (next 앞에 in 없이)",
+      "example": "I want to go to Thailand <b>next</b> March."
+    },
+    {
+      "word": "my first trip to ~",
+      "pos": "표현",
+      "meaning": "~로 가는 첫 여행 (on이 아니라 to)",
+      "example": "This will be <b>my first trip to</b> Thailand."
+    },
+    {
+      "word": "night market",
+      "pos": "명사",
+      "meaning": "야시장",
+      "example": "I want to go to a <b>night market</b>."
+    },
+    {
+      "word": "lots of Thai food",
+      "pos": "표현",
+      "meaning": "태국 음식 잔뜩 (food는 셀 수 없어서 many ✕)",
+      "example": "I want to eat <b>lots of Thai food</b>."
+    },
+    {
+      "word": "I've never eaten ~",
+      "pos": "표현",
+      "meaning": "~을 먹어 본 적이 없다",
+      "example": "I'd like to try some food that <b>I've never eaten</b> before."
+    },
+    {
+      "word": "It makes me feel ~",
+      "pos": "표현",
+      "meaning": "나를 ~하게 느끼게 한다 (feel me ✕)",
+      "example": "<b>It makes me feel</b> a little lonely, but also free."
+    }
+  ]
+}
