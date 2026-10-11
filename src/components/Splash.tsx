@@ -25,6 +25,10 @@ export default function Splash({ onStart }: SplashProps) {
     <div className="min-h-screen bg-paper flex flex-col items-center justify-between overflow-hidden px-6 py-12">
       <div />
       <div className="flex w-full max-w-xs flex-col items-center gap-10">
+        <div className="animate-fade-up text-center opacity-0" style={{ animationDelay: `${LAST_LANDING}s` }}>
+          <h1 className="text-[34px] text-ink">2manythings</h1>
+          <p className="mt-2 text-sm text-mute">많은 일도, 차곡차곡.</p>
+        </div>
         <div className="w-full rounded-xl border border-ink bg-card">
           <div className="h-3 rounded-t-[11px] bg-ink" />
           <div className="grid grid-cols-7 px-3 pt-2 text-center text-[10px] text-mute">
@@ -47,10 +51,6 @@ export default function Splash({ onStart }: SplashProps) {
               );
             })}
           </div>
-        </div>
-        <div className="animate-fade-up text-center opacity-0" style={{ animationDelay: `${LAST_LANDING}s` }}>
-          <h1 className="text-[34px] text-ink">2manythings</h1>
-          <p className="mt-2 text-sm text-mute">많은 일도, 차곡차곡.</p>
         </div>
       </div>
       <button
