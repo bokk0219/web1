@@ -26,13 +26,13 @@ export default function Home({ items, records, pinnedItemId, onPinItem, onOpenIt
 
   return (
     <div className="min-h-screen bg-paper pb-28">
-      <div className="px-6 pt-8 pb-10">
+      <div className="px-6 pt-8 pb-6">
         {items.length > 0 && (
           <button onClick={() => setShowPinPicker(true)} className="text-left" aria-label="맨 위 알림 바꾸기">
             <StatusNote days={note?.days ?? 0} text={note?.text ?? "잊으면 안 되는 일을 골라주세요"} pinned={Boolean(pinnedItem)} />
           </button>
         )}
-        <p className="mt-10 text-sm text-mute">2manythings</p>
+        <p className="mt-14 text-sm text-mute">2manythings</p>
         <h1 className="mt-1 h-11 overflow-hidden text-[30px] leading-[44px] text-ink">
           <RotatingWord words={recentNames} fallback="오늘도 하나 했다" />
         </h1>
@@ -48,7 +48,7 @@ export default function Home({ items, records, pinnedItemId, onPinItem, onOpenIt
         </button>
       </div>
 
-      <div className="px-6 mt-12">
+      <div className="px-6 mt-14">
         <h2 className="text-sm font-medium text-ink mb-4">최근 기록</h2>
         {recent.length === 0 ? (
           <EmptyState />
