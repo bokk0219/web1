@@ -9,7 +9,7 @@ interface BottomNavProps {
 
 export default function BottomNav({ active, onChange }: BottomNavProps) {
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-paper/95 backdrop-blur border-t border-line">
+    <nav className="fixed bottom-0 left-0 right-0 bg-paper border-t border-line">
       <div className="max-w-md mx-auto flex">
         <NavButton label="홈" emoji="🏠" isActive={active === "home"} onClick={() => onChange("home")} />
         <NavButton label="달력" emoji="📅" isActive={active === "calendar"} onClick={() => onChange("calendar")} />

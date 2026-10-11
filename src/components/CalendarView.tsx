@@ -119,7 +119,7 @@ export default function CalendarView({ items, records, onOpenItem }: CalendarVie
                     <ItemIcon emoji={item.emoji} />
                     <span className="flex-1 text-ink font-medium">{item.name}</span>
                     {r.reason && (
-                      <span className="text-xs text-stone bg-beige/70 rounded-full px-2 py-0.5">{r.reason}</span>
+                      <span className="max-w-[5.5rem] truncate text-xs text-mute/80">{r.reason}</span>
                     )}
                   </button>
                 </li>
