@@ -6,22 +6,21 @@ interface SplashProps {
 }
 
 const WEEKDAYS = ["일", "월", "화", "수", "목", "금", "토"];
-// 한 달(4주) 중 띄엄띄엄 일이 있는 날과 그날의 아이콘
-const DROPS: { day: number; emoji: string }[] = [
-  { day: 2, emoji: "🌱" },
-  { day: 5, emoji: "🧺" },
-  { day: 9, emoji: "💅" },
-  { day: 12, emoji: "🛏️" },
-  { day: 15, emoji: "🧹" },
-  { day: 19, emoji: "💊" },
-  { day: 22, emoji: "💇" },
-  { day: 26, emoji: "🐾" },
+// 한 달(4주) 중 띄엄띄엄 일이 있는 날. 줄을 맞추지 않고, 떨어지는 순서·방향·속도도 제각각
+const DROPS: { day: number; emoji: string; delay: number; dx: number; rot: number; dur: number }[] = [
+  { day: 12, emoji: "🛏️", delay: 0, dx: -60, rot: -25, dur: 1.7 },
+  { day: 3, emoji: "🌱", delay: 0.25, dx: 70, rot: 20, dur: 1.5 },
+  { day: 22, emoji: "💇", delay: 0.7, dx: 90, rot: 30, dur: 1.9 },
+  { day: 18, emoji: "🧹", delay: 0.85, dx: -40, rot: -15, dur: 1.6 },
+  { day: 7, emoji: "🧺", delay: 1.3, dx: -80, rot: 18, dur: 1.8 },
+  { day: 27, emoji: "🐾", delay: 1.45, dx: -50, rot: -30, dur: 1.5 },
+  { day: 9, emoji: "💅", delay: 1.9, dx: 60, rot: 24, dur: 1.7 },
+  { day: 20, emoji: "💊", delay: 2.2, dx: 40, rot: -20, dur: 1.6 },
 ];
-const DROP_GAP = 0.32; // 아이콘이 하나씩 내려앉는 간격(초)
-const LAST_LANDING = (DROPS.length - 1) * DROP_GAP + 1.6;
+const LAST_LANDING = Math.max(...DROPS.map((d) => d.delay + d.dur));
 
 export default function Splash({ onStart }: SplashProps) {
-  const dropByDay = new Map(DROPS.map((d, i) => [d.day, { ...d, order: i }]));
+  const dropByDay = new Map(DROPS.map((d) => [d.day, d]));
   return (
     <div className="min-h-screen bg-paper flex flex-col items-center justify-between overflow-hidden px-6 py-12">
       <div />
@@ -40,7 +39,7 @@ export default function Splash({ onStart }: SplashProps) {
                 <span key={day} className="flex h-9 flex-col items-center">
                   <span className="text-[9px] leading-3 text-clay tabular-nums">{day}</span>
                   {drop && (
-                    <span className="mt-0.5 animate-drop opacity-0" style={dropStyle(drop.order)}>
+                    <span className="mt-0.5 animate-drop opacity-0" style={dropStyle(drop)}>
                       <ItemIcon emoji={drop.emoji} size={20} />
                     </span>
                   )}
@@ -65,8 +64,12 @@ export default function Splash({ onStart }: SplashProps) {
   );
 }
 
-// 하나씩 순서대로, 살짝 기울어진 채 천천히 내려와 자리 잡는다
-function dropStyle(order: number): CSSProperties {
-  const rot = order % 2 === 0 ? -14 : 12;
-  return { "--rot": `${rot}deg`, animationDelay: `${order * DROP_GAP}s` } as CSSProperties;
+// 옆에서 비스듬히 날아와 제자리에 내려앉는다
+function dropStyle(d: (typeof DROPS)[number]): CSSProperties {
+  return {
+    "--dx": `${d.dx}px`,
+    "--rot": `${d.rot}deg`,
+    animationDelay: `${d.delay}s`,
+    animationDuration: `${d.dur}s`,
+  } as CSSProperties;
 }

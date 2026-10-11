@@ -39,10 +39,10 @@ export default {
           to: { opacity: "1", transform: "translateY(0)" },
         },
         drop: {
-          "0%": { opacity: "0", transform: "translateY(-42vh) rotate(var(--rot))" },
+          "0%": { opacity: "0", transform: "translate(var(--dx), -42vh) rotate(var(--rot))" },
           "20%": { opacity: "1" },
-          "80%": { opacity: "1", transform: "translateY(2px) rotate(calc(var(--rot) * -0.15))" },
-          "100%": { opacity: "1", transform: "translateY(0) rotate(0deg)" },
+          "80%": { opacity: "1", transform: "translate(0, 2px) rotate(calc(var(--rot) * -0.15))" },
+          "100%": { opacity: "1", transform: "translate(0, 0) rotate(0deg)" },
         },
         "fade-up": {
           from: { opacity: "0", transform: "translateY(8px)" },
