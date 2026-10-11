@@ -46,14 +46,14 @@ export default function CalendarView({ items, records, onOpenItem }: CalendarVie
   return (
     <div className="min-h-screen bg-cream pb-28">
       <div className="px-6 pt-10 pb-6">
-        <h1 className="text-xl font-bold text-ink">달력으로 보기</h1>
+        <h1 className="text-2xl text-ink">달력으로 보기</h1>
         <p className="text-stone text-sm">날짜별로 뭘 했는지 한눈에.</p>
       </div>
 
       <div className="px-6">
         <div className="flex items-center justify-between mb-4">
           <button onClick={() => goToMonth(-1)} className="text-stone text-lg px-2">‹</button>
-          <p className="text-ink font-semibold">{year}년 {month + 1}월</p>
+          <p className="text-lg text-ink">{year}년 {month + 1}월</p>
           <button onClick={() => goToMonth(1)} className="text-stone text-lg px-2">›</button>
         </div>
 
@@ -78,9 +78,9 @@ export default function CalendarView({ items, records, onOpenItem }: CalendarVie
                 <span
                   className={`w-8 h-8 flex items-center justify-center rounded-full text-sm ${
                     isSelected
-                      ? "bg-espresso text-cream font-semibold"
+                      ? "bg-espresso text-cream"
                       : isToday
-                      ? "bg-clay/50 text-ink font-semibold"
+                      ? "bg-clay/50 text-ink"
                       : cell.inMonth
                       ? "text-ink"
                       : "text-stone/40"
@@ -100,7 +100,7 @@ export default function CalendarView({ items, records, onOpenItem }: CalendarVie
       </div>
 
       <div className="px-6 mt-8">
-        <h2 className="text-sm font-semibold text-espresso mb-3">
+        <h2 className="text-sm font-medium text-ink mb-3">
           {Number(selectedDate.slice(5, 7))}월 {Number(selectedDate.slice(8, 10))}일 기록
         </h2>
         {selectedRecords.length === 0 ? (
