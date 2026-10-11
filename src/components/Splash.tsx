@@ -1,21 +1,45 @@
+import type { CSSProperties } from "react";
+import ItemIcon from "./ItemIcon";
+import { ICON_CATEGORIES } from "../storage";
+
 interface SplashProps {
   onStart: () => void;
 }
 
+const WEEKDAYS = ["일", "월", "화", "수", "목", "금", "토"];
+// 달력 두 주(14칸)에 떨어질 아이콘
+const FALLING = ICON_CATEGORIES.flatMap((c) => c.emojis).slice(0, 14);
+
 export default function Splash({ onStart }: SplashProps) {
   return (
-    <div className="min-h-screen bg-cream flex flex-col items-center justify-between px-6 py-12">
+    <div className="min-h-screen bg-paper flex flex-col items-center justify-between overflow-hidden px-6 py-12">
       <div />
-      <div className="flex flex-col items-center gap-8">
-        <SplashIllustration />
-        <div className="text-center space-y-2">
-          <h1 className="text-2xl font-bold text-ink tracking-tight">나는 이렇게 산다</h1>
-          <p className="text-stone text-sm">작은 일도, 다 내 삶의 기록.</p>
+      <div className="flex w-full max-w-xs flex-col items-center gap-10">
+        <div className="w-full rounded-xl border border-ink bg-card">
+          <div className="h-3 rounded-t-[11px] bg-ink" />
+          <div className="grid grid-cols-7 gap-y-1 px-3 pt-2 text-center text-[10px] text-mute">
+            {WEEKDAYS.map((d) => (
+              <span key={d}>{d}</span>
+            ))}
+          </div>
+          <div className="grid grid-cols-7 gap-y-2 px-3 pb-4 pt-2">
+            {FALLING.map((emoji, i) => (
+              <span key={emoji} className="flex justify-center">
+                <span className="animate-drop opacity-0" style={dropStyle(i)}>
+                  <ItemIcon emoji={emoji} className="h-6 w-6" />
+                </span>
+              </span>
+            ))}
+          </div>
+        </div>
+        <div className="animate-fade-up text-center opacity-0 [animation-delay:2.1s]">
+          <h1 className="font-serif text-[34px] font-light text-ink">2manythings</h1>
+          <p className="mt-2 text-sm text-mute">많은 일도, 차곡차곡.</p>
         </div>
       </div>
       <button
         onClick={onStart}
-        className="w-full max-w-xs bg-espresso text-cream rounded-full py-3.5 font-medium shadow-soft active:scale-[0.98] transition-transform"
+        className="w-full max-w-xs animate-fade-up rounded-xl bg-ink py-3.5 font-medium text-paper opacity-0 [animation-delay:2.4s] active:scale-[0.98] transition-transform"
       >
         시작하기
       </button>
@@ -23,22 +47,14 @@ export default function Splash({ onStart }: SplashProps) {
   );
 }
 
-function SplashIllustration() {
-  return (
-    <svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="110" cy="110" r="105" fill="#efe4d3" />
-      <rect x="40" y="130" width="140" height="10" rx="5" fill="#c9a97e" />
-      <rect x="55" y="90" width="60" height="45" rx="6" fill="#8a6a4b" />
-      <rect x="60" y="96" width="50" height="8" rx="4" fill="#f7f2ea" opacity="0.5" />
-      <circle cx="150" cy="95" r="22" fill="#5b4636" />
-      <circle cx="143" cy="90" r="2.5" fill="#f7f2ea" />
-      <circle cx="157" cy="90" r="2.5" fill="#f7f2ea" />
-      <path d="M144 101 Q150 105 156 101" stroke="#f7f2ea" strokeWidth="2" strokeLinecap="round" fill="none" />
-      <path d="M136 78 Q150 62 164 78" stroke="#5b4636" strokeWidth="3" fill="none" strokeLinecap="round" />
-      <ellipse cx="150" cy="120" rx="10" ry="14" fill="#8d8378" />
-      <path d="M140 118 Q130 110 122 116" stroke="#8d8378" strokeWidth="3" strokeLinecap="round" fill="none" />
-      <rect x="95" y="150" width="20" height="20" rx="3" fill="#c9a97e" />
-      <circle cx="105" cy="160" r="4" fill="#f7f2ea" />
-    </svg>
-  );
+// 아이콘마다 떨어지는 위치·기울기·순서를 조금씩 다르게 해서 쏟아지는 느낌을 낸다
+function dropStyle(i: number): CSSProperties {
+  const dx = ((i * 53) % 140) - 70;
+  const rot = ((i * 97) % 120) - 60;
+  const delay = ((i * 37) % 14) * 0.08;
+  return {
+    "--dx": `${dx}px`,
+    "--rot": `${rot}deg`,
+    animationDelay: `${delay}s`,
+  } as CSSProperties;
 }

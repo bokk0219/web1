@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ICON_CATEGORIES } from "../storage";
+import ItemIcon from "./ItemIcon";
 
 interface AddItemModalProps {
   onClose: () => void;
@@ -84,11 +85,12 @@ export default function AddItemModal({ onClose, onCreate }: AddItemModalProps) {
               <button
                 key={e}
                 onClick={() => setEmoji(e)}
-                className={`text-xl rounded-lg py-1.5 transition-colors ${
+                className={`flex justify-center rounded-lg py-1.5 transition-colors ${
                   emoji === e ? "bg-clay/60" : "bg-white/50 hover:bg-beige"
                 }`}
+                aria-label={e}
               >
-                {e}
+                <ItemIcon emoji={e} />
               </button>
             ))}
           </div>

@@ -1,3 +1,5 @@
+import ItemIcon from "./ItemIcon";
+
 type Tab = "home" | "calendar" | "items";
 
 interface BottomNavProps {
@@ -35,7 +37,7 @@ function NavButton({
         isActive ? "text-ink font-medium" : "text-mute"
       }`}
     >
-      <span className="text-lg leading-none">{emoji}</span>
+      <ItemIcon emoji={emoji} className={`h-5 w-5 ${isActive ? "" : "opacity-50"}`} />
       <span>{label}</span>
     </button>
   );

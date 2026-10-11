@@ -37,6 +37,15 @@ export default {
           from: { opacity: "0", transform: "translateY(40%)" },
           to: { opacity: "1", transform: "translateY(0)" },
         },
+        drop: {
+          "0%": { opacity: "1", transform: "translate(var(--dx), -110vh) rotate(var(--rot))" },
+          "70%": { opacity: "1", transform: "translate(0, 6px) rotate(0deg)" },
+          "100%": { opacity: "1", transform: "translate(0, 0) rotate(0deg)" },
+        },
+        "fade-up": {
+          from: { opacity: "0", transform: "translateY(8px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
         "page-flip": {
           "0%, 100%": { transform: "rotateX(0deg)" },
           "50%": { transform: "rotateX(-70deg)" },
@@ -45,6 +54,8 @@ export default {
       animation: {
         "word-in": "word-in 0.5s ease-out",
         "page-flip": "page-flip 0.6s ease-in-out",
+        drop: "drop 1.1s cubic-bezier(0.3, 0.7, 0.4, 1) both",
+        "fade-up": "fade-up 0.6s ease-out both",
       },
     },
   },

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Item, Record } from "../types";
 import { computeStats, daysAgo, relativeLabel } from "../utils/stats";
+import ItemIcon from "./ItemIcon";
 
 interface HomeProps {
   items: Item[];
@@ -23,7 +24,7 @@ export default function Home({ items, records, onOpenItem, onAddRecord }: HomePr
     <div className="min-h-screen bg-paper pb-28">
       <div className="px-6 pt-8 pb-10">
         {note && <StatusNote days={note.days} text={note.text} />}
-        <p className="mt-10 text-sm text-mute">나는 이렇게 산다…</p>
+        <p className="mt-10 text-sm text-mute">2manythings</p>
         <h1 className="mt-1 h-11 overflow-hidden font-serif text-[30px] font-light leading-[44px] text-ink">
           <RotatingWord words={recentNames} fallback="오늘도 하나 했다" />
         </h1>
@@ -58,7 +59,7 @@ export default function Home({ items, records, onOpenItem, onAddRecord }: HomePr
                           onClick={() => onOpenItem(item.id)}
                           className="group w-full flex items-center gap-3 bg-card rounded-xl px-4 py-3 text-left"
                         >
-                          <span className="text-xl transition-transform duration-300 group-active:scale-125 group-active:-rotate-6">{item.emoji}</span>
+                          <span className="transition-transform duration-300 group-active:scale-125 group-active:-rotate-6"><ItemIcon emoji={item.emoji} /></span>
                           <span className="flex-1 min-w-0 text-ink leading-snug">{item.name}</span>
                           {r.reason && <span className="max-w-[5.5rem] truncate text-xs text-mute/80">{r.reason}</span>}
                           <span className="w-12 shrink-0 text-right text-xs text-mute tabular-nums">{relativeLabel(r.date)}</span>

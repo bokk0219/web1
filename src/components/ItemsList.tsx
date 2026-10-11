@@ -1,6 +1,7 @@
 import type { Item, Record } from "../types";
 import { computeStats } from "../utils/stats";
 import { ICON_CATEGORIES, DEFAULT_CATEGORY } from "../storage";
+import ItemIcon from "./ItemIcon";
 
 interface ItemsListProps {
   items: Item[];
@@ -45,7 +46,7 @@ export default function ItemsList({ items, records, onOpenItem, onAddItem }: Ite
                     onClick={() => onOpenItem(item.id)}
                     className="w-full flex items-center gap-3 bg-white/60 hover:bg-white/90 transition-colors rounded-xl px-4 py-3.5 text-left"
                   >
-                    <span className="text-xl">{item.emoji}</span>
+                    <ItemIcon emoji={item.emoji} />
                     <div className="flex-1">
                       <p className="text-ink font-medium">{item.name}</p>
                       <p className="text-xs text-stone">

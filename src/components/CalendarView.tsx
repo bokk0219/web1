@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { Item, Record } from "../types";
 import { getMonthMatrix, WEEKDAY_LABELS } from "../utils/calendar";
 import { todayISO } from "../storage";
+import ItemIcon from "./ItemIcon";
 
 interface CalendarViewProps {
   items: Item[];
@@ -115,7 +116,7 @@ export default function CalendarView({ items, records, onOpenItem }: CalendarVie
                     onClick={() => onOpenItem(item.id)}
                     className="w-full flex items-center gap-3 bg-white/60 hover:bg-white/90 transition-colors rounded-xl px-4 py-3 text-left"
                   >
-                    <span className="text-xl">{item.emoji}</span>
+                    <ItemIcon emoji={item.emoji} />
                     <span className="flex-1 text-ink font-medium">{item.name}</span>
                     {r.reason && (
                       <span className="text-xs text-stone bg-beige/70 rounded-full px-2 py-0.5">{r.reason}</span>

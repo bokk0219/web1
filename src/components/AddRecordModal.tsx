@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { Item } from "../types";
 import { todayISO } from "../storage";
+import ItemIcon from "./ItemIcon";
 
 interface AddRecordModalProps {
   items: Item[];
@@ -79,7 +80,7 @@ export default function AddRecordModal({
                   itemId === it.id ? "bg-clay text-ink" : "bg-white/60 text-ink/80"
                 }`}
               >
-                <span>{it.emoji}</span>
+                <ItemIcon emoji={it.emoji} className="h-4 w-4" />
                 <span>{it.name}</span>
               </button>
             ))}
