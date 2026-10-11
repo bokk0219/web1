@@ -1,7 +1,8 @@
-import type { CSSProperties } from "react";
+import { useEffect, useRef, type CSSProperties } from "react";
 import ItemIcon from "./ItemIcon";
 
 interface SplashProps {
+  firstVisit: boolean;
   onStart: () => void;
 }
 
@@ -19,10 +20,23 @@ const DROPS: { day: number; emoji: string; delay: number; dx: number; rot: numbe
 ];
 const LAST_LANDING = Math.max(...DROPS.map((d) => d.delay + d.dur));
 
-export default function Splash({ onStart }: SplashProps) {
+// 처음 쓰는 사람은 「시작하기」를 누르고, 다시 여는 사람은 애니메이션이 끝나면 저절로 홈으로 넘어간다.
+// 기다리기 싫으면 화면을 누르면 바로 넘어간다.
+export default function Splash({ firstVisit, onStart }: SplashProps) {
   const dropByDay = new Map(DROPS.map((d) => [d.day, d]));
+  const onStartRef = useRef(onStart);
+  onStartRef.current = onStart;
+  useEffect(() => {
+    if (firstVisit) return;
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const timer = setTimeout(() => onStartRef.current(), reduced ? 800 : (LAST_LANDING + 1) * 1000);
+    return () => clearTimeout(timer);
+  }, [firstVisit]);
   return (
-    <div className="min-h-screen bg-paper flex flex-col items-center justify-between overflow-hidden px-6 py-12">
+    <div
+      className="min-h-screen bg-paper flex flex-col items-center justify-between overflow-hidden px-6 py-12"
+      onClick={firstVisit ? undefined : onStart}
+    >
       <div />
       <div className="flex w-full max-w-xs flex-col items-center gap-10">
         <div className="animate-fade-up text-center opacity-0" style={{ animationDelay: `${LAST_LANDING}s` }}>
@@ -53,13 +67,19 @@ export default function Splash({ onStart }: SplashProps) {
           </div>
         </div>
       </div>
-      <button
-        onClick={onStart}
-        className="w-full max-w-xs animate-fade-up rounded-xl bg-ink py-3.5 font-medium text-paper opacity-0 active:scale-[0.98] transition-transform"
-        style={{ animationDelay: `${LAST_LANDING + 0.3}s` }}
-      >
-        시작하기
-      </button>
+      {firstVisit ? (
+        <button
+          onClick={onStart}
+          className="w-full max-w-xs animate-fade-up rounded-xl bg-ink py-3.5 font-medium text-paper opacity-0 active:scale-[0.98] transition-transform"
+          style={{ animationDelay: `${LAST_LANDING + 0.3}s` }}
+        >
+          시작하기
+        </button>
+      ) : (
+        <p className="animate-fade-up text-xs text-mute opacity-0" style={{ animationDelay: "1s" }}>
+          화면을 누르면 바로 시작해요
+        </p>
+      )}
     </div>
   );
 }
