@@ -28,8 +28,8 @@ export default function Home({ items, records, pinnedItemId, onPinItem, onOpenIt
     <div className="min-h-screen bg-paper pb-28">
       <div className="px-6 pt-8 pb-6">
         {items.length > 0 && (
-          <button onClick={() => setShowPinPicker(true)} className="text-left" aria-label="맨 위 알림 바꾸기">
-            <StatusNote days={note?.days ?? 0} text={note?.text ?? "잊으면 안 되는 일을 골라주세요"} pinned={Boolean(pinnedItem)} />
+          <button onClick={() => setShowPinPicker(true)} className="max-w-full text-left" aria-label="맨 위 알림 바꾸기">
+            <StatusNote days={note?.days ?? 0} name={note?.name ?? ""} suffix={note?.suffix ?? "잊으면 안 되는 일을 골라주세요"} pinned={Boolean(pinnedItem)} />
           </button>
         )}
         <p className="mt-14 text-sm text-mute">2manythings</p>
@@ -125,16 +125,17 @@ function RotatingWord({ words, fallback }: { words: string[]; fallback: string }
   }, [words.length]);
   const word = words.length > 0 ? words[index % words.length] : fallback;
   return (
-    <span key={word} className="block animate-word-in">
+    <span key={word} className="block truncate animate-word-in">
       {word}
     </span>
   );
 }
 
-function StatusNote({ days, text, pinned }: { days: number; text: string; pinned: boolean }) {
+// 항목 이름이 길면 이름만 줄이고, "한 지 9일째" 같은 뒷부분은 한 덩어리로 지킨다
+function StatusNote({ days, name, suffix, pinned }: { days: number; name: string; suffix: string; pinned: boolean }) {
   return (
     <div className="flex items-center gap-2.5 text-sm text-ink">
-      <span className="[perspective:200px]">
+      <span className="shrink-0 [perspective:200px]">
         <span className="relative block h-[26px] w-6 origin-top animate-page-flip rounded-[3px] border border-ink bg-card">
           <span className="absolute inset-x-0 top-0 h-[5px] bg-ink" />
           <span className="absolute inset-x-0 bottom-0 text-center text-[10px] leading-[19px] tabular-nums">
@@ -142,8 +143,11 @@ function StatusNote({ days, text, pinned }: { days: number; text: string; pinned
           </span>
         </span>
       </span>
-      <span>{text}</span>
-      <span className="text-mute">{pinned ? "· 고정 ›" : "›"}</span>
+      <span className="flex min-w-0">
+        {name && <span className="truncate">{name}</span>}
+        <span className="shrink-0 whitespace-pre">{suffix}</span>
+      </span>
+      <span className="shrink-0 text-mute">{pinned ? "· 고정 ›" : "›"}</span>
     </div>
   );
 }
@@ -197,18 +201,18 @@ function PinPicker({
 
 function pinnedNote(item: Item, records: Record[]) {
   const stats = computeStats(records.filter((r) => r.itemId === item.id));
-  if (stats.daysSinceLast === null) return { days: 0, text: `${item.name} · 아직 기록이 없어요` };
+  if (stats.daysSinceLast === null) return { days: 0, name: item.name, suffix: ` · 아직 기록이 없어요` };
   const days = stats.daysSinceLast;
   if (stats.average && days >= stats.average) {
-    return { days, text: `${item.name} 할 때예요 · 평소 ${Math.round(stats.average)}일마다` };
+    return { days, name: item.name, suffix: ` 할 때예요 · 평소 ${Math.round(stats.average)}일마다` };
   }
-  return { days, text: `${item.name} 한 지 ${days}일째` };
+  return { days, name: item.name, suffix: ` 한 지 ${days}일째` };
 }
 
 // 평소 간격보다 오래된 항목을 먼저 알려주고, 없으면 가장 오래 쉰 항목을 알려준다
 function findNote(items: Item[], records: Record[]) {
-  let due: { days: number; text: string; ratio: number } | null = null;
-  let oldest: { days: number; text: string } | null = null;
+  let due: { days: number; name: string; suffix: string; ratio: number } | null = null;
+  let oldest: { days: number; name: string; suffix: string } | null = null;
   for (const item of items) {
     const stats = computeStats(records.filter((r) => r.itemId === item.id));
     if (stats.daysSinceLast === null) continue;
@@ -216,10 +220,10 @@ function findNote(items: Item[], records: Record[]) {
     if (stats.average && days >= stats.average) {
       const ratio = days / stats.average;
       if (!due || ratio > due.ratio) {
-        due = { days, ratio, text: `${item.name} 할 때예요 · 평소 ${Math.round(stats.average)}일마다` };
+        due = { days, ratio, name: item.name, suffix: ` 할 때예요 · 평소 ${Math.round(stats.average)}일마다` };
       }
     }
-    if (!oldest || days > oldest.days) oldest = { days, text: `${item.name} 한 지 ${days}일째` };
+    if (!oldest || days > oldest.days) oldest = { days, name: item.name, suffix: ` 한 지 ${days}일째` };
   }
   return due ?? oldest;
 }
