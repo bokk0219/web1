@@ -33,7 +33,7 @@ export default function Home({ items, records, pinnedItemId, onPinItem, onOpenIt
           </button>
         )}
         <p className="mt-10 text-sm text-mute">2manythings</p>
-        <h1 className="mt-1 h-9 overflow-hidden text-[24px] leading-[36px] text-ink">
+        <h1 className="mt-1 h-11 overflow-hidden text-[30px] leading-[44px] text-ink">
           <RotatingWord words={recentNames} fallback="오늘도 하나 했다" />
         </h1>
       </div>
