@@ -37,7 +37,7 @@ function NavButton({
         isActive ? "text-ink font-medium" : "text-mute"
       }`}
     >
-      <ItemIcon emoji={emoji} className={`h-5 w-5 ${isActive ? "" : "opacity-50"}`} />
+      <ItemIcon emoji={emoji} size={22} className={isActive ? "" : "opacity-40"} />
       <span>{label}</span>
     </button>
   );

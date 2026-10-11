@@ -80,7 +80,7 @@ export default function AddRecordModal({
                   itemId === it.id ? "bg-clay text-ink" : "bg-white/60 text-ink/80"
                 }`}
               >
-                <ItemIcon emoji={it.emoji} className="h-4 w-4" />
+                <ItemIcon emoji={it.emoji} size={16} />
                 <span>{it.name}</span>
               </button>
             ))}

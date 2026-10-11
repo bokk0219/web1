@@ -29,7 +29,7 @@ export default function ItemDetail({
       <div className="px-6 pt-10 pb-4 flex items-center gap-3">
         <button onClick={onBack} className="text-stone text-lg">‹</button>
         <h1 className="text-lg font-bold text-ink flex items-center gap-2">
-          <ItemIcon emoji={item.emoji} className="h-5 w-5" />
+          <ItemIcon emoji={item.emoji} size={20} />
           <span>{item.name}</span>
         </h1>
       </div>

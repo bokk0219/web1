@@ -41,7 +41,7 @@ export default function Splash({ onStart }: SplashProps) {
                   <span className="text-[9px] leading-3 text-clay tabular-nums">{day}</span>
                   {drop && (
                     <span className="mt-0.5 animate-drop opacity-0" style={dropStyle(drop.order)}>
-                      <ItemIcon emoji={drop.emoji} className="h-5 w-5" />
+                      <ItemIcon emoji={drop.emoji} size={20} />
                     </span>
                   )}
                 </span>
@@ -50,7 +50,7 @@ export default function Splash({ onStart }: SplashProps) {
           </div>
         </div>
         <div className="animate-fade-up text-center opacity-0" style={{ animationDelay: `${LAST_LANDING}s` }}>
-          <h1 className="font-serif text-[34px] font-light text-ink">2manythings</h1>
+          <h1 className="text-[34px] text-ink">2manythings</h1>
           <p className="mt-2 text-sm text-mute">많은 일도, 차곡차곡.</p>
         </div>
       </div>

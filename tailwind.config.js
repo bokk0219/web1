@@ -20,8 +20,9 @@ export default {
         stone: "#8c8a86",
       },
       fontFamily: {
-        serif: ['"Noto Serif KR"', "serif"],
+        emoji: ['"Noto Emoji"', "sans-serif"],
         sans: [
+          '"Gowun Dodum"',
           "Pretendard",
           "-apple-system",
           "BlinkMacSystemFont",

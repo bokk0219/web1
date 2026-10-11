@@ -25,7 +25,7 @@ export default function Home({ items, records, onOpenItem, onAddRecord }: HomePr
       <div className="px-6 pt-8 pb-10">
         {note && <StatusNote days={note.days} text={note.text} />}
         <p className="mt-10 text-sm text-mute">2manythings</p>
-        <h1 className="mt-1 h-11 overflow-hidden font-serif text-[30px] font-light leading-[44px] text-ink">
+        <h1 className="mt-1 h-11 overflow-hidden text-[30px] leading-[44px] text-ink">
           <RotatingWord words={recentNames} fallback="오늘도 하나 했다" />
         </h1>
       </div>

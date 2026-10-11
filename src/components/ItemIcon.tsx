@@ -1,26 +1,19 @@
-import { ICON_PATHS, ICON_VIEWBOX } from "../icons";
-
 interface ItemIconProps {
   emoji: string;
+  size?: number;
   className?: string;
 }
 
-// 이모지 문자를 흑백 선 아이콘으로 그린다. 그림이 없는 이모지는 흑백 필터만 씌운다.
-export default function ItemIcon({ emoji, className = "h-6 w-6" }: ItemIconProps) {
-  const body = ICON_PATHS[emoji.replace(/️/g, "")];
-  if (!body) {
-    return (
-      <span className={`inline-flex items-center justify-center grayscale ${className}`} aria-hidden="true">
-        {emoji}
-      </span>
-    );
-  }
+// 이모지를 Noto Emoji 글꼴(흑백, 둥근 선)로 그린다.
+// 저장된 데이터는 이모지 문자 그대로 두고, 화면에서만 흑백으로 보이게 한다.
+export default function ItemIcon({ emoji, size = 24, className = "" }: ItemIconProps) {
   return (
-    <svg
-      viewBox={ICON_VIEWBOX}
-      className={`shrink-0 text-ink ${className}`}
+    <span
+      className={`inline-flex shrink-0 items-center justify-center font-emoji leading-none text-ink ${className}`}
+      style={{ width: size, height: size, fontSize: size * 0.9 }}
       aria-hidden="true"
-      dangerouslySetInnerHTML={{ __html: body }}
-    />
+    >
+      {emoji.replace(/️/g, "") + "︎"}
+    </span>
   );
 }
