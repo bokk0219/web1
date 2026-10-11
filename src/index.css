@@ -7,8 +7,15 @@ html, body, #root {
 }
 
 body {
-  background-color: #f7f2ea;
+  background-color: #f7f6f3;
   -webkit-tap-highlight-color: transparent;
   word-break: keep-all;
   overflow-wrap: anywhere;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }
