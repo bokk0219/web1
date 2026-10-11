@@ -16,6 +16,7 @@ export function loadData(): AppData {
       items: items.map((item) => ({ ...item, category: item.category ?? DEFAULT_CATEGORY })),
       records: Array.isArray(parsed.records) ? parsed.records : [],
       hasVisited: Boolean(parsed.hasVisited),
+      pinnedItemId: typeof parsed.pinnedItemId === "string" ? parsed.pinnedItemId : undefined,
     };
   } catch {
     return emptyData();

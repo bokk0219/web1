@@ -6,11 +6,14 @@ import ItemIcon from "./ItemIcon";
 interface HomeProps {
   items: Item[];
   records: Record[];
+  pinnedItemId?: string;
+  onPinItem: (itemId: string | undefined) => void;
   onOpenItem: (itemId: string) => void;
   onAddRecord: () => void;
 }
 
-export default function Home({ items, records, onOpenItem, onAddRecord }: HomeProps) {
+export default function Home({ items, records, pinnedItemId, onPinItem, onOpenItem, onAddRecord }: HomeProps) {
+  const [showPinPicker, setShowPinPicker] = useState(false);
   const itemMap = new Map(items.map((i) => [i.id, i]));
   const recent = [...records]
     .sort((a, b) => (a.date === b.date ? a.createdAt.localeCompare(b.createdAt) : a.date.localeCompare(b.date)))
@@ -18,12 +21,17 @@ export default function Home({ items, records, onOpenItem, onAddRecord }: HomePr
     .slice(0, 30);
   const groups = groupByPeriod(recent);
   const recentNames = [...new Set(recent.map((r) => itemMap.get(r.itemId)?.name).filter(Boolean))].slice(0, 5) as string[];
-  const note = findNote(items, records);
+  const pinnedItem = items.find((i) => i.id === pinnedItemId);
+  const note = pinnedItem ? pinnedNote(pinnedItem, records) : findNote(items, records);
 
   return (
     <div className="min-h-screen bg-paper pb-28">
       <div className="px-6 pt-8 pb-10">
-        {note && <StatusNote days={note.days} text={note.text} />}
+        {items.length > 0 && (
+          <button onClick={() => setShowPinPicker(true)} className="text-left" aria-label="맨 위 알림 바꾸기">
+            <StatusNote days={note?.days ?? 0} text={note?.text ?? "잊으면 안 되는 일을 골라주세요"} pinned={Boolean(pinnedItem)} />
+          </button>
+        )}
         <p className="mt-10 text-sm text-mute">2manythings</p>
         <h1 className="mt-1 h-11 overflow-hidden text-[30px] leading-[44px] text-ink">
           <RotatingWord words={recentNames} fallback="오늘도 하나 했다" />
@@ -73,6 +81,18 @@ export default function Home({ items, records, onOpenItem, onAddRecord }: HomePr
           </div>
         )}
       </div>
+
+      {showPinPicker && (
+        <PinPicker
+          items={items}
+          pinnedItemId={pinnedItem?.id}
+          onPick={(itemId) => {
+            onPinItem(itemId);
+            setShowPinPicker(false);
+          }}
+          onClose={() => setShowPinPicker(false)}
+        />
+      )}
     </div>
   );
 }
@@ -111,7 +131,7 @@ function RotatingWord({ words, fallback }: { words: string[]; fallback: string }
   );
 }
 
-function StatusNote({ days, text }: { days: number; text: string }) {
+function StatusNote({ days, text, pinned }: { days: number; text: string; pinned: boolean }) {
   return (
     <div className="flex items-center gap-2 text-xs text-ink">
       <span className="[perspective:200px]">
@@ -123,8 +143,66 @@ function StatusNote({ days, text }: { days: number; text: string }) {
         </span>
       </span>
       <span>{text}</span>
+      <span className="text-mute">{pinned ? "· 고정 ›" : "›"}</span>
     </div>
   );
+}
+
+function PinPicker({
+  items,
+  pinnedItemId,
+  onPick,
+  onClose,
+}: {
+  items: Item[];
+  pinnedItemId?: string;
+  onPick: (itemId: string | undefined) => void;
+  onClose: () => void;
+}) {
+  const option = "w-full flex items-center gap-3 rounded-xl px-4 py-3 text-left";
+  return (
+    <div className="fixed inset-0 bg-ink/40 flex items-end sm:items-center justify-center z-50" onClick={onClose}>
+      <div
+        className="bg-paper w-full sm:max-w-md sm:rounded-3xl rounded-t-3xl p-6 space-y-4 max-h-[80vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex items-center justify-between">
+          <h2 className="text-lg text-ink">맨 위에 올릴 항목</h2>
+          <button onClick={onClose} className="text-mute text-sm">닫기</button>
+        </div>
+        <ul className="space-y-1.5">
+          <li>
+            <button onClick={() => onPick(undefined)} className={`${option} ${pinnedItemId ? "bg-card" : "bg-ink text-paper"}`}>
+              <span className="flex-1">자동으로 골라주기</span>
+              <span className={`text-xs ${pinnedItemId ? "text-mute" : "text-paper/70"}`}>늦어진 일을 알려줘요</span>
+            </button>
+          </li>
+          {items.map((item) => {
+            const selected = item.id === pinnedItemId;
+            return (
+              <li key={item.id}>
+                <button onClick={() => onPick(item.id)} className={`${option} ${selected ? "bg-ink text-paper" : "bg-card text-ink"}`}>
+                  <ItemIcon emoji={item.emoji} className={selected ? "text-paper" : ""} />
+                  <span className="flex-1">{item.name}</span>
+                  {selected && <span className="text-xs text-paper/70">고정됨</span>}
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+function pinnedNote(item: Item, records: Record[]) {
+  const stats = computeStats(records.filter((r) => r.itemId === item.id));
+  if (stats.daysSinceLast === null) return { days: 0, text: `${item.name} · 아직 기록이 없어요` };
+  const days = stats.daysSinceLast;
+  if (stats.average && days >= stats.average) {
+    return { days, text: `${item.name} 할 때예요 · 평소 ${Math.round(stats.average)}일마다` };
+  }
+  return { days, text: `${item.name} 한 지 ${days}일째` };
 }
 
 // 평소 간격보다 오래된 항목을 먼저 알려주고, 없으면 가장 오래 쉰 항목을 알려준다

@@ -56,6 +56,7 @@ export default function App() {
       ...d,
       items: d.items.filter((i) => i.id !== itemId),
       records: d.records.filter((r) => r.itemId !== itemId),
+      pinnedItemId: d.pinnedItemId === itemId ? undefined : d.pinnedItemId,
     }));
     setSelectedItemId(null);
     setTab("items");
@@ -83,6 +84,8 @@ export default function App() {
             <Home
               items={data.items}
               records={data.records}
+              pinnedItemId={data.pinnedItemId}
+              onPinItem={(itemId) => setData((d) => ({ ...d, pinnedItemId: itemId }))}
               onOpenItem={setSelectedItemId}
               onAddRecord={() => {
                 setPendingRecordItemId(undefined);

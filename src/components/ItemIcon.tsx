@@ -9,7 +9,7 @@ interface ItemIconProps {
 export default function ItemIcon({ emoji, size = 24, className = "" }: ItemIconProps) {
   return (
     <span
-      className={`inline-flex shrink-0 items-center justify-center font-emoji leading-none text-ink ${className}`}
+      className={`inline-flex shrink-0 items-center justify-center font-emoji leading-none ${className}`}
       style={{ width: size, height: size, fontSize: size * 0.9 }}
       aria-hidden="true"
     >
