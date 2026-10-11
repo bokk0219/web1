@@ -33,7 +33,7 @@ export default function Home({ items, records, pinnedItemId, onPinItem, onOpenIt
           </button>
         )}
         <p className="mt-10 text-sm text-mute">2manythings</p>
-        <h1 className="mt-1 h-11 overflow-hidden text-[30px] leading-[44px] text-ink">
+        <h1 className="mt-1 h-9 overflow-hidden text-[24px] leading-[36px] text-ink">
           <RotatingWord words={recentNames} fallback="오늘도 하나 했다" />
         </h1>
       </div>
@@ -133,11 +133,11 @@ function RotatingWord({ words, fallback }: { words: string[]; fallback: string }
 
 function StatusNote({ days, text, pinned }: { days: number; text: string; pinned: boolean }) {
   return (
-    <div className="flex items-center gap-2 text-xs text-ink">
+    <div className="flex items-center gap-2.5 text-sm text-ink">
       <span className="[perspective:200px]">
-        <span className="relative block h-[22px] w-5 origin-top animate-page-flip rounded-[3px] border border-ink bg-card">
+        <span className="relative block h-[26px] w-6 origin-top animate-page-flip rounded-[3px] border border-ink bg-card">
           <span className="absolute inset-x-0 top-0 h-[5px] bg-ink" />
-          <span className="absolute inset-x-0 bottom-0 text-center text-[9px] leading-[15px] tabular-nums">
+          <span className="absolute inset-x-0 bottom-0 text-center text-[10px] leading-[19px] tabular-nums">
             {Math.min(days, 99)}
           </span>
         </span>
