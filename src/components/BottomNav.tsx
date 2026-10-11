@@ -1,3 +1,5 @@
+import ItemIcon from "./ItemIcon";
+
 type Tab = "home" | "calendar" | "items";
 
 interface BottomNavProps {
@@ -7,7 +9,7 @@ interface BottomNavProps {
 
 export default function BottomNav({ active, onChange }: BottomNavProps) {
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-cream/95 backdrop-blur border-t border-beige">
+    <nav className="fixed bottom-0 left-0 right-0 bg-paper border-t border-line">
       <div className="max-w-md mx-auto flex">
         <NavButton label="홈" emoji="🏠" isActive={active === "home"} onClick={() => onChange("home")} />
         <NavButton label="달력" emoji="📅" isActive={active === "calendar"} onClick={() => onChange("calendar")} />
@@ -32,10 +34,10 @@ function NavButton({
     <button
       onClick={onClick}
       className={`flex-1 flex flex-col items-center gap-0.5 py-3 text-xs ${
-        isActive ? "text-espresso font-medium" : "text-stone"
+        isActive ? "text-ink font-medium" : "text-mute"
       }`}
     >
-      <span className="text-lg leading-none">{emoji}</span>
+      <ItemIcon emoji={emoji} size={22} className={isActive ? "" : "opacity-40"} />
       <span>{label}</span>
     </button>
   );

@@ -24,4 +24,5 @@ export interface AppData {
   items: Item[];
   records: Record[];
   hasVisited: boolean;
+  pinnedItemId?: string; // 맨 위 알림에 올려둔 항목 (없으면 자동으로 고름)
 }
