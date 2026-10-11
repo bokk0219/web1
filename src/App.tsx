@@ -19,15 +19,21 @@ export default function App() {
   const [showAddItem, setShowAddItem] = useState(false);
   const [showAddRecord, setShowAddRecord] = useState(false);
   const [pendingRecordItemId, setPendingRecordItemId] = useState<string | undefined>(undefined);
+  // 앱을 열 때마다 시작 애니메이션을 한 번 보여준다
+  const [showIntro, setShowIntro] = useState(true);
 
   useEffect(() => {
     saveData(data);
   }, [data]);
 
-  if (!data.hasVisited) {
+  if (!data.hasVisited || showIntro) {
     return (
       <Splash
-        onStart={() => setData((d) => ({ ...d, hasVisited: true }))}
+        firstVisit={!data.hasVisited}
+        onStart={() => {
+          setShowIntro(false);
+          setData((d) => ({ ...d, hasVisited: true }));
+        }}
       />
     );
   }
