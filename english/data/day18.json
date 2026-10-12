@@ -1,0 +1,156 @@
+{
+  "day": 18,
+  "date": "2026-10-12",
+  "slug": "PostOffice",
+  "title": "At the Post Office",
+  "title_ko": "우체국에서 해외로 소포 보내기",
+  "vocab_title_ko": "우체국에서 소포 보내기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Ben",
+      "en": "Good morning! Next, please. How can I help you?",
+      "ko": "안녕하세요! 다음 분이요. 무엇을 도와드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like to send a birthday gift to my older brother in London.",
+      "ko": "런던에 사는 오빠에게 생일 선물을 보내고 싶어요."
+    },
+    {
+      "role": "partner",
+      "name": "Ben",
+      "en": "London. Sure! Please put it on the scale. What's inside the box?",
+      "ko": "런던이요. 네! 저울 위에 올려 주세요. 상자 안에 뭐가 들었어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "It's a book and some Korean snacks.",
+      "ko": "책 한 권이랑 한국 과자예요."
+    },
+    {
+      "role": "partner",
+      "name": "Ben",
+      "en": "A book and snacks. OK. Are there any liquids or meat in the snacks?",
+      "ko": "책이랑 과자요. 네. 과자에 액체나 고기가 들어 있나요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, there aren't. They're made of chestnuts.",
+      "ko": "아니요, 없어요. 밤으로 만든 과자예요."
+    },
+    {
+      "role": "partner",
+      "name": "Ben",
+      "en": "Chestnut snacks! That's fine, then. How would you like to send it? By air or by sea?",
+      "ko": "밤 과자군요! 그럼 괜찮아요. 어떻게 보내시겠어요? 항공으로요, 배로요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'll send it by air because my older brother's birthday is coming soon.",
+      "ko": "오빠 생일이 곧이라서 항공으로 보낼게요."
+    },
+    {
+      "role": "partner",
+      "name": "Ben",
+      "en": "By air, it takes about five to seven days. Could you fill out this customs form, please?",
+      "ko": "항공으로는 5일에서 7일 정도 걸려요. 이 세관 신고서 좀 작성해 주시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I'll fill out the form. Here it is.",
+      "ko": "네, 작성할게요. 여기 있어요."
+    },
+    {
+      "role": "partner",
+      "name": "Ben",
+      "en": "Thank you. That's thirty-two thousand won. Would you like to add insurance for the package?",
+      "ko": "감사합니다. 3만 2천 원입니다. 소포에 보험도 추가하시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, thanks. Just send it without insurance.",
+      "ko": "아니요, 괜찮아요. 보험 없이 그냥 보내 주세요."
+    },
+    {
+      "role": "partner",
+      "name": "Ben",
+      "en": "OK, no insurance. Here's your receipt with the tracking number. Is there anything else I can help you with?",
+      "ko": "네, 보험 없이요. 송장 번호가 적힌 영수증 여기 있어요. 더 도와드릴 게 있을까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "When will it arrive in London?",
+      "ko": "런던에는 언제 도착할까요?"
+    },
+    {
+      "role": "partner",
+      "name": "Ben",
+      "en": "It should arrive in London by next Monday. You can check it online with the tracking number. Have a nice day!",
+      "ko": "다음 주 월요일까지는 런던에 도착할 거예요. 송장 번호로 온라인에서 확인하실 수 있어요. 좋은 하루 보내세요!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "older brother",
+      "pos": "명사",
+      "meaning": "오빠, 형 (elder brother보다 일상적)",
+      "example": "I'd like to send a birthday gift to my <b>older brother</b>."
+    },
+    {
+      "word": "be made of",
+      "pos": "표현",
+      "meaning": "~로 만들어지다 (be동사 필수)",
+      "example": "They're <b>made of</b> chestnuts."
+    },
+    {
+      "word": "by air / by sea",
+      "pos": "표현",
+      "meaning": "항공으로 / 배로",
+      "example": "I'll send it <b>by air</b>."
+    },
+    {
+      "word": "is coming soon",
+      "pos": "표현",
+      "meaning": "곧 다가온다",
+      "example": "My older brother's birthday <b>is coming soon</b>."
+    },
+    {
+      "word": "fill out the form",
+      "pos": "표현",
+      "meaning": "서류를 작성하다",
+      "example": "Yes, I'll <b>fill out the form</b>."
+    },
+    {
+      "word": "customs form",
+      "pos": "명사",
+      "meaning": "세관 신고서",
+      "example": "Could you fill out this <b>customs form</b>, please?"
+    },
+    {
+      "word": "Here it is.",
+      "pos": "표현",
+      "meaning": "여기 있어요. (Here is it ✕)",
+      "example": "Yes, I'll fill out the form. <b>Here it is.</b>"
+    },
+    {
+      "word": "insurance",
+      "pos": "명사",
+      "meaning": "보험",
+      "example": "Just send it without <b>insurance</b>."
+    },
+    {
+      "word": "tracking number",
+      "pos": "명사",
+      "meaning": "송장 번호, 배송 조회 번호",
+      "example": "Here's your receipt with the <b>tracking number</b>."
+    }
+  ]
+}
