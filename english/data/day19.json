@@ -1,0 +1,144 @@
+{
+  "day": 19,
+  "date": "2026-10-13",
+  "slug": "BusyMorning",
+  "title": "A Busy Morning at Work",
+  "title_ko": "동료와 오늘 할 일 이야기하기",
+  "vocab_title_ko": "회사에서 오늘 할 일",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Morning, Hyunju! You're early today. Do you have a busy day?",
+      "ko": "좋은 아침이에요, 현주 씨! 오늘 일찍 왔네요. 오늘 바빠요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I'll be busy writing a report. I have to send it to my manager by tomorrow.",
+      "ko": "네, 보고서 쓰느라 바쁠 거예요. 내일까지 매니저님께 보내야 해요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Oh, a report due tomorrow? That's tight! What's the report about?",
+      "ko": "아, 내일 마감인 보고서요? 빠듯하네요! 무슨 보고서예요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "It's about next year's sales plan.",
+      "ko": "내년 판매 계획에 관한 거예요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Next year's sales plan? That's a big one! Do you need any help with the numbers?",
+      "ko": "내년 판매 계획이요? 큰 거네요! 숫자 쪽으로 도와줄까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I always have trouble with numbers, so I need your help. When I finish the report, could you please check the numbers in it?",
+      "ko": "제가 늘 숫자에 약해서 도움이 필요해요. 보고서 다 쓰면 숫자 좀 확인해 주실 수 있어요?"
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Of course! Just send it to me when it's ready. What time do you think you'll finish?",
+      "ko": "그럼요! 다 되면 보내 줘요. 몇 시쯤 끝날 것 같아요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like to finish it by three p.m. Then I'll send it to you by email.",
+      "ko": "오후 3시까지 끝내고 싶어요. 그다음에 이메일로 보내 드릴게요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Three p.m. is perfect. I'll check it before I leave. By the way, did you have breakfast? You look a little tired.",
+      "ko": "3시면 딱 좋아요. 퇴근 전에 확인해 줄게요. 그런데 아침은 먹었어요? 조금 피곤해 보여요."
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, I didn't have breakfast. I was in a hurry. Let's have a cup of coffee and some snacks.",
+      "ko": "아니요, 못 먹었어요. 급하게 나왔거든요. 커피랑 간식 좀 먹어요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Good idea! I have some muffins and cookies. Which do you want, a muffin or a cookie?",
+      "ko": "좋아요! 머핀이랑 쿠키 있어요. 머핀이랑 쿠키 중에 뭐 먹을래요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like a muffin. Thank you so much.",
+      "ko": "머핀 먹을게요. 정말 고마워요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Here you go! Good luck with your report today, Hyunju. You can do it!",
+      "ko": "여기요! 오늘 보고서 잘 써요, 현주 씨. 할 수 있어요!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "busy + -ing",
+      "pos": "표현",
+      "meaning": "~하느라 바쁜 (busy for ✕)",
+      "example": "I'll be <b>busy writing</b> a report."
+    },
+    {
+      "word": "write a report",
+      "pos": "표현",
+      "meaning": "보고서를 쓰다 (make보다 write)",
+      "example": "I'll be busy <b>writing a report</b>."
+    },
+    {
+      "word": "by vs until",
+      "pos": "표현",
+      "meaning": "by: ~까지 (끝내기, 마감) / until: ~까지 (계속하기)",
+      "example": "I have to send it <b>by</b> tomorrow."
+    },
+    {
+      "word": "next year's",
+      "pos": "표현",
+      "meaning": "내년의 ('s 필수)",
+      "example": "It's about <b>next year's</b> sales plan."
+    },
+    {
+      "word": "sales plan",
+      "pos": "명사",
+      "meaning": "판매 계획, 영업 계획 (sales에 s)",
+      "example": "It's about next year's <b>sales plan</b>."
+    },
+    {
+      "word": "Could you please ~?",
+      "pos": "표현",
+      "meaning": "~해 주실 수 있어요? (공손한 부탁)",
+      "example": "<b>Could you please</b> check the numbers in it?"
+    },
+    {
+      "word": "check the numbers",
+      "pos": "표현",
+      "meaning": "숫자를 확인하다 (보고서 '속'은 in)",
+      "example": "Could you please <b>check the numbers</b> in it?"
+    },
+    {
+      "word": "by email",
+      "pos": "표현",
+      "meaning": "이메일로",
+      "example": "Then I'll send it to you <b>by email</b>."
+    },
+    {
+      "word": "in a hurry",
+      "pos": "표현",
+      "meaning": "급하게, 서둘러서 (I was hurry ✕)",
+      "example": "I didn't have breakfast. I was <b>in a hurry</b>."
+    }
+  ]
+}
