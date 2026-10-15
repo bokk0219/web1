@@ -1,0 +1,174 @@
+{
+  "day": 20,
+  "date": "2026-10-15",
+  "slug": "HairSalon",
+  "title": "At the Hair Salon",
+  "title_ko": "미용실에서 머리하기",
+  "vocab_title_ko": "미용실에서 머리하기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Amy",
+      "en": "Hi! Welcome. Do you have an appointment?",
+      "ko": "안녕하세요! 어서 오세요. 예약하셨어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I have an appointment with Ms. Lee.",
+      "ko": "네, 이 선생님께 예약했어요."
+    },
+    {
+      "role": "partner",
+      "name": "Amy",
+      "en": "Oh, that's me! I'm Amy Lee. Please have a seat. What would you like to do today?",
+      "ko": "아, 저예요! 에이미 리예요. 앉으세요. 오늘은 어떻게 해 드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like to get a haircut, and I'd like to cover my gray hair.",
+      "ko": "머리를 자르고 흰머리도 염색해서 가리고 싶어요."
+    },
+    {
+      "role": "partner",
+      "name": "Amy",
+      "en": "A haircut and a color to cover your gray hair. Sure! How short would you like it?",
+      "ko": "커트랑 흰머리 커버 염색이요. 네! 얼마나 짧게 해 드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I want Hwasa's hairstyle. Let me show you a photo. I can't explain it well.",
+      "ko": "화사 헤어스타일로 하고 싶어요. 사진 보여 드릴게요. 말로는 설명을 잘 못하겠어요."
+    },
+    {
+      "role": "partner",
+      "name": "Amy",
+      "en": "Oh, I love this style! It will look great on you. What color would you like for your hair?",
+      "ko": "아, 이 스타일 정말 예뻐요! 손님한테 잘 어울릴 거예요. 머리 색은 어떤 걸로 할까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like brown.",
+      "ko": "갈색으로 하고 싶어요."
+    },
+    {
+      "role": "partner",
+      "name": "Amy",
+      "en": "Brown. Nice! Light brown or dark brown?",
+      "ko": "갈색이요. 좋아요! 밝은 갈색이요, 진한 갈색이요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Dark brown, please.",
+      "ko": "진한 갈색으로 해 주세요."
+    },
+    {
+      "role": "partner",
+      "name": "Amy",
+      "en": "Dark brown. Got it! Your hair is a little dry. Do you use any hair treatment at home?",
+      "ko": "진한 갈색이요. 알겠습니다! 머리가 조금 건조하네요. 집에서 트리트먼트 쓰세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, I don't use hair treatment at home. I don't have much time to get ready.",
+      "ko": "아니요, 집에서는 안 써요. 준비할 시간이 별로 없거든요."
+    },
+    {
+      "role": "partner",
+      "name": "Amy",
+      "en": "I see. Then how about a treatment here today? It takes only twenty minutes. Would you like to try it?",
+      "ko": "그렇군요. 그럼 오늘 여기서 트리트먼트 받아 보시는 건 어때요? 20분이면 돼요. 해 보시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I'd love to.",
+      "ko": "네, 좋아요."
+    },
+    {
+      "role": "partner",
+      "name": "Amy",
+      "en": "Great! All done! How do you like your new hairstyle?",
+      "ko": "좋아요! 다 됐어요! 새 헤어스타일 마음에 드세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "It looks great on me. Thank you so much. How should I style it at home?",
+      "ko": "저한테 정말 잘 어울려요. 정말 감사해요. 집에서는 어떻게 손질하면 돼요?"
+    },
+    {
+      "role": "partner",
+      "name": "Amy",
+      "en": "I'm so glad you like it! Just use a little hair oil and dry it with your fingers. That's all! Have a wonderful day, Hyunju!",
+      "ko": "마음에 드신다니 정말 기뻐요! 헤어 오일을 조금 바르고 손가락으로 말리시면 돼요. 그게 다예요! 좋은 하루 보내세요, 현주 씨!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "appointment",
+      "pos": "명사",
+      "meaning": "(미용실·병원) 예약",
+      "example": "Yes, I have an <b>appointment</b> with Ms. Lee."
+    },
+    {
+      "word": "get a haircut",
+      "pos": "표현",
+      "meaning": "머리를 자르다 (haircut은 명사)",
+      "example": "I'd like to <b>get a haircut</b>."
+    },
+    {
+      "word": "gray hair",
+      "pos": "명사",
+      "meaning": "흰머리 (white hair보다 자주 씀)",
+      "example": "I'd like to cover my <b>gray hair</b>."
+    },
+    {
+      "word": "cover",
+      "pos": "동사",
+      "meaning": "가리다, 덮다",
+      "example": "I'd like to <b>cover</b> my gray hair."
+    },
+    {
+      "word": "Let me show you ~",
+      "pos": "표현",
+      "meaning": "~을 보여 드릴게요 (let me see you ✕)",
+      "example": "<b>Let me show you</b> a photo."
+    },
+    {
+      "word": "hairstyle",
+      "pos": "명사",
+      "meaning": "헤어스타일 (철자 style 주의)",
+      "example": "I want Hwasa's <b>hairstyle</b>."
+    },
+    {
+      "word": "treatment",
+      "pos": "명사",
+      "meaning": "(머리) 트리트먼트, 관리",
+      "example": "How about a <b>treatment</b> here today?"
+    },
+    {
+      "word": "I'd love to.",
+      "pos": "표현",
+      "meaning": "좋아요, 정말 하고 싶어요. (제안을 기쁘게 받을 때)",
+      "example": "Yes, <b>I'd love to.</b>"
+    },
+    {
+      "word": "look great on me",
+      "pos": "표현",
+      "meaning": "나한테 잘 어울리다",
+      "example": "It <b>looks great on me</b>."
+    },
+    {
+      "word": "style",
+      "pos": "동사",
+      "meaning": "(머리를) 손질하다",
+      "example": "How should I <b>style</b> it at home?"
+    }
+  ]
+}

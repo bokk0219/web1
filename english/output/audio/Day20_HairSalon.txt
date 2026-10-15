@@ -1,0 +1,17 @@
+🔵 Hi! Welcome. Do you have an appointment?
+🔴 Yes, I have an appointment with Ms. Lee.
+🔵 Oh, that's me! I'm Amy Lee. Please have a seat. What would you like to do today?
+🔴 I'd like to get a haircut, and I'd like to cover my gray hair.
+🔵 A haircut and a color to cover your gray hair. Sure! How short would you like it?
+🔴 I want Hwasa's hairstyle. Let me show you a photo. I can't explain it well.
+🔵 Oh, I love this style! It will look great on you. What color would you like for your hair?
+🔴 I'd like brown.
+🔵 Brown. Nice! Light brown or dark brown?
+🔴 Dark brown, please.
+🔵 Dark brown. Got it! Your hair is a little dry. Do you use any hair treatment at home?
+🔴 No, I don't use hair treatment at home. I don't have much time to get ready.
+🔵 I see. Then how about a treatment here today? It takes only twenty minutes. Would you like to try it?
+🔴 Yes, I'd love to.
+🔵 Great! All done! How do you like your new hairstyle?
+🔴 It looks great on me. Thank you so much. How should I style it at home?
+🔵 I'm so glad you like it! Just use a little hair oil and dry it with your fingers. That's all! Have a wonderful day, Hyunju!
