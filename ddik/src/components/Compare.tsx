@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { MALLS } from "../cards";
-import { detectMall, newOffer } from "../storage";
+import { ACTIVE_MALLS, mallName } from "../cards";
+import { isSupported, newOffer } from "../storage";
 import type { CardSettings, Comparison, MallKey, Offer } from "../types";
 import Results from "./Results";
 import { Card, Check, NumberField, TextField, TriToggle } from "./ui";
@@ -54,16 +54,18 @@ export default function Compare({
         <div className="flex gap-2">
           <input
             className="min-w-0 flex-1 rounded-xl border border-dk-line px-3 py-2.5 text-base outline-none focus:border-dk-ink"
-            placeholder="다른 판매처 상품 링크 (선택)"
+            placeholder="다른 판매처 링크 (비워도 됨)"
             value={addUrl}
             onChange={(e) => setAddUrl(e.target.value)}
           />
           <button
             type="button"
             className="shrink-0 rounded-xl bg-dk-ink px-4 text-white disabled:opacity-30"
-            disabled={addUrl !== "" && detectMall(addUrl) == null}
+            disabled={addUrl !== "" && !isSupported(addUrl)}
             onClick={() => {
-              set({ offers: [...comparison.offers, newOffer(addUrl)] });
+              // 링크가 없으면 아직 안 넣은 쇼핑몰을 골라 둔다
+              const unused = ACTIVE_MALLS.find((m) => !comparison.offers.some((o) => o.mall === m.key));
+              set({ offers: [...comparison.offers, newOffer(addUrl, unused?.key)] });
               setAddUrl("");
             }}
           >
@@ -97,7 +99,8 @@ function OfferEditor({
             value={o.mall}
             onChange={(e) => onChange({ mall: e.target.value as MallKey })}
           >
-            {MALLS.map((m) => <option key={m.key} value={m.key}>{m.name}</option>)}
+            {ACTIVE_MALLS.map((m) => <option key={m.key} value={m.key}>{m.name}</option>)}
+            {!ACTIVE_MALLS.some((m) => m.key === o.mall) && <option value={o.mall}>{mallName(o.mall, o.mallName)}</option>}
           </select>
         </label>
         {o.mall === "other" ? (
