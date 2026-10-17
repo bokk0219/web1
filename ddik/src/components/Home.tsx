@@ -3,6 +3,7 @@ import { mallName } from "../cards";
 import { isSupported } from "../storage";
 import type { Comparison } from "../types";
 import type { MallKey } from "../types";
+import BookmarkSetup from "./BookmarkSetup";
 import PasteBox from "./PasteBox";
 import { Card } from "./ui";
 
@@ -65,6 +66,8 @@ export default function Home({
           링크 없이 직접 가격 입력
         </button>
       </Card>
+
+      <BookmarkSetup />
 
       <section>
         <h2 className="text-sm text-dk-mute">최근 비교한 상품</h2>

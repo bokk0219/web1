@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { MallKey } from "../types";
 import { mallName } from "../cards";
+import { collect } from "../collect";
 
 export default function PasteBox({
   onPaste, label = "띡! 읽기",
@@ -14,6 +15,15 @@ export default function PasteBox({
         placeholder="네이버·G마켓·11번가 검색 결과 화면을 전체 선택 → 복사해서 여기에 붙여넣기"
         value={text}
         onChange={(e) => { setText(e.target.value); setMsg(""); }}
+        onPaste={(e) => {
+          // 복사한 화면의 HTML이 있으면 링크(상품 주소)까지 살려서 넣는다
+          const html = e.clipboardData.getData("text/html");
+          if (!html) return;
+          e.preventDefault();
+          const doc = new DOMParser().parseFromString(html, "text/html");
+          setText(collect(doc.body, false));
+          setMsg("");
+        }}
       />
       <button
         type="button"
