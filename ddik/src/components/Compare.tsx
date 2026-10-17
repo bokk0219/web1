@@ -2,6 +2,9 @@ import { useState } from "react";
 import { ACTIVE_MALLS, mallName } from "../cards";
 import { isSupported, newOffer } from "../storage";
 import type { CardSettings, Comparison, MallKey, Offer } from "../types";
+import Candidates from "./Candidates";
+import { applyPaste } from "./paste";
+import PasteBox from "./PasteBox";
 import Results from "./Results";
 import { Card, Check, NumberField, TextField, TriToggle } from "./ui";
 
@@ -39,6 +42,23 @@ export default function Compare({
         </p>
       </Card>
 
+      <Card className="space-y-2">
+        <h2 className="text-sm text-dk-mute">다른 쇼핑몰 검색 결과 붙여넣기</h2>
+        <PasteBox
+          label="띡! 추가"
+          onPaste={(text) => {
+            const r = applyPaste(comparison, text);
+            if (r.found > 0) onChange(r.cmp);
+            return r;
+          }}
+        />
+      </Card>
+
+      <Results comparison={comparison} settings={settings} onSettings={onSettings} />
+
+      <Candidates comparison={comparison} onChange={onChange} />
+
+      <h2 className="pt-2 text-sm text-dk-mute">판매처 정보 (고치려면 여기서)</h2>
       {comparison.offers.map((o, i) => (
         <OfferEditor
           key={o.id}
@@ -74,7 +94,6 @@ export default function Compare({
         </div>
       </Card>
 
-      <Results comparison={comparison} settings={settings} onSettings={onSettings} />
     </div>
   );
 }

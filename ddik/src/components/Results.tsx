@@ -29,10 +29,17 @@ export default function Results({
     return <Card><p className="text-sm text-dk-mute">상품 가격을 입력하면 비교 결과가 나타납니다.</p></Card>;
   }
 
+  // 판매처마다 용량을 알면 100ml당 실질 비용으로 순위를 매긴다 (묶음 크기가 달라도 공정하게)
+  const byUnit = rows.every((r) => r.offer.volumeMl);
+  const score = (r: Row) => (byUnit ? (r.effective / r.offer.volumeMl!) * 100 : r.effective);
+  if (byUnit) rows.sort((a, b) => score(a) - score(b));
   const best = rows[0];
-  const second = rows.find((r) => r !== best && r.effective > best.effective) ?? rows[1];
+  const second = rows.find((r) => r !== best && score(r) > score(best)) ?? rows[1];
+  const unitText = (r: Row) => (r.offer.volumeMl ? ` · 100ml당 ${won(score(r))}` : "");
+  const noShip = comparison.offers.filter((o) => o.price != null && (o.shipping == null || o.shippingGuess));
   const unknowns = rows.filter((r) => r.benefit.status === "unknown");
-  const notSame = comparison.offers.length > 1 && comparison.offers.some((o) => o.price != null && !o.sameProduct);
+  // 붙여넣기로 고른 후보는 용량으로 비교하므로 "같은 상품" 확인을 묻지 않는다
+  const notSame = comparison.offers.length > 1 && comparison.offers.some((o) => o.price != null && !o.sameProduct && !o.sourceId);
 
   const copy = async () => {
     const lines = [
@@ -65,11 +72,14 @@ export default function Results({
           </dd>
           {best.mallPointsWon > 0 && (<><dt className="text-dk-mute">쇼핑몰 자체 적립</dt><dd className="text-right">{pt(best.offer.mallPoints ?? 0)}</dd></>)}
           <dt className="text-dk-mute">실질 구매 비용</dt><dd className="text-right text-lg">{won(best.effective)}</dd>
+          {byUnit && (<><dt className="text-dk-mute">100ml당</dt><dd className="text-right">{won(score(best))}</dd></>)}
         </dl>
         {second && (
           <p className="mt-3 text-sm">
             차선책 <b className="font-normal underline">{label(second)}</b>보다{" "}
-            {second.effective - best.effective > 0 ? `${won(second.effective - best.effective)} 유리` : "차이 없음"}
+            {byUnit
+              ? `100ml당 ${won(score(second) - score(best))} 유리`
+              : second.effective - best.effective > 0 ? `${won(second.effective - best.effective)} 유리` : "차이 없음"}
           </p>
         )}
         <div className="mt-4 grid grid-cols-2 gap-2">
@@ -86,8 +96,14 @@ export default function Results({
         </div>
       </Card>
 
-      {(unknowns.length > 0 || notSame) && (
+      {(unknowns.length > 0 || notSame || noShip.length > 0) && (
         <Card className="space-y-2 bg-amber-50">
+          {noShip.length > 0 && (
+            <p className="text-sm">
+              ⚠︎ 배송비를 화면에서 확인하지 못한 판매처가 있어요 (0원 또는 추정값으로 계산):{" "}
+              {noShip.map((o) => mallName(o.mall, o.mallName)).join(", ")}
+            </p>
+          )}
           {notSame && <p className="text-sm">⚠︎ 동일 상품·옵션 확인이 안 된 판매처가 있어요.</p>}
           {unknowns.length > 0 && (
             <>
@@ -112,7 +128,7 @@ export default function Results({
                     <div className="min-w-0">
                       <div className="truncate">{label(r)}</div>
                       <div className="mt-1 text-xs text-dk-mute">
-                        결제 {won(r.payment)} ·{" "}
+                        결제 {won(r.payment)}{unitText(r)} ·{" "}
                         {r.benefit.status === "expected" && <>예상 {benefitText(r)}</>}
                         {r.benefit.status === "none" && <>카드 혜택 없음</>}
                         {r.benefit.status === "unknown" && <>조건 확인 시 최대 {won(r.benefit.potentialWon)}</>}
@@ -123,7 +139,7 @@ export default function Results({
                       <div className="mt-1">
                         {r === best ? <Badge tone="ok">추천</Badge>
                           : r.benefit.status === "unknown" ? <Badge tone="warn">확인 필요</Badge>
-                          : <Badge tone="none">+{won(r.effective - best.effective)}</Badge>}
+                          : <Badge tone="none">+{won(byUnit ? score(r) - score(best) : r.effective - best.effective)}{byUnit && "/100ml"}</Badge>}
                       </div>
                     </div>
                   </div>
