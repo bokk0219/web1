@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{ts,tsx}"],
+  content: ["./index.html", "./src/**/*.{ts,tsx}", "./ddik/index.html", "./ddik/src/**/*.{ts,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -18,6 +18,13 @@ export default {
         brown: "#5e5c58",
         espresso: "#1c1b1a",
         stone: "#8c8a86",
+        // 띡! 쇼핑 (ddik/)
+        "dk-bg": "#f5f6f4",
+        "dk-ink": "#15181a",
+        "dk-mute": "#737a80",
+        "dk-line": "#e1e4e6",
+        "dk-soft": "#eef0f1",
+        "dk-accent": "#0a8f6a",
       },
       fontFamily: {
         emoji: ['"Noto Emoji"', "sans-serif"],
