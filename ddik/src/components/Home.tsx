@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { mallName } from "../cards";
-import { detectMall } from "../storage";
+import { isSupported } from "../storage";
 import type { Comparison } from "../types";
 import { Card } from "./ui";
 
@@ -13,7 +13,7 @@ export default function Home({
   onDelete: (id: string) => void;
 }) {
   const [url, setUrl] = useState("");
-  const valid = detectMall(url) != null;
+  const valid = isSupported(url);
 
   return (
     <div className="space-y-8">
@@ -35,10 +35,13 @@ export default function Home({
           <input
             id="url"
             className="mt-1 w-full rounded-xl border border-dk-line px-3 py-3 text-base outline-none focus:border-dk-ink"
-            placeholder="https://www.coupang.com/vp/products/…"
+            placeholder="네이버·G마켓·11번가 상품 링크"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
           />
+          {url.trim() !== "" && !valid && (
+            <p className="mt-2 text-xs text-amber-800">네이버·G마켓·11번가 링크만 비교할 수 있어요.</p>
+          )}
           <button
             type="submit"
             disabled={!valid}

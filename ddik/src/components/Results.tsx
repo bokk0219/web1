@@ -95,7 +95,6 @@ export default function Results({
                 ⚠︎ 확인되지 않은 조건이 있어 일부 혜택을 실질 비용에서 뺐어요:{" "}
                 {[...new Set(unknowns.flatMap((r) => r.benefit.missing))].join(", ")}
               </p>
-              <button type="button" className="text-sm underline" onClick={onSettings}>카드 설정에서 입력하기</button>
             </>
           )}
         </Card>
@@ -137,6 +136,12 @@ export default function Results({
       </section>
 
       <p className="text-xs leading-relaxed text-dk-mute">
+        가정: {[
+          settings.deepEco.owned && `Deep ECO 전월 실적 ${settings.deepEco.prevMonthMet ? "충족" : "미충족"}`,
+          settings.edition3.owned && `Edition3 전월 실적 ${settings.edition3.prevMonthMet ? "충족" : "미충족"}`,
+          settings.edition3.owned && `네이버플러스 멤버십 ${settings.edition3.naverPlusMember ? "회원" : "비회원"}`,
+        ].filter(Boolean).join(", ")}
+        {" "}(<button type="button" className="underline" onClick={onSettings}>카드 설정</button>에서 변경).{" "}
         실질 구매 비용 = 결제 금액 − 예상 캐시백 − 예상 포인트 가치(1P={settings.pointValue}원). 확인되지 않은 혜택은 빼고 계산.
         모든 혜택은 결제 전 예상 금액이며, 실제 지급액은 카드사 확정 내역으로 확인하세요.
         카드 혜택 기준일 {DEEP_ECO.checkedAt}.

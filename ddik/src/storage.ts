@@ -1,12 +1,12 @@
-import { MALLS } from "./cards";
+import { ACTIVE_MALLS, MALLS } from "./cards";
 import type { CardSettings, Comparison, MallKey, Offer } from "./types";
 
-const SETTINGS_KEY = "ddik.settings.v1";
+const SETTINGS_KEY = "ddik.settings.v2";
 const COMPARISONS_KEY = "ddik.comparisons.v1";
 
 export const defaultSettings = (): CardSettings => ({
-  deepEco: { owned: true, prevMonthSpend: null, usedCashback: null },
-  edition3: { owned: true, prevMonthSpend: null, naverPlusMember: null, usedMembershipPoints: null, launchEventExempt: false },
+  deepEco: { owned: true, prevMonthMet: true, usedCashback: null },
+  edition3: { owned: true, prevMonthMet: true, naverPlusMember: true, usedMembershipPoints: null, launchEventExempt: false },
   pointValue: 1,
 });
 
@@ -49,15 +49,20 @@ export function detectMall(url: string): MallKey | null {
   }
 }
 
-export function newOffer(url = ""): Offer {
-  const mall = (url && detectMall(url)) || "other";
+export const isSupported = (url: string) => {
+  const m = detectMall(url);
+  return m != null && ACTIVE_MALLS.some((a) => a.key === m);
+};
+
+export function newOffer(url = "", fallback: MallKey = "naverplus"): Offer {
+  const mall = (url && detectMall(url)) || fallback;
   let mallName = "";
   if (mall === "other" && url) {
     try { mallName = new URL(url).hostname.replace(/^(www|m)\./, ""); } catch { /* 주소가 아니면 비워 둠 */ }
   }
   return {
     id: uid(), mall, mallName, url: url.trim(), price: null, shipping: null, coupon: null, mallPoints: null,
-    naverMembershipTarget: null, sameProduct: false, option: "", checkedAt: new Date().toISOString(),
+    naverMembershipTarget: true, sameProduct: false, option: "", checkedAt: new Date().toISOString(),
   };
 }
 

@@ -50,23 +50,20 @@ export function deepEcoBenefit(o: Offer, payment: number, s: CardSettings["deepE
   }
   b.conditions.push(...DEEP_ECO.conditions);
   const raw = Math.floor(payment * DEEP_ECO.rate);
-  const remain = s.usedCashback == null ? null : Math.max(0, DEEP_ECO.monthlyCap - s.usedCashback);
   b.basis.push(`${won(payment)} × ${pct(DEEP_ECO.rate)} = ${won(raw)} (원 단위 내림, 보수적 계산)`);
 
-  if (s.prevMonthSpend == null) b.missing.push("전월 이용 금액");
-  else if (s.prevMonthSpend < DEEP_ECO.minPrevMonth) {
-    b.basis.push(`전월 실적 ${won(s.prevMonthSpend)} < ${won(DEEP_ECO.minPrevMonth)} → 0원`);
+  if (!s.prevMonthMet) {
+    b.basis.push(`전월 실적 ${won(DEEP_ECO.minPrevMonth)} 미충족으로 설정 → 0원`);
     return b;
   }
-  if (remain == null) b.missing.push("이번 달 받은 캐시백");
-
-  const amount = remain == null ? raw : Math.min(raw, remain);
-  if (remain != null) b.basis.push(`월 잔여 한도 ${won(remain)} 적용 → ${won(amount)}`);
-  if (b.missing.length) {
-    b.status = "unknown";
-    b.potentialWon = amount;
-    return b;
-  }
+  b.basis.push(`전월 실적 ${won(DEEP_ECO.minPrevMonth)} 이상 채운다고 가정`);
+  const remain = Math.max(0, DEEP_ECO.monthlyCap - (s.usedCashback ?? 0));
+  const amount = Math.min(raw, remain);
+  b.basis.push(
+    s.usedCashback == null
+      ? `이번 달 받은 캐시백 미입력 → 월 한도 ${won(DEEP_ECO.monthlyCap)} 전액 남은 것으로 가정`
+      : `월 잔여 한도 ${won(remain)} 적용 → ${won(amount)}`,
+  );
   b.amount = amount;
   b.valueWon = amount;
   b.status = amount > 0 ? "expected" : "none";
@@ -88,9 +85,8 @@ export function edition3Benefit(
   let exemptOk = false;
 
   if (isNaver && o.naverMembershipTarget == null) b.missing.push("멤버십 적립 대상 상품 여부");
-  if (isNaver && o.naverMembershipTarget !== false && s.naverPlusMember == null) b.missing.push("네이버플러스 멤버십 가입 여부");
 
-  if (isNaver && o.naverMembershipTarget !== false && s.naverPlusMember !== false) {
+  if (isNaver && o.naverMembershipTarget !== false && s.naverPlusMember) {
     rate = double ? EDITION3.double.membershipRate : EDITION3.membership.rate;
     cap = double ? EDITION3.double.membershipCap : EDITION3.membership.cap;
     exemptOk = s.launchEventExempt && isOn(EDITION3.launchExemptUntil, today);
@@ -104,22 +100,23 @@ export function edition3Benefit(
   }
 
   if (exemptOk) b.basis.push("출시 이벤트 대상: 2026.12.31까지 전월 실적 조건 면제");
-  else if (s.prevMonthSpend == null) b.missing.push("전월 이용 금액");
-  else if (s.prevMonthSpend < EDITION3.minPrevMonth) {
-    b.basis.push(`전월 실적 ${won(s.prevMonthSpend)} < ${won(EDITION3.minPrevMonth)} → 0P`);
+  else if (!s.prevMonthMet) {
+    b.basis.push(`전월 실적 ${won(EDITION3.minPrevMonth)} 미충족으로 설정 → 0P`);
     return b;
-  }
+  } else b.basis.push(`전월 실적 ${won(EDITION3.minPrevMonth)} 이상 채운다고 가정`);
 
   const raw = Math.round(payment * rate);
   b.basis.push(`${won(payment)} × ${pct(rate)} = ${pt(raw)} (건별 반올림)`);
   let amount = raw;
   if (cap != null) {
-    if (s.usedMembershipPoints == null) b.missing.push("이번 달 멤버십 대상 적립 포인트");
-    else {
-      const remain = Math.max(0, cap - s.usedMembershipPoints);
-      amount = Math.min(raw, remain);
-      b.basis.push(`월 잔여 한도 ${pt(remain)} 적용 → ${pt(amount)}${raw > remain ? " (한도 초과분 일반 적립 여부 미확인 → 0P로 계산)" : ""}`);
-    }
+    const remain = Math.max(0, cap - (s.usedMembershipPoints ?? 0));
+    amount = Math.min(raw, remain);
+    b.basis.push(
+      s.usedMembershipPoints == null
+        ? `이번 달 적립 포인트 미입력 → 월 한도 ${pt(cap)} 전액 남은 것으로 가정`
+        : `월 잔여 한도 ${pt(remain)} 적용 → ${pt(amount)}`,
+    );
+    if (raw > remain) b.basis.push("한도 초과분의 일반 적립 여부는 확인되지 않아 0P로 계산");
   }
   const valueWon = amount * pointValue;
   if (pointValue !== 1) b.basis.push(`포인트 가치 1P = ${pointValue}원 → ${won(valueWon)}`);

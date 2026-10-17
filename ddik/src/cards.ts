@@ -3,16 +3,19 @@ import type { MallKey } from "./types";
 // 카드 혜택 기준. 약관이 바뀌면 이 파일만 고친다.
 // 확인 기준일과 출처를 화면에 함께 보여준다.
 
-export const MALLS: { key: MallKey; name: string; hosts: string[] }[] = [
+// active: 비교 대상으로 쓰는 쇼핑몰. 나머지는 예전 기록 표시용으로만 남겨 둔다.
+export const MALLS: { key: MallKey; name: string; hosts: string[]; active?: boolean }[] = [
+  { key: "naverplus", name: "네이버플러스 스토어", active: true, hosts: ["smartstore.naver.com", "brand.naver.com", "shopping.naver.com", "search.shopping.naver.com", "naver.me"] },
   { key: "coupang", name: "쿠팡", hosts: ["coupang.com"] },
-  { key: "naverplus", name: "네이버플러스 스토어", hosts: ["smartstore.naver.com", "brand.naver.com", "shopping.naver.com", "search.shopping.naver.com", "naver.me"] },
-  { key: "11st", name: "11번가", hosts: ["11st.co.kr"] },
-  { key: "gmarket", name: "G마켓", hosts: ["gmarket.co.kr"] },
+  { key: "11st", name: "11번가", active: true, hosts: ["11st.co.kr"] },
+  { key: "gmarket", name: "G마켓", active: true, hosts: ["gmarket.co.kr"] },
   { key: "auction", name: "옥션", hosts: ["auction.co.kr"] },
   { key: "tmon", name: "티몬", hosts: ["tmon.co.kr"] },
   { key: "wemakeprice", name: "위메프", hosts: ["wemakeprice.com"] },
   { key: "other", name: "기타 쇼핑몰", hosts: [] },
 ];
+
+export const ACTIVE_MALLS = MALLS.filter((m) => m.active);
 
 export const mallName = (key: MallKey, custom?: string) =>
   key === "other" && custom ? custom : MALLS.find((m) => m.key === key)!.name;

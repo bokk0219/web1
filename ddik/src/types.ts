@@ -39,14 +39,14 @@ export interface Comparison {
 export interface CardSettings {
   deepEco: {
     owned: boolean;
-    prevMonthSpend: number | null; // 전월(1일~말일) 이용 금액
-    usedCashback: number | null; // 이번 달 받은 캐시백 (교통·온라인&Recycling·Paperless 합산)
+    prevMonthMet: boolean; // 전월 실적 30만원 이상을 매달 채우는지 (한 번만 정함)
+    usedCashback: number | null; // 이번 달 받은 캐시백 (선택, 비우면 한도 전액 남은 것으로 계산)
   };
   edition3: {
     owned: boolean;
-    prevMonthSpend: number | null;
-    naverPlusMember: TriState;
-    usedMembershipPoints: number | null; // 이번 달 멤버십 대상 적립 포인트
+    prevMonthMet: boolean; // 전월 실적 40만원 이상을 매달 채우는지
+    naverPlusMember: boolean;
+    usedMembershipPoints: number | null; // 이번 달 멤버십 대상 적립 포인트 (선택)
     launchEventExempt: boolean; // 2026.9.30까지 발급 → 2026년 말까지 실적 면제
   };
   pointValue: number; // 포인트 1P의 원화 가치
