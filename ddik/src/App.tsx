@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Compare from "./components/Compare";
 import Home from "./components/Home";
 import Settings from "./components/Settings";
+import { applyPaste } from "./components/paste";
 import { loadComparisons, loadSettings, newComparison, saveComparisons, saveSettings } from "./storage";
 import type { CardSettings, Comparison } from "./types";
 
@@ -35,6 +36,14 @@ export default function App() {
             const c = newComparison(url);
             upsert(c);
             setView({ name: "compare", id: c.id });
+          }}
+          onPaste={(text) => {
+            const r = applyPaste(newComparison(), text);
+            if (r.found > 0) {
+              upsert(r.cmp);
+              setView({ name: "compare", id: r.cmp.id });
+            }
+            return r;
           }}
           onOpen={(id) => setView({ name: "compare", id })}
           onDelete={(id) => setList((l) => l.filter((c) => c.id !== id))}

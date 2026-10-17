@@ -1,3 +1,5 @@
+import type { Candidate } from "./parse";
+
 // 판매처(쇼핑몰) 구분. 카드 혜택 대상 여부를 판단하는 기준이 된다.
 export type MallKey =
   | "coupang"
@@ -25,6 +27,9 @@ export interface Offer {
   sameProduct: boolean; // 동일 상품·옵션 확인
   option: string;
   checkedAt: string; // 가격 확인 시점 (ISO)
+  sourceId?: string; // 붙여넣기 후보에서 골랐을 때 그 후보 id
+  volumeMl?: number | null; // 상품명에서 추정한 총 용량
+  shippingGuess?: boolean;
 }
 
 export interface Comparison {
@@ -32,6 +37,7 @@ export interface Comparison {
   productName: string;
   imageUrl: string;
   offers: Offer[];
+  candidates?: Candidate[]; // 붙여넣은 검색 결과에서 읽은 후보
   createdAt: string;
   updatedAt: string;
 }

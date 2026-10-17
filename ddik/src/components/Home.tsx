@@ -2,13 +2,16 @@ import { useState } from "react";
 import { mallName } from "../cards";
 import { isSupported } from "../storage";
 import type { Comparison } from "../types";
+import type { MallKey } from "../types";
+import PasteBox from "./PasteBox";
 import { Card } from "./ui";
 
 export default function Home({
-  recent, onStart, onOpen, onDelete,
+  recent, onStart, onPaste, onOpen, onDelete,
 }: {
   recent: Comparison[];
   onStart: (url: string) => void;
+  onPaste: (text: string) => { found: number; mall: MallKey | null };
   onOpen: (id: string) => void;
   onDelete: (id: string) => void;
 }) {
@@ -23,6 +26,14 @@ export default function Home({
         </h1>
         <p className="mt-2 text-sm text-dk-mute">가격 비교도, 카드 계산도, 띡!</p>
       </header>
+
+      <Card>
+        <h2 className="mb-2 text-sm">검색 결과 붙여넣기</h2>
+        <PasteBox onPaste={onPaste} label="띡! 비교하기" />
+        <p className="mt-2 text-xs leading-relaxed text-dk-mute">
+          쇼핑몰마다 한 번씩 붙여넣으면 가장 싼 상품을 골라 카드 혜택까지 비교해요. 네이버 가격비교에는 11번가 가격도 함께 나와요.
+        </p>
+      </Card>
 
       <Card>
         <form
@@ -47,7 +58,7 @@ export default function Home({
             disabled={!valid}
             className="mt-3 w-full rounded-xl bg-dk-ink py-3 text-white disabled:opacity-30"
           >
-            띡! 비교하기
+            링크로 비교하기
           </button>
         </form>
         <button type="button" className="mt-3 w-full text-sm text-dk-mute underline" onClick={() => onStart("")}>
