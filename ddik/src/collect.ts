@@ -41,17 +41,13 @@ export function collect(root: Node, live: boolean): string {
   return merged.join("\n");
 }
 
-// 북마크 주소. 쇼핑몰 화면에서 누르면 화면 내용을 정리해 띡! 쇼핑 창으로 보낸다.
+// 북마크 주소. 휴대폰 북마크 주소 칸에 다 들어가도록 짧게: 화면 HTML을 통째로 앱 창에 보내고, 정리는 앱이 한다.
 export function bookmarkletCode(appUrl: string): string {
-  const appOrigin = new URL(appUrl).origin;
-  const body = `(function(){
-var t=(${collect.toString()})(document.body,true);
-var d={type:"ddik-page",url:location.href,text:t};
-var w=window.open(${JSON.stringify(appUrl + "#b")},"ddik");
-if(!w){alert("띡! 쇼핑 창을 열지 못했어요. 팝업 차단을 꺼 주세요.");return;}
-var ok=false,n=0;
-window.addEventListener("message",function(e){if(e.data==="ddik-ok")ok=true;});
-var iv=setInterval(function(){if(ok||n++>60){clearInterval(iv);return;}try{w.postMessage(d,${JSON.stringify(appOrigin)});}catch(e){}},500);
-})()`;
-  return "javascript:" + encodeURIComponent(body);
+  const origin = new URL(appUrl).origin;
+  const body =
+    `(function(){var w=window.open(${JSON.stringify(appUrl + "#b")},"ddik"),` +
+    `d={type:"ddik-html",url:location.href,html:document.body.outerHTML},n=0,` +
+    `i=setInterval(function(){n++>40?clearInterval(i):w.postMessage(d,${JSON.stringify(origin)})},500);` +
+    `addEventListener("message",function(e){e.data=="ddik-ok"&&clearInterval(i)})})()`;
+  return "javascript:" + body.replace(/ /g, "%20").replace(/#/g, "%23");
 }
