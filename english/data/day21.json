@@ -1,0 +1,186 @@
+{
+  "day": 21,
+  "date": "2026-10-18",
+  "slug": "Gym",
+  "title": "Joining a Gym",
+  "title_ko": "헬스장 등록하기",
+  "vocab_title_ko": "헬스장 등록하기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Chris",
+      "en": "Hi there! Welcome to Fit Life. How can I help you today?",
+      "ko": "안녕하세요! 핏 라이프에 오신 걸 환영해요. 무엇을 도와드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like to sign up for a membership.",
+      "ko": "회원 등록을 하고 싶어요."
+    },
+    {
+      "role": "partner",
+      "name": "Chris",
+      "en": "Great! We have monthly and yearly memberships. How long would you like to sign up for?",
+      "ko": "좋아요! 월 회원권과 연 회원권이 있어요. 얼마 동안 등록하시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like a monthly membership, please.",
+      "ko": "월 회원권으로 할게요."
+    },
+    {
+      "role": "partner",
+      "name": "Chris",
+      "en": "A monthly membership is fifty thousand won. Have you exercised at a gym before?",
+      "ko": "월 회원권은 5만 원이에요. 전에 헬스장에서 운동해 보셨어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, but it's been a long time.",
+      "ko": "네, 그런데 너무 오래됐어요."
+    },
+    {
+      "role": "partner",
+      "name": "Chris",
+      "en": "No problem! Many people start again here. What's your goal? Losing weight, or getting stronger?",
+      "ko": "괜찮아요! 여기서 다시 시작하시는 분들이 많아요. 목표가 뭐예요? 살 빼기요, 아니면 근력 키우기요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I want to lose weight and get stronger. I used to go biking after work.",
+      "ko": "살도 빼고 튼튼해지고 싶어요. 예전에는 퇴근하고 자전거를 탔어요."
+    },
+    {
+      "role": "partner",
+      "name": "Chris",
+      "en": "Biking is great cardio! We also have indoor cycling classes. Would you like a personal trainer to help you?",
+      "ko": "자전거는 정말 좋은 유산소 운동이죠! 실내 사이클 수업도 있어요. 개인 트레이너 도움을 받으시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I'd like a personal trainer. I'd like to learn step by step.",
+      "ko": "네, 개인 트레이너가 있으면 좋겠어요. 차근차근 배우고 싶어요."
+    },
+    {
+      "role": "partner",
+      "name": "Chris",
+      "en": "Great! Our trainer, Mike, is very kind. A personal training session is thirty thousand won. How many times a week would you like to come?",
+      "ko": "좋아요! 저희 트레이너 마이크가 정말 친절해요. 개인 수업은 한 번에 3만 원이에요. 일주일에 몇 번 오시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like to come three times a week.",
+      "ko": "일주일에 세 번 오고 싶어요."
+    },
+    {
+      "role": "partner",
+      "name": "Chris",
+      "en": "Three times a week. Perfect! What time would you like to come? Morning or evening?",
+      "ko": "일주일에 세 번이요. 좋아요! 몇 시에 오시겠어요? 아침이요, 저녁이요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like to come in the evening after work.",
+      "ko": "퇴근하고 저녁에 오고 싶어요."
+    },
+    {
+      "role": "partner",
+      "name": "Chris",
+      "en": "OK! Mike is free at seven p.m. on Mondays, Wednesdays, and Fridays. Does that work for you?",
+      "ko": "알겠어요! 마이크가 월, 수, 금 저녁 7시에 시간이 돼요. 괜찮으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I usually finish work at seven p.m. Is anyone free at seven thirty?",
+      "ko": "제가 보통 7시에 퇴근해요. 7시 반에 시간 되는 분 있나요?"
+    },
+    {
+      "role": "partner",
+      "name": "Chris",
+      "en": "Let me check... Yes! Our trainer Sarah is free at seven thirty. She's great with beginners. Shall I book her for you?",
+      "ko": "확인해 볼게요… 네! 트레이너 사라가 7시 반에 시간이 돼요. 초보자를 정말 잘 가르쳐요. 사라로 예약해 드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, please. Can I start tomorrow?",
+      "ko": "네, 부탁해요. 내일부터 시작할 수 있어요?"
+    },
+    {
+      "role": "partner",
+      "name": "Chris",
+      "en": "Sure! Your first session is tomorrow at seven thirty. Don't forget to bring comfortable clothes and water. See you tomorrow!",
+      "ko": "그럼요! 첫 수업은 내일 7시 반이에요. 편한 옷이랑 물 꼭 챙겨 오세요. 내일 봬요!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "sign up for a membership",
+      "pos": "표현",
+      "meaning": "회원 등록을 하다 (등록하다 = sign up / join)",
+      "example": "I'd like to <b>sign up for a membership</b>."
+    },
+    {
+      "word": "monthly membership",
+      "pos": "명사",
+      "meaning": "월 회원권 (yearly = 연)",
+      "example": "I'd like a <b>monthly membership</b>, please."
+    },
+    {
+      "word": "It's been a long time.",
+      "pos": "표현",
+      "meaning": "오랜만이에요, 오래됐어요.",
+      "example": "Yes, but <b>it's been a long time.</b>"
+    },
+    {
+      "word": "get stronger",
+      "pos": "표현",
+      "meaning": "더 튼튼해지다, 근력이 세지다",
+      "example": "I want to lose weight and <b>get stronger</b>."
+    },
+    {
+      "word": "go biking",
+      "pos": "표현",
+      "meaning": "자전거 타러 가다 (go a biking ✕ / go + -ing)",
+      "example": "I used to <b>go biking</b> after work."
+    },
+    {
+      "word": "personal trainer",
+      "pos": "명사",
+      "meaning": "개인 트레이너",
+      "example": "Yes, I'd like a <b>personal trainer</b>."
+    },
+    {
+      "word": "three times a week",
+      "pos": "표현",
+      "meaning": "일주일에 세 번",
+      "example": "I'd like to come <b>three times a week</b>."
+    },
+    {
+      "word": "usually + 현재형",
+      "pos": "표현",
+      "meaning": "보통 ~한다 (습관은 현재형)",
+      "example": "I <b>usually finish</b> work at seven p.m."
+    },
+    {
+      "word": "Does that work for you?",
+      "pos": "표현",
+      "meaning": "(그 시간) 괜찮으세요?",
+      "example": "Mike is free at seven p.m. <b>Does that work for you?</b>"
+    },
+    {
+      "word": "Can I start ~?",
+      "pos": "표현",
+      "meaning": "~부터 시작할 수 있어요? (Is it start ✕)",
+      "example": "<b>Can I start</b> tomorrow?"
+    }
+  ]
+}
