@@ -1,0 +1,19 @@
+🔵 Hi there! Welcome to Fit Life. How can I help you today?
+🔴 I'd like to sign up for a membership.
+🔵 Great! We have monthly and yearly memberships. How long would you like to sign up for?
+🔴 I'd like a monthly membership, please.
+🔵 A monthly membership is fifty thousand won. Have you exercised at a gym before?
+🔴 Yes, but it's been a long time.
+🔵 No problem! Many people start again here. What's your goal? Losing weight, or getting stronger?
+🔴 I want to lose weight and get stronger. I used to go biking after work.
+🔵 Biking is great cardio! We also have indoor cycling classes. Would you like a personal trainer to help you?
+🔴 Yes, I'd like a personal trainer. I'd like to learn step by step.
+🔵 Great! Our trainer, Mike, is very kind. A personal training session is thirty thousand won. How many times a week would you like to come?
+🔴 I'd like to come three times a week.
+🔵 Three times a week. Perfect! What time would you like to come? Morning or evening?
+🔴 I'd like to come in the evening after work.
+🔵 OK! Mike is free at seven p.m. on Mondays, Wednesdays, and Fridays. Does that work for you?
+🔴 I usually finish work at seven p.m. Is anyone free at seven thirty?
+🔵 Let me check... Yes! Our trainer Sarah is free at seven thirty. She's great with beginners. Shall I book her for you?
+🔴 Yes, please. Can I start tomorrow?
+🔵 Sure! Your first session is tomorrow at seven thirty. Don't forget to bring comfortable clothes and water. See you tomorrow!
