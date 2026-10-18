@@ -1,0 +1,156 @@
+{
+  "day": 22,
+  "date": "2026-10-18",
+  "slug": "Bank",
+  "title": "Exchanging Money at the Bank",
+  "title_ko": "은행에서 환전하기",
+  "vocab_title_ko": "은행에서 환전하기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "David",
+      "en": "Good afternoon! How can I help you?",
+      "ko": "안녕하세요! 무엇을 도와드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like to exchange Korean won for Thai baht.",
+      "ko": "한국 원화를 태국 바트로 환전하고 싶어요."
+    },
+    {
+      "role": "partner",
+      "name": "David",
+      "en": "Sure! Korean won to Thai baht. How much would you like to exchange?",
+      "ko": "네! 원화를 바트로요. 얼마나 환전하시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like to exchange five hundred thousand won.",
+      "ko": "50만 원을 환전하고 싶어요."
+    },
+    {
+      "role": "partner",
+      "name": "David",
+      "en": "Five hundred thousand won. OK! May I see your ID, please?",
+      "ko": "50만 원이요. 알겠습니다! 신분증 좀 보여 주시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Sure, here it is.",
+      "ko": "네, 여기 있어요."
+    },
+    {
+      "role": "partner",
+      "name": "David",
+      "en": "Thank you. Would you like large bills or small bills?",
+      "ko": "감사합니다. 큰 단위 지폐로 드릴까요, 작은 단위로 드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like half in small bills, please.",
+      "ko": "절반은 작은 단위로 주세요."
+    },
+    {
+      "role": "partner",
+      "name": "David",
+      "en": "Sure! Half in large bills and half in small bills. Are you traveling to Thailand?",
+      "ko": "네! 절반은 큰 단위, 절반은 작은 단위로요. 태국 여행 가세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I'm going to Thailand on vacation.",
+      "ko": "네, 휴가로 태국에 가요."
+    },
+    {
+      "role": "partner",
+      "name": "David",
+      "en": "How nice! When are you leaving?",
+      "ko": "좋으시겠어요! 언제 떠나세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'm leaving in December.",
+      "ko": "12월에 떠나요."
+    },
+    {
+      "role": "partner",
+      "name": "David",
+      "en": "December! That's a great time to visit. Here's your baht and the receipt. Is there anything else I can help you with?",
+      "ko": "12월이요! 여행하기 딱 좋은 때죠. 바트랑 영수증 여기 있습니다. 더 도와드릴 게 있을까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, thanks.",
+      "ko": "아니요, 괜찮아요."
+    },
+    {
+      "role": "partner",
+      "name": "David",
+      "en": "OK! Have a wonderful trip to Thailand, and enjoy the night markets!",
+      "ko": "알겠습니다! 태국 여행 즐겁게 다녀오시고, 야시장도 실컷 즐기세요!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "exchange A for B",
+      "pos": "표현",
+      "meaning": "A를 B로 환전하다 (to보다 for / into)",
+      "example": "I'd like to <b>exchange</b> Korean won <b>for</b> Thai baht."
+    },
+    {
+      "word": "baht",
+      "pos": "명사",
+      "meaning": "바트 (태국 화폐)",
+      "example": "I'd like to exchange Korean won for Thai <b>baht</b>."
+    },
+    {
+      "word": "five hundred thousand",
+      "pos": "표현",
+      "meaning": "50만 (철자 thousand 주의)",
+      "example": "I'd like to exchange <b>five hundred thousand</b> won."
+    },
+    {
+      "word": "ID",
+      "pos": "명사",
+      "meaning": "신분증",
+      "example": "May I see your <b>ID</b>, please?"
+    },
+    {
+      "word": "large bills / small bills",
+      "pos": "명사",
+      "meaning": "큰 단위 지폐 / 작은 단위 지폐",
+      "example": "Would you like <b>large bills or small bills</b>?"
+    },
+    {
+      "word": "half in small bills",
+      "pos": "표현",
+      "meaning": "절반은 작은 단위로 (of가 아니라 in)",
+      "example": "I'd like <b>half in small bills</b>, please."
+    },
+    {
+      "word": "on vacation",
+      "pos": "표현",
+      "meaning": "휴가로 (for vacation보다 자연스러움)",
+      "example": "I'm going to Thailand <b>on vacation</b>."
+    },
+    {
+      "word": "I'm leaving ~",
+      "pos": "표현",
+      "meaning": "~에 떠나요 (정해진 계획)",
+      "example": "<b>I'm leaving</b> in December."
+    },
+    {
+      "word": "this December vs next December",
+      "pos": "표현",
+      "meaning": "올해 12월 / 내년 12월 (지금이 10월이면 올해는 this 또는 in)",
+      "example": "I'm leaving <b>in December</b>."
+    }
+  ]
+}
