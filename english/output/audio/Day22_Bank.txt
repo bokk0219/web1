@@ -1,0 +1,15 @@
+🔵 Good afternoon! How can I help you?
+🔴 I'd like to exchange Korean won for Thai baht.
+🔵 Sure! Korean won to Thai baht. How much would you like to exchange?
+🔴 I'd like to exchange five hundred thousand won.
+🔵 Five hundred thousand won. OK! May I see your ID, please?
+🔴 Sure, here it is.
+🔵 Thank you. Would you like large bills or small bills?
+🔴 I'd like half in small bills, please.
+🔵 Sure! Half in large bills and half in small bills. Are you traveling to Thailand?
+🔴 Yes, I'm going to Thailand on vacation.
+🔵 How nice! When are you leaving?
+🔴 I'm leaving in December.
+🔵 December! That's a great time to visit. Here's your baht and the receipt. Is there anything else I can help you with?
+🔴 No, thanks.
+🔵 OK! Have a wonderful trip to Thailand, and enjoy the night markets!
