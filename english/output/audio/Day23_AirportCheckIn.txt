@@ -1,0 +1,15 @@
+🔵 Good morning! Where are you flying to today?
+🔴 I'm going to Bangkok.
+🔵 Bangkok. Great! May I see your passport, please?
+🔴 Here is my passport.
+🔵 Thank you. Would you like a window seat or an aisle seat?
+🔴 A window seat, please.
+🔵 A window seat. OK! How many bags are you checking in?
+🔴 Just one suitcase. Here it is.
+🔵 Please put it on the scale. Are there any batteries or power banks in your suitcase?
+🔴 No, there are no batteries in my suitcase.
+🔵 Good. It's twenty kilograms, so it's fine. Here's your boarding pass. Do you know where your gate is?
+🔴 Yes, I can see it on my boarding pass.
+🔵 Right. It's Gate twenty-three. Boarding starts at nine thirty. Do you have any other questions?
+🔴 No, thanks.
+🔵 OK! Have a nice flight, and enjoy Bangkok!

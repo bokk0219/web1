@@ -1,0 +1,156 @@
+{
+  "day": 23,
+  "date": "2026-10-19",
+  "slug": "AirportCheckIn",
+  "title": "Airport Check-in",
+  "title_ko": "공항에서 체크인하기",
+  "vocab_title_ko": "공항 체크인",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Emily",
+      "en": "Good morning! Where are you flying to today?",
+      "ko": "안녕하세요! 오늘 어디로 가세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'm going to Bangkok.",
+      "ko": "방콕에 가요."
+    },
+    {
+      "role": "partner",
+      "name": "Emily",
+      "en": "Bangkok. Great! May I see your passport, please?",
+      "ko": "방콕이요. 좋아요! 여권 좀 보여 주시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Here is my passport.",
+      "ko": "여기 여권이요."
+    },
+    {
+      "role": "partner",
+      "name": "Emily",
+      "en": "Thank you. Would you like a window seat or an aisle seat?",
+      "ko": "감사합니다. 창가 자리로 드릴까요, 통로 자리로 드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "A window seat, please.",
+      "ko": "창가 자리로 주세요."
+    },
+    {
+      "role": "partner",
+      "name": "Emily",
+      "en": "A window seat. OK! How many bags are you checking in?",
+      "ko": "창가 자리요. 알겠습니다! 부치실 짐은 몇 개예요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Just one suitcase. Here it is.",
+      "ko": "여행 가방 하나요. 여기 있어요."
+    },
+    {
+      "role": "partner",
+      "name": "Emily",
+      "en": "Please put it on the scale. Are there any batteries or power banks in your suitcase?",
+      "ko": "저울 위에 올려 주세요. 가방 안에 배터리나 보조 배터리 있나요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, there are no batteries in my suitcase.",
+      "ko": "아니요, 가방에 배터리는 없어요."
+    },
+    {
+      "role": "partner",
+      "name": "Emily",
+      "en": "Good. It's twenty kilograms, so it's fine. Here's your boarding pass. Do you know where your gate is?",
+      "ko": "좋아요. 20킬로그램이라 괜찮아요. 탑승권 여기 있어요. 탑승구가 어딘지 아세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I can see it on my boarding pass.",
+      "ko": "네, 탑승권에 나와 있어요."
+    },
+    {
+      "role": "partner",
+      "name": "Emily",
+      "en": "Right. It's Gate twenty-three. Boarding starts at nine thirty. Do you have any other questions?",
+      "ko": "맞아요. 23번 탑승구예요. 탑승은 9시 30분에 시작해요. 다른 궁금한 점 있으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, thanks.",
+      "ko": "아니요, 괜찮아요."
+    },
+    {
+      "role": "partner",
+      "name": "Emily",
+      "en": "OK! Have a nice flight, and enjoy Bangkok!",
+      "ko": "알겠습니다! 즐거운 비행 되시고, 방콕에서 좋은 시간 보내세요!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "fly to ~",
+      "pos": "표현",
+      "meaning": "~로 비행기 타고 가다",
+      "example": "Where are you <b>flying to</b> today?"
+    },
+    {
+      "word": "window seat / aisle seat",
+      "pos": "명사",
+      "meaning": "창가 자리 / 통로 자리",
+      "example": "Would you like a <b>window seat or an aisle seat</b>?"
+    },
+    {
+      "word": "check in a bag",
+      "pos": "표현",
+      "meaning": "짐을 부치다",
+      "example": "How many bags are you <b>checking in</b>?"
+    },
+    {
+      "word": "suitcase",
+      "pos": "명사",
+      "meaning": "여행 가방 (캐리어는 한국식 표현)",
+      "example": "Just one <b>suitcase</b>. Here it is."
+    },
+    {
+      "word": "power bank",
+      "pos": "명사",
+      "meaning": "보조 배터리",
+      "example": "Are there any batteries or <b>power banks</b> in your suitcase?"
+    },
+    {
+      "word": "There are no ~",
+      "pos": "표현",
+      "meaning": "~이 없어요",
+      "example": "No, <b>there are no</b> batteries in my suitcase."
+    },
+    {
+      "word": "boarding pass",
+      "pos": "명사",
+      "meaning": "탑승권 (탑승권에 적힌 = on my boarding pass)",
+      "example": "I can see it <b>on my boarding pass</b>."
+    },
+    {
+      "word": "gate",
+      "pos": "명사",
+      "meaning": "탑승구",
+      "example": "It's <b>Gate</b> twenty-three."
+    },
+    {
+      "word": "Boarding starts at ~",
+      "pos": "표현",
+      "meaning": "~시에 탑승이 시작돼요",
+      "example": "<b>Boarding starts at</b> nine thirty."
+    }
+  ]
+}
