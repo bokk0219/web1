@@ -1,0 +1,15 @@
+🔵 Hello. Passport, please.
+🔴 Here it is.
+🔵 Thank you. What's the purpose of your visit?
+🔴 I'm here for sightseeing.
+🔵 Sightseeing. OK. How long will you stay in Thailand?
+🔴 I'll stay here for four days.
+🔵 Four days. Where will you be staying?
+🔴 I'll stay at a hotel for two days and at a guesthouse for two days.
+🔵 I see. Do you have a return ticket?
+🔴 Yes, I have a return ticket.
+🔵 OK. Please look at the camera. And put your right fingers here.
+🔴 Can I go now?
+🔵 Just a moment... Is this your first time in Thailand?
+🔴 Yes, this is my first time in Thailand. I'm very excited.
+🔵 Welcome to Thailand! Enjoy your stay.

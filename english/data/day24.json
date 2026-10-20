@@ -1,0 +1,156 @@
+{
+  "day": 24,
+  "date": "2026-10-20",
+  "slug": "Immigration",
+  "title": "At Immigration",
+  "title_ko": "방콕 공항 입국 심사",
+  "vocab_title_ko": "입국 심사",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Officer",
+      "en": "Hello. Passport, please.",
+      "ko": "안녕하세요. 여권 주세요."
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Here it is.",
+      "ko": "여기 있어요."
+    },
+    {
+      "role": "partner",
+      "name": "Officer",
+      "en": "Thank you. What's the purpose of your visit?",
+      "ko": "감사합니다. 방문 목적이 뭐예요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'm here for sightseeing.",
+      "ko": "관광하러 왔어요."
+    },
+    {
+      "role": "partner",
+      "name": "Officer",
+      "en": "Sightseeing. OK. How long will you stay in Thailand?",
+      "ko": "관광이요. 알겠습니다. 태국에 얼마나 머무세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'll stay here for four days.",
+      "ko": "나흘 동안 있을 거예요."
+    },
+    {
+      "role": "partner",
+      "name": "Officer",
+      "en": "Four days. Where will you be staying?",
+      "ko": "나흘이요. 어디서 묵으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'll stay at a hotel for two days and at a guesthouse for two days.",
+      "ko": "호텔에서 이틀, 게스트하우스에서 이틀 묵을 거예요."
+    },
+    {
+      "role": "partner",
+      "name": "Officer",
+      "en": "I see. Do you have a return ticket?",
+      "ko": "그렇군요. 돌아가는 표 있으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I have a return ticket.",
+      "ko": "네, 돌아가는 표 있어요."
+    },
+    {
+      "role": "partner",
+      "name": "Officer",
+      "en": "OK. Please look at the camera. And put your right fingers here.",
+      "ko": "네. 카메라를 봐 주세요. 그리고 오른손 손가락을 여기 올려 주세요."
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Can I go now?",
+      "ko": "이제 가도 될까요?"
+    },
+    {
+      "role": "partner",
+      "name": "Officer",
+      "en": "Just a moment... Is this your first time in Thailand?",
+      "ko": "잠시만요… 태국은 처음이세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, this is my first time in Thailand. I'm very excited.",
+      "ko": "네, 태국은 처음이에요. 정말 설레요."
+    },
+    {
+      "role": "partner",
+      "name": "Officer",
+      "en": "Welcome to Thailand! Enjoy your stay.",
+      "ko": "태국에 오신 걸 환영합니다! 즐거운 시간 보내세요."
+    }
+  ],
+  "vocab": [
+    {
+      "word": "purpose of your visit",
+      "pos": "표현",
+      "meaning": "방문 목적",
+      "example": "What's the <b>purpose of your visit</b>?"
+    },
+    {
+      "word": "I'm here for sightseeing.",
+      "pos": "표현",
+      "meaning": "관광하러 왔어요. (I visit to tour ✕)",
+      "example": "<b>I'm here for sightseeing.</b>"
+    },
+    {
+      "word": "How long will you stay?",
+      "pos": "표현",
+      "meaning": "얼마나 머무세요?",
+      "example": "<b>How long will you stay</b> in Thailand?"
+    },
+    {
+      "word": "guesthouse",
+      "pos": "명사",
+      "meaning": "게스트하우스 (한 단어, 앞에 at a)",
+      "example": "I'll stay at a <b>guesthouse</b> for two days."
+    },
+    {
+      "word": "return ticket",
+      "pos": "명사",
+      "meaning": "돌아가는 표, 왕복표",
+      "example": "Yes, I have a <b>return ticket</b>."
+    },
+    {
+      "word": "look at the camera",
+      "pos": "표현",
+      "meaning": "카메라를 보다",
+      "example": "Please <b>look at the camera</b>."
+    },
+    {
+      "word": "fingers",
+      "pos": "명사",
+      "meaning": "손가락 (지문 찍을 때)",
+      "example": "Put your right <b>fingers</b> here."
+    },
+    {
+      "word": "Can I go now?",
+      "pos": "표현",
+      "meaning": "이제 가도 될까요?",
+      "example": "<b>Can I go now?</b>"
+    },
+    {
+      "word": "Just a moment.",
+      "pos": "표현",
+      "meaning": "잠시만요.",
+      "example": "<b>Just a moment...</b> Is this your first time in Thailand?"
+    }
+  ]
+}
