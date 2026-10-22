@@ -1,0 +1,156 @@
+{
+  "day": 25,
+  "date": "2026-10-22",
+  "slug": "NightMarket",
+  "title": "At a Night Market in Bangkok",
+  "title_ko": "방콕 야시장에서 길거리 음식 사 먹기",
+  "vocab_title_ko": "방콕 야시장",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Nok",
+      "en": "Hello! Welcome! Try our pad thai!",
+      "ko": "안녕하세요! 어서 오세요! 우리 팟타이 먹어 봐요!"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "It looks delicious. I'd like one pad thai and a bottle of Coke. Can you recommend anything else?",
+      "ko": "맛있어 보이네요. 팟타이 하나랑 콜라 한 병 주세요. 다른 것도 추천해 주실래요?"
+    },
+    {
+      "role": "partner",
+      "name": "Nok",
+      "en": "Yes! Try our mango sticky rice. It's very sweet and popular! Do you want your pad thai spicy?",
+      "ko": "네! 망고 찰밥 드셔 보세요. 달콤하고 인기 많아요! 팟타이는 맵게 해 드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I love spicy food, and I'd like one mango sticky rice.",
+      "ko": "매운 음식 좋아해요. 망고 찰밥도 하나 주세요."
+    },
+    {
+      "role": "partner",
+      "name": "Nok",
+      "en": "Spicy pad thai and one mango sticky rice! That's one hundred fifty baht. Are you eating here or taking it to go?",
+      "ko": "매운 팟타이랑 망고 찰밥 하나요! 150바트예요. 여기서 드세요, 가져가세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'll eat here. Is this chair free?",
+      "ko": "여기서 먹을게요. 이 의자 비었어요?"
+    },
+    {
+      "role": "partner",
+      "name": "Nok",
+      "en": "Yes, please sit down! Here's your Coke. Where are you from?",
+      "ko": "네, 앉으세요! 콜라 여기 있어요. 어디에서 왔어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'm from Korea. This is my first time in Thailand.",
+      "ko": "한국에서 왔어요. 태국은 처음이에요."
+    },
+    {
+      "role": "partner",
+      "name": "Nok",
+      "en": "Korea! I love K-dramas! Welcome to Thailand! Here's your pad thai. How is it?",
+      "ko": "한국이요! 저 한국 드라마 정말 좋아해요! 태국에 온 걸 환영해요! 팟타이 나왔어요. 맛이 어때요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "It's perfect for my taste. The mango sticky rice is so delicious.",
+      "ko": "제 입맛에 딱이에요. 망고 찰밥도 정말 맛있어요."
+    },
+    {
+      "role": "partner",
+      "name": "Nok",
+      "en": "I'm so happy you like it! Would you like anything else?",
+      "ko": "맛있다니 정말 기뻐요! 더 필요한 거 있어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like a bottle of beer, please.",
+      "ko": "맥주 한 병 주세요."
+    },
+    {
+      "role": "partner",
+      "name": "Nok",
+      "en": "One cold beer! Here you go. That's eighty baht. Card or cash?",
+      "ko": "시원한 맥주 한 병이요! 여기요. 80바트예요. 카드예요, 현금이에요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "In cash, please.",
+      "ko": "현금으로 할게요."
+    },
+    {
+      "role": "partner",
+      "name": "Nok",
+      "en": "Thank you! Enjoy your night in Bangkok!",
+      "ko": "고마워요! 방콕에서 즐거운 밤 보내요!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "It looks delicious.",
+      "pos": "표현",
+      "meaning": "맛있어 보여요.",
+      "example": "<b>It looks delicious.</b> I'd like one pad thai."
+    },
+    {
+      "word": "pad thai",
+      "pos": "명사",
+      "meaning": "팟타이 (태국식 볶음 쌀국수)",
+      "example": "I'd like one <b>pad thai</b> and a bottle of Coke."
+    },
+    {
+      "word": "mango sticky rice",
+      "pos": "명사",
+      "meaning": "망고 찰밥 (태국 디저트)",
+      "example": "The <b>mango sticky rice</b> is so delicious."
+    },
+    {
+      "word": "Do you want it spicy?",
+      "pos": "표현",
+      "meaning": "맵게 해 드릴까요?",
+      "example": "<b>Do you want</b> your pad thai <b>spicy</b>?"
+    },
+    {
+      "word": "eat here / take it to go",
+      "pos": "표현",
+      "meaning": "여기서 먹다 / 포장해 가다",
+      "example": "Are you <b>eating here</b> or <b>taking it to go</b>?"
+    },
+    {
+      "word": "Is this chair free?",
+      "pos": "표현",
+      "meaning": "이 의자 비었어요? (is는 한 번만 / Is this seat taken?)",
+      "example": "I'll eat here. <b>Is this chair free?</b>"
+    },
+    {
+      "word": "Where are you from?",
+      "pos": "표현",
+      "meaning": "어디에서 왔어요?",
+      "example": "<b>Where are you from?</b> I'm from Korea."
+    },
+    {
+      "word": "It's perfect for my taste.",
+      "pos": "표현",
+      "meaning": "제 입맛에 딱이에요. (철자 taste)",
+      "example": "<b>It's perfect for my taste.</b>"
+    },
+    {
+      "word": "Card or cash?",
+      "pos": "표현",
+      "meaning": "카드예요, 현금이에요?",
+      "example": "That's eighty baht. <b>Card or cash?</b>"
+    }
+  ]
+}
