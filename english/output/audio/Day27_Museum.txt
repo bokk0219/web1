@@ -1,0 +1,17 @@
+🔵 Hello! Welcome to the museum. How can I help you?
+🔴 I'd like a ticket for the Yoo Youngkuk exhibition.
+🔵 One ticket for the Yoo Youngkuk exhibition. That's fifteen thousand won. Would you like an audio guide, too?
+🔴 Yes, I'd like an audio guide, please.
+🔵 Sure! It's three thousand won more. Would you like it in Korean or English?
+🔴 Korean, please.
+🔵 Korean. OK! The total is eighteen thousand won. How would you like to pay?
+🔴 By card, please. Here is my card.
+🔵 Thank you! Here's your ticket and the audio guide. The exhibition is on the second floor. Do you have any questions?
+🔴 Can I take photos in the exhibition?
+🔵 Yes, you can. But please don't use flash. Do you need a locker for your bag?
+🔴 No, thanks. I'm OK.
+🔵 OK! Is this your first visit to our museum?
+🔴 No, I visited the museum last year. It has so many great collections.
+🔵 Thank you! I'm glad you came back. What did you like the most last time?
+🔴 I liked modern Korean paintings.
+🔵 Then you'll love this exhibition! Yoo Youngkuk is a big part of Korean modern art. Enjoy!

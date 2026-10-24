@@ -1,0 +1,168 @@
+{
+  "day": 27,
+  "date": "2026-10-24",
+  "slug": "Museum",
+  "title": "At the Art Museum",
+  "title_ko": "미술관 매표소에서 표 사기",
+  "vocab_title_ko": "미술관 매표소",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Grace",
+      "en": "Hello! Welcome to the museum. How can I help you?",
+      "ko": "안녕하세요! 미술관에 오신 걸 환영해요. 무엇을 도와드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'd like a ticket for the Yoo Youngkuk exhibition.",
+      "ko": "유영국 전시 표 한 장 주세요."
+    },
+    {
+      "role": "partner",
+      "name": "Grace",
+      "en": "One ticket for the Yoo Youngkuk exhibition. That's fifteen thousand won. Would you like an audio guide, too?",
+      "ko": "유영국 전시 표 한 장이요. 만 오천 원이에요. 오디오 가이드도 필요하세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I'd like an audio guide, please.",
+      "ko": "네, 오디오 가이드도 주세요."
+    },
+    {
+      "role": "partner",
+      "name": "Grace",
+      "en": "Sure! It's three thousand won more. Would you like it in Korean or English?",
+      "ko": "네! 삼천 원 추가돼요. 한국어로 드릴까요, 영어로 드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Korean, please.",
+      "ko": "한국어로 주세요."
+    },
+    {
+      "role": "partner",
+      "name": "Grace",
+      "en": "Korean. OK! The total is eighteen thousand won. How would you like to pay?",
+      "ko": "한국어요. 알겠습니다! 모두 만 팔천 원이에요. 어떻게 결제하시겠어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "By card, please. Here is my card.",
+      "ko": "카드로 할게요. 여기 카드요."
+    },
+    {
+      "role": "partner",
+      "name": "Grace",
+      "en": "Thank you! Here's your ticket and the audio guide. The exhibition is on the second floor. Do you have any questions?",
+      "ko": "감사합니다! 표랑 오디오 가이드 여기 있어요. 전시는 2층이에요. 궁금한 점 있으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Can I take photos in the exhibition?",
+      "ko": "전시장에서 사진 찍어도 되나요?"
+    },
+    {
+      "role": "partner",
+      "name": "Grace",
+      "en": "Yes, you can. But please don't use flash. Do you need a locker for your bag?",
+      "ko": "네, 찍으셔도 돼요. 그런데 플래시는 쓰지 말아 주세요. 가방 보관할 사물함 필요하세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, thanks. I'm OK.",
+      "ko": "아니요, 괜찮아요."
+    },
+    {
+      "role": "partner",
+      "name": "Grace",
+      "en": "OK! Is this your first visit to our museum?",
+      "ko": "알겠습니다! 저희 미술관은 처음 오셨어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, I visited the museum last year. It has so many great collections.",
+      "ko": "아니요, 작년에 와 봤어요. 좋은 소장품이 정말 많더라고요."
+    },
+    {
+      "role": "partner",
+      "name": "Grace",
+      "en": "Thank you! I'm glad you came back. What did you like the most last time?",
+      "ko": "감사합니다! 다시 와 주셔서 기뻐요. 지난번엔 뭐가 제일 좋으셨어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I liked modern Korean paintings.",
+      "ko": "한국 근현대 회화가 좋았어요."
+    },
+    {
+      "role": "partner",
+      "name": "Grace",
+      "en": "Then you'll love this exhibition! Yoo Youngkuk is a big part of Korean modern art. Enjoy!",
+      "ko": "그럼 이번 전시도 정말 좋아하실 거예요! 유영국은 한국 근현대 미술에서 아주 중요한 화가거든요. 즐겁게 관람하세요!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "a ticket for the ~ exhibition",
+      "pos": "표현",
+      "meaning": "~ 전시 표 한 장 (the 필수)",
+      "example": "I'd like <b>a ticket for the</b> Yoo Youngkuk <b>exhibition</b>."
+    },
+    {
+      "word": "audio guide",
+      "pos": "명사",
+      "meaning": "오디오 가이드",
+      "example": "Yes, I'd like an <b>audio guide</b>, please."
+    },
+    {
+      "word": "It's ~ more.",
+      "pos": "표현",
+      "meaning": "~ 추가돼요.",
+      "example": "<b>It's</b> three thousand won <b>more</b>."
+    },
+    {
+      "word": "in Korean / in English",
+      "pos": "표현",
+      "meaning": "한국어로 / 영어로",
+      "example": "Would you like it <b>in Korean or English</b>?"
+    },
+    {
+      "word": "Can I take photos?",
+      "pos": "표현",
+      "meaning": "사진 찍어도 돼요?",
+      "example": "<b>Can I take photos</b> in the exhibition?"
+    },
+    {
+      "word": "flash",
+      "pos": "명사",
+      "meaning": "(카메라) 플래시",
+      "example": "Please don't use <b>flash</b>."
+    },
+    {
+      "word": "locker",
+      "pos": "명사",
+      "meaning": "사물함, 물품 보관함",
+      "example": "Do you need a <b>locker</b> for your bag?"
+    },
+    {
+      "word": "first visit",
+      "pos": "명사",
+      "meaning": "첫 방문",
+      "example": "Is this your <b>first visit</b> to our museum?"
+    },
+    {
+      "word": "collection",
+      "pos": "명사",
+      "meaning": "소장품, 컬렉션",
+      "example": "It has so many great <b>collections</b>."
+    }
+  ]
+}
