@@ -1,0 +1,186 @@
+{
+  "day": 29,
+  "date": "2026-10-25",
+  "slug": "BikeToJamsil",
+  "title": "My Body Hurts After Biking",
+  "title_ko": "자전거 타고 잠실 다녀온 이야기",
+  "vocab_title_ko": "자전거 다녀온 이야기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Good morning, Hyunju! Are you OK?",
+      "ko": "좋은 아침이에요, 현주 씨! 괜찮아요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I rode a bike for eleven kilometers. It was very good, but my whole body hurts.",
+      "ko": "자전거를 11킬로미터 탔어요. 정말 좋았는데, 온몸이 아파요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Wow, eleven kilometers! Where did you go?",
+      "ko": "와, 11킬로미터요! 어디까지 갔어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I started near my home and went to Jamsil Han River Park.",
+      "ko": "집 근처에서 출발해서 잠실 한강공원까지 갔어요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Nice! How long did it take?",
+      "ko": "좋네요! 얼마나 걸렸어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "It took forty minutes.",
+      "ko": "40분 걸렸어요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Only forty minutes? Was it your first time riding that far?",
+      "ko": "40분밖에 안 걸렸어요? 그렇게 멀리 탄 건 처음이에요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, I've ridden sixteen kilometers before.",
+      "ko": "아니요, 전에 16킬로미터도 타 봤어요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Wow! So why does your body hurt this time?",
+      "ko": "와! 그런데 이번엔 왜 몸이 아파요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Because I haven't ridden a bike for a long time.",
+      "ko": "자전거를 오랫동안 안 탔거든요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Ah, that's why! Which part hurts the most?",
+      "ko": "아, 그래서구나! 어디가 제일 아파요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "My back and legs hurt the most.",
+      "ko": "허리랑 다리가 제일 아파요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Oh no! Did you check your seat height?",
+      "ko": "저런! 안장 높이는 확인했어요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I checked it before I started. I think I was too tense.",
+      "ko": "출발하기 전에 확인했어요. 몸에 너무 힘이 들어갔던 것 같아요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "I see. Will you ride to Jamsil again?",
+      "ko": "그렇군요. 잠실에 또 자전거 타고 갈 거예요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, I will go again before it gets too cold.",
+      "ko": "네, 너무 추워지기 전에 또 갈 거예요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Good idea! Can I join you next time?",
+      "ko": "좋은 생각이에요! 다음엔 저도 같이 가도 돼요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Sure, let's go together.",
+      "ko": "그럼요, 같이 가요."
+    },
+    {
+      "role": "partner",
+      "name": "Kate",
+      "en": "Yay! Take a good rest, Hyunju!",
+      "ko": "야호! 푹 쉬어요, 현주 씨!"
+    }
+  ],
+  "vocab": [
+    {
+      "word": "My whole body hurts.",
+      "pos": "표현",
+      "meaning": "온몸이 아파요. (uncomfortable은 '불편하다, 거북하다')",
+      "example": "It was very good, but <b>my whole body hurts.</b>"
+    },
+    {
+      "word": "kilometers",
+      "pos": "명사",
+      "meaning": "킬로미터 (kilo + meter, 2 이상이면 s)",
+      "example": "I rode a bike for eleven <b>kilometers</b>."
+    },
+    {
+      "word": "How long did it take? / It took ~.",
+      "pos": "표현",
+      "meaning": "얼마나 걸렸어요? / ~ 걸렸어요.",
+      "example": "<b>How long did it take?</b> <b>It took</b> forty minutes."
+    },
+    {
+      "word": "I've ridden ~ before.",
+      "pos": "표현",
+      "meaning": "전에 ~ 타 봤어요. (ride–rode–ridden / I've been to는 장소)",
+      "example": "No, <b>I've ridden</b> sixteen kilometers <b>before.</b>"
+    },
+    {
+      "word": "for a long time",
+      "pos": "표현",
+      "meaning": "오랫동안 (haven't + p.p.와 함께)",
+      "example": "I haven't ridden a bike <b>for a long time</b>."
+    },
+    {
+      "word": "~ hurt the most",
+      "pos": "표현",
+      "meaning": "~가 제일 아프다 (아픈 부위가 주어)",
+      "example": "My back and legs <b>hurt the most</b>."
+    },
+    {
+      "word": "seat height",
+      "pos": "명사",
+      "meaning": "안장 높이",
+      "example": "Did you check your <b>seat height</b>?"
+    },
+    {
+      "word": "tense",
+      "pos": "형용사",
+      "meaning": "몸이 굳은, 힘이 들어간 (nervous는 마음의 긴장)",
+      "example": "I think I was too <b>tense</b>."
+    },
+    {
+      "word": "before it gets cold",
+      "pos": "표현",
+      "meaning": "추워지기 전에 (before 뒤에 not ✕)",
+      "example": "I will go again <b>before it gets</b> too <b>cold</b>."
+    },
+    {
+      "word": "Can I join you?",
+      "pos": "표현",
+      "meaning": "저도 같이 가도 돼요?",
+      "example": "Good idea! <b>Can I join you</b> next time?"
+    }
+  ]
+}
