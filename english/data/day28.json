@@ -1,0 +1,156 @@
+{
+  "day": 28,
+  "date": "2026-10-25",
+  "slug": "Reservation",
+  "title": "Booking a Table by Phone",
+  "title_ko": "전화로 식당 예약하기",
+  "vocab_title_ko": "전화로 식당 예약하기",
+  "lines": [
+    {
+      "role": "partner",
+      "name": "Leo",
+      "en": "Hello, Bella Pasta. How can I help you?",
+      "ko": "안녕하세요, 벨라 파스타입니다. 무엇을 도와드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Hello, I'd like to make a reservation for this Sunday for two.",
+      "ko": "안녕하세요, 이번 일요일에 두 명 예약하고 싶어요."
+    },
+    {
+      "role": "partner",
+      "name": "Leo",
+      "en": "Sure! This Sunday for two. What time would you like?",
+      "ko": "네! 이번 일요일 두 분이요. 몇 시로 해 드릴까요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "At seven, please.",
+      "ko": "7시로 해 주세요."
+    },
+    {
+      "role": "partner",
+      "name": "Leo",
+      "en": "Seven p.m. OK! May I have your name, please?",
+      "ko": "저녁 7시요. 알겠습니다! 성함이 어떻게 되세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "It's HJ.",
+      "ko": "HJ예요."
+    },
+    {
+      "role": "partner",
+      "name": "Leo",
+      "en": "HJ. Thank you. And your phone number?",
+      "ko": "HJ 님. 감사합니다. 전화번호는요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "It's zero one zero, one two three four, four five six seven.",
+      "ko": "010-1234-4567이에요."
+    },
+    {
+      "role": "partner",
+      "name": "Leo",
+      "en": "Got it. Any special requests?",
+      "ko": "알겠습니다. 특별히 요청하실 사항 있으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "I'm not allergic to most food, but I don't want any curry in my food.",
+      "ko": "대부분의 음식에 알레르기는 없는데, 음식에 카레는 빼 주세요."
+    },
+    {
+      "role": "partner",
+      "name": "Leo",
+      "en": "No curry. No problem! So, this Sunday at seven, for two people. Is that right?",
+      "ko": "카레는 빼고요. 문제없어요! 그럼 이번 일요일 7시, 두 분. 맞으세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "Yes, that's right. Can I get a window seat?",
+      "ko": "네, 맞아요. 창가 자리로 해 주실 수 있어요?"
+    },
+    {
+      "role": "partner",
+      "name": "Leo",
+      "en": "Sure! I'll save a window table for you. Will you need parking?",
+      "ko": "그럼요! 창가 자리로 잡아 둘게요. 주차 필요하세요?"
+    },
+    {
+      "role": "me",
+      "name": "Hyunju",
+      "en": "No, I'll go there by subway.",
+      "ko": "아니요, 지하철 타고 갈 거예요."
+    },
+    {
+      "role": "partner",
+      "name": "Leo",
+      "en": "OK! See you this Sunday at seven, HJ.",
+      "ko": "알겠습니다! 이번 일요일 7시에 뵐게요, HJ 님."
+    }
+  ],
+  "vocab": [
+    {
+      "word": "make a reservation",
+      "pos": "표현",
+      "meaning": "예약하다 (a 필수)",
+      "example": "I'd like to <b>make a reservation</b> for this Sunday."
+    },
+    {
+      "word": "for this Sunday",
+      "pos": "표현",
+      "meaning": "이번 일요일로 (this 앞에 on ✕)",
+      "example": "I'd like to make a reservation <b>for this Sunday</b> for two."
+    },
+    {
+      "word": "May I have your name?",
+      "pos": "표현",
+      "meaning": "성함이 어떻게 되세요?",
+      "example": "<b>May I have your name</b>, please?"
+    },
+    {
+      "word": "전화번호 읽기",
+      "pos": "표현",
+      "meaning": "숫자를 하나씩, 끊는 곳에서 쉬기 (0 = zero)",
+      "example": "It's <b>zero one zero, one two three four</b>, four five six seven."
+    },
+    {
+      "word": "special requests",
+      "pos": "명사",
+      "meaning": "특별 요청 사항",
+      "example": "Any <b>special requests</b>?"
+    },
+    {
+      "word": "most food",
+      "pos": "표현",
+      "meaning": "대부분의 음식 (most of food ✕)",
+      "example": "I'm not allergic to <b>most food</b>."
+    },
+    {
+      "word": "Is that right? / That's right.",
+      "pos": "표현",
+      "meaning": "맞으세요? / 맞아요.",
+      "example": "<b>Is that right?</b> Yes, <b>that's right.</b>"
+    },
+    {
+      "word": "parking",
+      "pos": "명사",
+      "meaning": "주차, 주차 공간",
+      "example": "Will you need <b>parking</b>?"
+    },
+    {
+      "word": "by subway",
+      "pos": "표현",
+      "meaning": "지하철로 (by + 교통수단, a/the 없이)",
+      "example": "No, I'll go there <b>by subway</b>."
+    }
+  ]
+}

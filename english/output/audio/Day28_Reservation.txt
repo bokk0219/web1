@@ -1,0 +1,15 @@
+🔵 Hello, Bella Pasta. How can I help you?
+🔴 Hello, I'd like to make a reservation for this Sunday for two.
+🔵 Sure! This Sunday for two. What time would you like?
+🔴 At seven, please.
+🔵 Seven p.m. OK! May I have your name, please?
+🔴 It's HJ.
+🔵 HJ. Thank you. And your phone number?
+🔴 It's zero one zero, one two three four, four five six seven.
+🔵 Got it. Any special requests?
+🔴 I'm not allergic to most food, but I don't want any curry in my food.
+🔵 No curry. No problem! So, this Sunday at seven, for two people. Is that right?
+🔴 Yes, that's right. Can I get a window seat?
+🔵 Sure! I'll save a window table for you. Will you need parking?
+🔴 No, I'll go there by subway.
+🔵 OK! See you this Sunday at seven, HJ.
