@@ -88,3 +88,14 @@ PR link in one line.
 - Close with the progress in plain numbers — she loves this: "N일 완료, 30일까지 M일 남았어요"
   (after Day 30, switch to the review phase in `english-tutor`). Use numbers elsewhere too where
   they help (line count, characters/credits, words added).
+
+## Review phase (after Day 30)
+
+From November 2026 the sessions are reviews, not new days (see `english-tutor`, Phase 2). Don't
+write a day file, don't build, and don't make an audio script. Instead:
+
+1. Append one row to `english/review/log.md`:
+   `| date | review # | DayNN scene | 첫 시도 정답 N/M | 퀴즈 N/10 or – | one-line note |`.
+2. Commit, push and merge it as in step 3.
+3. In the reply, give the numbers: today's scores, reviews done "N/30", and the change from that
+   day's earlier result when one exists. Keep it short.
