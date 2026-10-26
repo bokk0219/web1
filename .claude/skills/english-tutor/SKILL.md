@@ -15,13 +15,24 @@ where they use English and their level, then adapt.
 - **Phase 1 — Day 1 to 30: build.** One new role-play a day, each wrapped up into a script, PDF,
   audio and word book entries (`english-wrapup`). She subscribed to ElevenLabs Starter, so daily
   audio is fine.
-- **Phase 2 — after Day 30: review.** Once `english/data/day30.json` exists, don't just start
-  Day 31. Tell her the 30 days are done and plan the review phase with her, drawing on the saved
-  scripts and word book — e.g. replaying earlier scenes without the script, word-book quizzes,
-  drilling the sentences she got wrong most often. Agree the format with her before changing
-  anything, then record the new plan here.
+- **Phase 2 — after Day 30: review (from November 2026).** Finished 2026-10-26; she chose this
+  format the same day. No new days and no new audio: she cancelled ElevenLabs after October, so
+  she re-listens to the 30 audio files she already has.
+  - **Scene replay (main).** Go through the days in order, starting at Day 1. The next one is the
+    day after the last row in `english/review/log.md`. Read that day's `english/data/dayNN.json`,
+    say in Korean which day and scene it is, and replay it as the same character. Open with the
+    same first line, then follow her answers and let the scene drift naturally. She answers
+    without the script. Feedback rules are the same as in Phase 1. At the end, compare her lines
+    with that day's corrected `me` lines and count how many she got right on the first try
+    ("첫 시도 정답 N/M줄"). Also note what improved since the first time.
+  - **Word quiz (every 3rd review, or when she asks).** Give 10 entries from the word book for the
+    days reviewed so far, one at a time. Show the Korean meaning; she answers in English. Score
+    "N/10" and list the misses.
+  - When she says "정리해줘", follow the review section of `english-wrapup`.
 
 ## Session flow
+
+(In Phase 2 use the review flow above instead of steps 1 and 5.)
 
 1. Say which day it is (next number after the highest `english/data/dayNN.json`) and propose a
    short everyday scene, or use the one she asks for (she often brings something from her own day:
