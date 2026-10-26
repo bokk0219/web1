@@ -1,0 +1,39 @@
+{
+  "day": 30,
+  "date": "2026-10-26",
+  "slug": "ThirtyDays",
+  "title": "I Finished Thirty Days!",
+  "title_ko": "친구에게 30일 영어 공부 완주 이야기하기",
+  "vocab_title_ko": "30일 완주 이야기",
+  "lines": [
+    {"role": "partner", "name": "Jenny", "en": "Hi, Hyunju! You look so happy today. What's up?", "ko": "안녕, 현주야! 오늘 정말 행복해 보인다. 무슨 일 있어?"},
+    {"role": "me", "name": "Hyunju", "en": "I've finished my English study for thirty days.", "ko": "30일 동안 영어 공부를 끝냈어."},
+    {"role": "partner", "name": "Jenny", "en": "Thirty days? Wow! Every day?", "ko": "30일? 와! 매일?"},
+    {"role": "me", "name": "Hyunju", "en": "Yes, I studied every single day. I'm so happy.", "ko": "응, 하루도 빠짐없이 공부했어. 정말 행복해."},
+    {"role": "partner", "name": "Jenny", "en": "That's amazing! How did you study?", "ko": "대단하다! 어떻게 공부했어?"},
+    {"role": "me", "name": "Hyunju", "en": "I studied with an AI app. I made scripts and audio files.", "ko": "AI 앱으로 공부했어. 대본이랑 음성 파일을 만들었어."},
+    {"role": "partner", "name": "Jenny", "en": "Cool! When did you listen to them?", "ko": "멋지다! 그건 언제 들었어?"},
+    {"role": "me", "name": "Hyunju", "en": "I listened to them on the go.", "ko": "이동하면서 들었어."},
+    {"role": "partner", "name": "Jenny", "en": "Smart! What was the hardest part?", "ko": "똑똑하네! 제일 어려웠던 건 뭐야?"},
+    {"role": "me", "name": "Hyunju", "en": "Most parts were very interesting, but the hardest part was when I didn't know the right English word.", "ko": "대부분 정말 재미있었는데, 딱 맞는 영어 단어를 모를 때가 제일 어려웠어."},
+    {"role": "partner", "name": "Jenny", "en": "I understand. So, what's next?", "ko": "이해해. 그럼 다음은 뭐야?"},
+    {"role": "me", "name": "Hyunju", "en": "After a few days of rest, I'm going to review what I studied.", "ko": "며칠 쉬고 나서, 공부한 걸 복습할 거야."},
+    {"role": "partner", "name": "Jenny", "en": "Great plan! Can you say one thing you learned?", "ko": "좋은 계획이다! 배운 거 하나만 말해 줄래?"},
+    {"role": "me", "name": "Hyunju", "en": "Sure. I was a couch potato all weekend.", "ko": "그럼. 나 주말 내내 소파에서 뒹굴었어."},
+    {"role": "partner", "name": "Jenny", "en": "Ha ha! Me too! Will you keep studying?", "ko": "하하! 나도! 공부는 계속할 거야?"},
+    {"role": "me", "name": "Hyunju", "en": "Yes, I'll keep studying every day.", "ko": "응, 매일 계속 공부할 거야."},
+    {"role": "partner", "name": "Jenny", "en": "I'm so proud of you, Hyunju! The end is the beginning!", "ko": "네가 정말 자랑스러워, 현주야! 끝은 곧 시작이야!"}
+  ],
+  "vocab": [
+    {"word": "What's up?", "pos": "표현", "meaning": "무슨 일 있어? (친구끼리 인사로도 써요)", "example": "You look so happy today. <b>What's up?</b>"},
+    {"word": "I've finished ~", "pos": "표현", "meaning": "~을 끝냈어요 (for last month ✕ → for thirty days)", "example": "<b>I've finished</b> my English study for thirty days."},
+    {"word": "every single day", "pos": "표현", "meaning": "하루도 빠짐없이 (every 뒤는 단수)", "example": "I studied <b>every single day</b>."},
+    {"word": "an AI app", "pos": "명사", "meaning": "AI 앱 (모음 소리 '에이' 앞이라 an)", "example": "I studied with <b>an AI app</b>."},
+    {"word": "on the go", "pos": "표현", "meaning": "이동하면서, 돌아다니면서", "example": "I listened to them <b>on the go</b>."},
+    {"word": "the hardest part", "pos": "표현", "meaning": "가장 어려운 부분", "example": "<b>The hardest part</b> was when I didn't know the right word."},
+    {"word": "the right word", "pos": "표현", "meaning": "딱 맞는 단어", "example": "I didn't know <b>the right</b> English <b>word</b>."},
+    {"word": "a few days of rest", "pos": "표현", "meaning": "며칠간의 휴식", "example": "After <b>a few days of rest</b>, I'm going to review."},
+    {"word": "what I studied", "pos": "표현", "meaning": "내가 공부한 것", "example": "I'm going to review <b>what I studied</b>."},
+    {"word": "keep ~ing", "pos": "표현", "meaning": "계속 ~하다", "example": "I'll <b>keep studying</b> every day."}
+  ]
+}
