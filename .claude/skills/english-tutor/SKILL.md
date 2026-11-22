@@ -27,7 +27,8 @@ where they use English and their level, then adapt.
     ("첫 시도 정답 N/M줄"). Also note what improved since the first time.
   - **Word quiz (every 3rd review, or when she asks).** Give 10 entries from the word book for the
     days reviewed so far, one at a time. Show the Korean meaning; she answers in English. Score
-    "N/10" and list the misses.
+    "N/10" and list the misses. Mix in the words she missed in earlier quizzes (see the log's
+    notes) until she gets each one right.
   - When she says "정리해줘", follow the review section of `english-wrapup`.
 
 ## Session flow
