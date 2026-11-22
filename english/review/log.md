@@ -9,3 +9,4 @@ One row per review session. Scene replays go in order from Day 1. A word quiz ru
 | 2026-11-07 | 3 | Day03 Exhibition (친구에게 전시회 이야기하기) | 2/8 | 5/10 | 과거형 좋아짐; a/the·복수 s·because of·it 빠짐; 퀴즈 오답 homemade, receipt, on a diet, souvenir, humor |
 | 2026-11-14 | 4 | Day04 Pharmacy (약국에서 감기약 사기) | 3/7 | – | caught a cold, symptoms, drowsy 정확; a cold/a fever 등 a 빠짐, these/have had, get a sleep |
 | 2026-11-22 | 5 | Day05 Doctor (병원에서 진료받기) | 3/6 | – | a cold/a fever 숙제 해냄, 마침표로 문장 끊기 좋아짐; sore/sour 혼동, Is there 빠짐, No thank |
+| 2026-11-22 | 6 | Day06 PhoneCall (친구와 전화로 안부 나누기) | 3/5 | 8/10 | a 붙이기·get in touch with 정확; drank/helped, focus on, when 뒤 will ✕; 퀴즈 오답 receipt, souvenir (2회 연속 → 다음 퀴즈에 다시) |
